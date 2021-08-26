@@ -1,12 +1,24 @@
-draw_self();
+var ttheta = direction + gun2dir;
+if (gun2dir != 0) with (gun) {
+	if (ttheta >= 360) ttheta -= 360;
+	
+	var xx = owner.x + lengthdir_x(radius, ttheta);
+	var yy = owner.y + lengthdir_y(radius, ttheta);
+	
+	draw_sprite_ext(sprite_index, image_index, xx, yy,
+	image_xscale, image_yscale, ttheta, c_white, image_alpha)
+}
 
-draw_set_halign(fa_middle);
+//DEBUG
+/*draw_set_halign(fa_middle);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_placeholder);
 draw_text(x, y - 140, "combo");
 for (var i = 0; i < ds_list_size(combo_now); i++)
 	draw_text(x - 64 + 64 * i, y - 100, string(combo_now[| i]));
-draw_text(x, y + 100, "bulls: " + string(bulls));
+if (first_hit == L) draw_text(x, y - 60, "first: " + "L");
+if (first_hit == R) draw_text(x, y - 60, "first: " + "R");
+draw_text(x, y + 100, "bulls: " + string(bulls));*/
 
 /*draw_set_halign(fa_middle);
 draw_set_font(fnt_placeholder);

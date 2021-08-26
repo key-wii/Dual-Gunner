@@ -30,7 +30,7 @@ if (dashing && can_move) {
 	if (dash_tick == 15) {
 		with (owner) {
 			point_mouse();
-			if (instance_exists(partner)) partner.dir_line = direction;
+			if (instance_exists(gun)) gun.dir_line = direction;
 		}
 		dashing = false;
 	}

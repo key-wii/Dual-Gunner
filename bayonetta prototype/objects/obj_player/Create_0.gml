@@ -17,9 +17,10 @@ move.owner = id;
 partner.hp = hp;
 partner.owner = id;
 partner.radius = partner.sprite_width + sprite_width;*/
-partner = instance_create_layer(x, y, "Player", obj_arrow);
-partner.owner = id;
-partner.radius = sprite_width;
+gun = instance_create_layer(x, y, "Player", obj_arrow);
+gun.owner = id;
+gun.radius = sprite_width;
+gun2dir = 0;
 
 set_vars();
 

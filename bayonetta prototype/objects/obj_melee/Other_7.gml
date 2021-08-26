@@ -1,4 +1,5 @@
 if (instance_exists(owner)) with (owner) {
+	dont_cancel = false;
 	if (mouse_check_button(mb_left) || mouse_check_button(mb_right))
 		instance_change(obj_player_melee_hold, true);
 	else {

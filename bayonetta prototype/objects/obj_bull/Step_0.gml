@@ -31,6 +31,6 @@ if (place_meeting(x, y, obj_wall)) {
 	}
 }
 
-coll_destroy_bull_e();
+//coll_destroy_bull_e();
 
 if (wrap) move_wrap(true, true, -70);

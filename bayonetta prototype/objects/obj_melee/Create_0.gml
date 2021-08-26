@@ -1,3 +1,3 @@
 event_inherited();
 
-alarm_set(0, 2);
+//alarm_set(0, 2);

@@ -4,6 +4,6 @@ image_yscale = 2;
 pow = 1;
 enemiesHit = ds_list_create();
 
-moreKnockBack = 0;
+//moreKnockBack = 0;
 
 if (instance_exists(obj_player_move)) with (obj_player_move) dashing = false;
