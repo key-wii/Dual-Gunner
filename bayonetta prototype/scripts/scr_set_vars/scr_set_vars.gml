@@ -1,5 +1,5 @@
 function set_vars() {
-	meleeCharge = 32;
+	meleeCharge = 24;
 	melee_count = 0;
 	last_shot = false;
 	just_meleed = false;

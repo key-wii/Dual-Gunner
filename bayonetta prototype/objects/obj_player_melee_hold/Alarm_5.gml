@@ -1,8 +1,3 @@
-/// @description Wicked Weave
-if (hold) {
-	alarm_set(5, 1);
-	exit;
-}
 var xx = lengthdir_x(sprite_width / 2, start_dir);
 var yy = lengthdir_y(sprite_width / 2, start_dir);
 atk = instance_create_layer(x + xx, y + yy, "Player", obj_shockwave);

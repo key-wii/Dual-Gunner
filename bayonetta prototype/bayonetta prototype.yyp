@@ -32,6 +32,7 @@
     {"id":{"name":"spr_bull_explode_e","path":"sprites/spr_bull_explode_e/spr_bull_explode_e.yy",},"order":32,},
     {"id":{"name":"snd_hit_bull","path":"sounds/snd_hit_bull/snd_hit_bull.yy",},"order":1,},
     {"id":{"name":"spr_e_dummy_hurt","path":"sprites/spr_e_dummy_hurt/spr_e_dummy_hurt.yy",},"order":12,},
+    {"id":{"name":"scr_reset_combo","path":"scripts/scr_reset_combo/scr_reset_combo.yy",},"order":6,},
     {"id":{"name":"spr_arrow2","path":"sprites/spr_arrow2/spr_arrow2.yy",},"order":41,},
     {"id":{"name":"obj_audio_controller","path":"objects/obj_audio_controller/obj_audio_controller.yy",},"order":0,},
     {"id":{"name":"snd_hook","path":"sounds/snd_hook/snd_hook.yy",},"order":14,},
@@ -186,7 +187,7 @@
     "IDEVersion": "2.3.3.574",
   },
   "resourceVersion": "1.4",
-  "name": "ruby prototype",
+  "name": "bayonetta prototype",
   "tags": [],
   "resourceType": "GMProject",
 }

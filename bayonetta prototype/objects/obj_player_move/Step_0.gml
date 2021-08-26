@@ -1,3 +1,5 @@
+if (instance_exists(obj_melee)) exit;
+
 xMove = 0;
 yMove = 0;
 if (recoil > 0) {
