@@ -42,6 +42,7 @@ if (place_meeting(x, y, obj_player_parent)) {
 	with (obj_player_parent) {
 		if (place_meeting(x,y,other.id)) {
 			 take_damage_player(other.pow, kbDir);
+			 reset_combo();
 		}
 		sound_machine(snd_hurt);
 		ssSudden(1, 8, false, false);

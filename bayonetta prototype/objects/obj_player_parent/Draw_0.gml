@@ -1,5 +1,13 @@
 draw_self();
 
+draw_set_halign(fa_middle);
+draw_set_valign(fa_middle);
+draw_set_font(fnt_placeholder);
+draw_text(x, y - 140, "combo");
+for (var i = 0; i < ds_list_size(combo_now); i++)
+	draw_text(x - 64 + 64 * i, y - 100, string(combo_now[| i]));
+draw_text(x, y + 100, "bulls: " + string(bulls));
+
 /*draw_set_halign(fa_middle);
 draw_set_font(fnt_placeholder);
 if (hp > 9) var col = c_lime;

@@ -3,4 +3,5 @@ function reset_combo() {
 	melee_count = 0;
 	ds_list_clear(combo_now);
 	last_hit = false;
+	alarm_set(5, 0);
 }

@@ -5,8 +5,7 @@ if (hold) {
 }
 var xx = lengthdir_x(sprite_width / 2, start_dir);
 var yy = lengthdir_y(sprite_width / 2, start_dir);
-atk = instance_create_layer(x + xx, y + yy, "Player", obj_shockwave);
-atk.direction = start_dir;
-atk.image_angle = atk.direction;
-atk.image_yscale *= dir_face;
-atk.speed = 14;
+var wave = instance_create_layer(x + xx, y + yy, "Player", obj_shockwave);
+wave.direction = start_dir;
+wave.image_angle = wave.direction;
+wave.speed = 20; //14?

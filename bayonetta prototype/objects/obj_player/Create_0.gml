@@ -30,3 +30,7 @@ combo1 = ds_list_create();
 combo1[| 0] = 1;
 combo1[| 1] = 2;
 combo1[| 2] = 1;
+
+
+
+bulls = 0;

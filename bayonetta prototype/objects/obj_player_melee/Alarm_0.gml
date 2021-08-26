@@ -23,6 +23,7 @@ tick = 0;
 just_meleed = true;
 
 melee_count++;
+
 //alarm_set(5, 4);
 
 

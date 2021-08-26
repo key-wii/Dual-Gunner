@@ -10,3 +10,6 @@ last_shot = false;
 
 alarm_set(0, 5);
 alarm_set(1, 78);
+
+
+bulls = 0;

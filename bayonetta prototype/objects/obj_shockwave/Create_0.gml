@@ -1,6 +1,7 @@
 alarm_set(0, 23);
 
-pow = 3;
+default_pow = 4;
+pow = default_pow;
 enemiesHit = ds_list_create();
 
 splatter(16, 16);
