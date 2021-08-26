@@ -1,0 +1,3 @@
+/// @description room speed to 1 then...
+room_speed = 1;
+alarm_set(5, 1);
