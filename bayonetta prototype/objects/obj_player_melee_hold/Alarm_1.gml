@@ -1,5 +1,6 @@
 if (last_hit && hold) {
 	// Big Wicked Weave
+	sound_machine(snd_throwWaveBig);
 	var xx = lengthdir_x(sprite_width / 4, direction);
 	var yy = lengthdir_y(sprite_width / 4, direction);
 	var wave = instance_create_layer(x + xx, y + yy, "Player", obj_shockwave);

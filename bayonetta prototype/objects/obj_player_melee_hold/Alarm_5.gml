@@ -4,6 +4,7 @@
 	alarm_set(5, 1);
 	exit;
 }*/
+sound_machine(snd_throwWave);
 var xx = lengthdir_x(sprite_width / 2, direction);
 var yy = lengthdir_y(sprite_width / 2, direction);
 var wave = instance_create_layer(x + xx, y + yy, "Player", obj_shockwave);

@@ -1,6 +1,6 @@
 y = room_height / 2;
 
-hp = 40;
+hp = 80;
 spriteDefault = sprite_index;
 spriteHurt = spr_e_spread_hurt;
 
