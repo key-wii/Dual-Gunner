@@ -34,8 +34,10 @@ if (place_meeting(x, y, obj_wall)) {
 					exit;
 				}
 				//bounce off wall
-				var enemy = instance_nearest(x, y, obj_e_parent);
+				turn(60);
+				/*var enemy = instance_nearest(x, y, obj_e_parent);
 				if (instance_exists(enemy)) {
+					turn(60);
 					var ddis = point_distance(x, y, enemy.x, enemy.y);
 					var max_turn = 45;
 					if (ddis < 100) {
@@ -48,10 +50,9 @@ if (place_meeting(x, y, obj_wall)) {
 							if (diff > max_turn) direction = last_dir + max_turn;
 							else if (diff < -max_turn) direction = last_dir - max_turn;
 					}
-					turn(60);
 				} else {
 					turn(60);
-				}
+				}*/
 				image_angle = direction;
 				if (image_xscale > 1 && alarm_get(0) >= 0) image_xscale = 1;
 				if (image_yscale > 1 && alarm_get(0) >= 0) image_yscale = 1;

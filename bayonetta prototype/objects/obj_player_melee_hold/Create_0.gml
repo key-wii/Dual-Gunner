@@ -7,6 +7,7 @@ start_dir = direction;
 
 if (instance_exists(gun)) gun.dir_line = direction;
 gun2dir = 30 * dir_face;
+fireGun = 1;
 
 last_shot = false;
 

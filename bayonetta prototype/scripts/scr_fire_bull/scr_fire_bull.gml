@@ -5,6 +5,8 @@ function fire_bull(dddir, small) {
 	bull.direction = dddir;
 	bull.image_angle = dddir;
 	bull.speed = 18;
+	bull.dir_face = dir_face;
+	drop_casing(dddir, false);
 	if (small) {
 		bull.sprite_index = spr_bull_small;
 		bull.image_xscale = .9;
@@ -48,6 +50,7 @@ function fire_bull(dddir, small) {
 	if (alarm_get(1) <= 6) with (bull) {
 		//last bullet always does flat 15 damage
 		pow = 15;
+		drop_casing(dddir, true);
 		alarm_set(0, 0);
 		if (small) {
 			image_xscale = 1;
@@ -57,5 +60,25 @@ function fire_bull(dddir, small) {
 			image_yscale = 2.25;
 		}
 		alarm_set(3, 1);
+	}
+}
+
+function drop_casing(dddir, clip) {
+	dddir += 180;
+	dddir += irandom_range(-12, 12);
+	var xx = lengthdir_x(sprite_width / 2 + 0, dddir);
+	var yy = lengthdir_y(sprite_width / 2 + 0, dddir);
+	var casing = instance_create_layer(x + xx, y + yy, "Floor", obj_brass);
+	casing.direction = dddir;
+	with (casing) {
+		image_angle = irandom(359);
+		speed = 10 + irandom(70);
+		if (irandom(4) == 0) speed += 20;
+		if (clip) {
+			sprite_index = spr_clip;
+			exit;
+		}
+		image_xscale = .7;
+		image_yscale = .7;
 	}
 }

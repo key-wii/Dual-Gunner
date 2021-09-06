@@ -1,5 +1,5 @@
 var ttheta = direction + gun2dir;
-if (gun2dir != 0) with (gun) {
+if (gun2dir != 0 && bulls > 0) with (gun) {
 	if (ttheta >= 360) ttheta -= 360;
 	
 	var xx = owner.x + lengthdir_x(radius, ttheta);
@@ -10,15 +10,18 @@ if (gun2dir != 0) with (gun) {
 }
 
 //DEBUG
-/*draw_set_halign(fa_middle);
+draw_set_alpha(.5);
+draw_set_halign(fa_middle);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_placeholder);
 draw_text(x, y - 140, "combo");
-for (var i = 0; i < ds_list_size(combo_now); i++)
-	draw_text(x - 64 + 64 * i, y - 100, string(combo_now[| i]));
-if (first_hit == L) draw_text(x, y - 60, "first: " + "L");
-if (first_hit == R) draw_text(x, y - 60, "first: " + "R");
+var size = ds_list_size(combo_now);
+for (var i = 0; i < size; i++)
+	draw_text((x - (size * 32) + 64 * i) + 32, y - 100, string(combo_now[| i]));
+/*if (first_hit == L) draw_text(x, y - 60, "first strike: " + "L");
+if (first_hit == R) draw_text(x, y - 60, "first strike: " + "R");
 draw_text(x, y + 100, "bulls: " + string(bulls));*/
+draw_set_alpha(1);
 
 /*draw_set_halign(fa_middle);
 draw_set_font(fnt_placeholder);

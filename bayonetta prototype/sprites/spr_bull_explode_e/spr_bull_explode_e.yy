@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "gun stuff",
+    "path": "folders/Sprites/gun stuff.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bull_explode_e",

@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_shoot.wav",
-  "duration": 0.12059,
+  "soundFile": "snd_shoot2_OLD.wav",
+  "duration": 0.141633,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_shoot",
+  "name": "snd_shoot2_OLD",
   "tags": [],
   "resourceType": "GMSound",
 }

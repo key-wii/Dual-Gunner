@@ -1,1 +1,0 @@
-collide_wall();

@@ -1,7 +1,12 @@
 /// @description Projectile(s)
-fire_bull(direction, false);
-fire_bull(direction + gun2dir, true);
-
+	 if (fireGun == 1) {
+	fire_bull(direction, false);
+	fireGun = 2;
+}
+else if (fireGun == 2) {
+	fire_bull(direction + gun2dir, true);
+	fireGun = 1;
+}
 sound_machine(snd_shoot);
 bulls++;
 
@@ -27,4 +32,4 @@ with (move) {
 	bull.image_yscale = .5;
 }*/
 
-alarm_set(0, 6);
+alarm_set(0, 3);

@@ -2,11 +2,16 @@
 if (dir_face == 1) sound_machine(snd_slash);
 else sound_machine(snd_slash2);
 var atk = instance_create_layer(x, y, "Player", obj_melee);
+if (first) with (atk) {
+	first = true;
+	image_xscale *= 1.25;
+	image_yscale *= 1.25;
+}
 atk.direction = start_dir;
 atk.image_angle = atk.direction;
-atk.image_yscale *= dir_face;
 atk.owner = id;
 atk.move = move;
+atk.image_yscale *= dir_face;
 var ddir = start_dir;
 with (move) { 
 	var xx = lengthdir_x(12, ddir);
