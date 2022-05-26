@@ -1,7 +1,7 @@
 function fire_bull(dddir, small) {
 	var xx = lengthdir_x(sprite_width / 2 + 0, dddir);
 	var yy = lengthdir_y(sprite_width / 2 + 0, dddir);
-	var bull = instance_create_layer(x + xx, y + yy, "Player", obj_bull);
+	var bull = instance_create_layer(x + xx, y + yy, "Bull", obj_bull);
 	bull.direction = dddir;
 	bull.image_angle = dddir;
 	bull.speed = 18;
@@ -45,6 +45,18 @@ function fire_bull(dddir, small) {
 				bull.image_yscale = 4;
 				bull.min_size = 2.2;
 				break;
+			/*case 7: 
+				bull.pow = 1.5;
+				bull.image_xscale = 4;
+				bull.image_yscale = 4;
+				bull.min_size = 2.2;
+				break;
+			case 8: 
+				bull.pow = 1.5;
+				bull.image_xscale = 4;
+				bull.image_yscale = 4;
+				bull.min_size = 2.2;
+				break;*/
 		}
 	}
 	if (alarm_get(1) <= 6) with (bull) {

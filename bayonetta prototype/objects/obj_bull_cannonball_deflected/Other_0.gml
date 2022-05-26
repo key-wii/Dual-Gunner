@@ -1,0 +1,1 @@
+if (!wrap) instance_destroy();

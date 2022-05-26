@@ -36,6 +36,26 @@ if (place_meeting(x, y, obj_bull_e)) {
 	}
 }
 
+if (place_meeting(x, y, obj_bull_cannonball_e)) {
+	var ddir = direction;
+	with (obj_bull_cannonball_e) {
+		if (place_meeting(x,y,other.id)) {
+			room_speed = 12;
+			with (obj_controller) alarm_set(2, 1);
+			hp -= 2;
+			if (hp > 0) exit;
+			direction = ddir;
+			image_angle = direction
+			x += lengthdir_x(30, ddir);
+			y += lengthdir_y(30, ddir);
+			speed = clamp(speed * 2, 30, sprite_width * 3);
+			instance_change(obj_bull_cannonball_deflected, true);
+			wrap = true;
+			room_speed = 60;
+		}
+	}
+}
+
 if (place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {

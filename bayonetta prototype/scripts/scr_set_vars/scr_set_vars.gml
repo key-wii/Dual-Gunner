@@ -9,4 +9,9 @@ function set_vars() {
 	just_shockwaved = false;
 	hookCharge = 6;
 	just_hooked = false;*/
+	cooldown_jump = 0;
+	cooldownJumpMax = 5;
+	cooldown_counter = 0;
+	cooldownCounterMax = 20;
+	just_countered = false;
 }

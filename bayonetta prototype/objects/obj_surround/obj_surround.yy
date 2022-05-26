@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "player_abilities",
-    "path": "folders/Objects/player_abilities.yy",
+    "name": "unused",
+    "path": "folders/Objects/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_surround",

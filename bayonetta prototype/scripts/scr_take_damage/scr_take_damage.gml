@@ -11,6 +11,9 @@ function take_damage(knockback, knockbackDir) {
 	with (obj_controller) alarm_set(2, 1);
 	
 	knockbacked(knockback, knockbackDir);
+	if (dizzy_dmg) {
+		dizzy_set(100, knockback * 12);
+	}
 }
 
 function take_damage3(knockback, knockbackDir) {
@@ -26,4 +29,7 @@ function take_damage3(knockback, knockbackDir) {
 	with (obj_controller) alarm_set(2, 2);
 	
 	knockbacked3(knockback, knockbackDir);
+	if (dizzy_dmg) {
+		dizzy_set(100, knockback * 12);
+	}
 }

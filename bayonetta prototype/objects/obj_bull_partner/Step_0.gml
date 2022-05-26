@@ -8,6 +8,11 @@ if (place_meeting(x, y, obj_e_parent)) {
 	var kbDir = direction;
 	with (obj_e_parent) {
 		if (place_meeting(x,y,other.id)) {
+			if (shield) {
+				
+				with (other) instance_change(obj_bull_explode, true);
+				exit;
+			}
 			take_damage(other.pow, kbDir);
 		}
 		sound_machine(snd_hit_wave);

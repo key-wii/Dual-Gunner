@@ -6,6 +6,6 @@ function after_melee() {
 	just_meleed = true;
 	instance_change(obj_player, false);
 	if (last_shot) alarm_set(2, 60);
-	else alarm_set(2, 40);
+	else alarm_set(2, 50);
 	if (last_hit) reset_combo();
 }
