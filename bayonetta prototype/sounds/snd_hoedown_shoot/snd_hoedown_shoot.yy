@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_hit.wav",
-  "duration": 0.987211,
+  "soundFile": "snd_hoedown_shoot.wav",
+  "duration": 1.250516,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_hit",
+  "name": "snd_hoedown_shoot",
   "tags": [],
   "resourceType": "GMSound",
 }

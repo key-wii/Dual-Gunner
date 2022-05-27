@@ -1,4 +1,4 @@
-y = room_height / 2;
+//y = room_height / 2;
 var scale = 3;
 
 hp = 220;

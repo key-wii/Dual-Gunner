@@ -5,6 +5,7 @@ touching_wall = false;
 alarm_reset = true;
 
 recoil = 0;
+stop = false;
 
 dashing = false;
 dashSpd = 19;

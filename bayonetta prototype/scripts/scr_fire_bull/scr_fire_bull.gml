@@ -41,9 +41,9 @@ function fire_bull(dddir, small) {
 				break;
 			case 6: 
 				bull.pow = 1.5;
-				bull.image_xscale = 4;
-				bull.image_yscale = 4;
-				bull.min_size = 2.2;
+				bull.image_xscale = 3.5;
+				bull.image_yscale = 3.5;
+				bull.min_size = 2;
 				break;
 			/*case 7: 
 				bull.pow = 1.5;

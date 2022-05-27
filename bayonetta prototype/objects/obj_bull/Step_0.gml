@@ -59,8 +59,8 @@ if (place_meeting(x, y, obj_wall)) {
 					turn(60);
 				}*/
 				image_angle = direction;
-				if (image_xscale > 1 && alarm_get(0) >= 0) image_xscale = 1;
-				if (image_yscale > 1 && alarm_get(0) >= 0) image_yscale = 1;
+				if (image_xscale > min_size && alarm_get(0) >= 0) image_xscale = min_size;
+				if (image_yscale > min_size && alarm_get(0) >= 0) image_yscale = min_size;
 			}
 		}
 	}

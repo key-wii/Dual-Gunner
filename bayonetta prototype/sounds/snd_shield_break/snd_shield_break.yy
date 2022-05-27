@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -10,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_charge.wav",
-  "duration": 0.52059,
+  "soundFile": "snd_shield_break.wav",
+  "duration": 1.553896,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_charge",
+  "name": "snd_shield_break",
   "tags": [],
   "resourceType": "GMSound",
 }

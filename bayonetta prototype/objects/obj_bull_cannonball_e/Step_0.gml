@@ -46,8 +46,11 @@ if (place_meeting(x, y, obj_player_parent)) {
 		}
 		sound_machine(snd_hurt);
 		ssSudden(3, 8, false, false);
-		x_adjust = lengthdir_x(40, kbDir);
-		y_adjust = lengthdir_y(40, kbDir);
+		knockbacked_player3(sprite_width, kbDir);
+		room_speed = 10;
+		with (obj_controller) alarm_set(2, 2);
+		x_adjust = lengthdir_x(10, kbDir);
+		y_adjust = lengthdir_y(10, kbDir);
 		var xx = lengthdir_x(40, kbDir);
 		var yy = lengthdir_y(40, kbDir);
 		splatterRadiusAt_e(x + xx, y + yy, 38, 100, 42);

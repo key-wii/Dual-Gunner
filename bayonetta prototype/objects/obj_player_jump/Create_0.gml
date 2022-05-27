@@ -8,3 +8,5 @@ wait = 0;
 
 with (obj_player_move) topSpeed *= 1.25;
 //with (obj_player_move) topSpeed /= 2;
+
+sound_machine(snd_jump);

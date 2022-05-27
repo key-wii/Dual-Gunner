@@ -1,5 +1,3 @@
-y = room_height / 2;
-
 hp = 80;
 spriteDefault = sprite_index;
 spriteHurt = spr_e_dummy_hurt;

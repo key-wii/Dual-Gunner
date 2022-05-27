@@ -2,7 +2,7 @@ sprite_default = sprite_index;
 spriteHurt = spr_hurt;
 hp = 10;
 
-y = room_height / 2;
+//y = room_height / 2;
 x_adjust = 0;
 y_adjust = 0;
 

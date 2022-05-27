@@ -7,7 +7,8 @@ else if (fireGun == 2) {
 	fire_bull(direction + gun2dir, true);
 	fireGun = 1;
 }
-sound_machine(snd_shoot);
+//audio_sound_pitch(snd_shoot, .05);
+sound_machine(snd_shootreal);
 bulls++;
 
 var ddir = direction + 180;

@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.9,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_hit_wave.wav",
-  "duration": 0.473356,
+  "duration": 1.595624,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

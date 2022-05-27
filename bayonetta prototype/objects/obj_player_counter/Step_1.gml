@@ -17,6 +17,10 @@ if (timer == 0) {
 	image_xscale = 1;
 	image_yscale = 1;
 	just_countered = true;
-	if (!big_deflect) alarm_set(3, 10); //10 frames of vulnerability where player cannot act
+	if (!big_deflect) {
+		alarm_set(3, 10); //10 frames of vulnerability where player cannot act
+		alarm_set(2, 1); //Reset combo from before counter
+	}
+	else alarm_set(2, 60); //Maintain combo for 60 more frames
 	instance_change(obj_player, false);
 }

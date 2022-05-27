@@ -1,15 +1,14 @@
 Controls
-WASD ------- Movement
-Mouse ------ Aim
-L Click ---- Shot Type A
-R Click ---- Shot Type B
-Spacebar --- Jump
-Q ---------- Counter
-E ---------- Dash (still in development)
-
-ESC -------- Close Window
-
+WASD ------------ Movement
+Mouse ----------- Aim
+Tap L/R Click --- Deflect Projectile
+Hold L Click ---- Shot Type A
+Hold R Click ---- Shot Type B
+Tap Spacebar ---- Jump
+Tap Q ----------- Block & Counter
+Tap E ----------- Dash (still in development)
 
 
-DEBUG (not intended for general use)
-F1 --------- Restart Room
+
+ESC ------------- Close Window
+F1 -------------- Restart Room

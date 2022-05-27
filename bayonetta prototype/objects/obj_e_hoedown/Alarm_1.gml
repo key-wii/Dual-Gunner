@@ -6,8 +6,8 @@
 charging = false;
 charge = chargeMax;
 
-
-sound_machine(snd_shoot_e);
+//audio_stop_sound(snd_hoedown_charge);
+sound_machine(snd_hoedown_shoot);
 var ddir = direction;
 var xx = lengthdir_x(sprite_width / 2, ddir);
 var yy = lengthdir_y(sprite_width / 2, ddir);

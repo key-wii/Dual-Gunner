@@ -59,6 +59,7 @@ if (keyboard_check(ord("W")) && keyboard_check(ord("S")) ||
 } else {
 	opposing_keys = false;
 }
+if (stop) opposing_keys = true;
 
 if (keyboard_check(ord("A")) && !too_many_keys && !opposing_keys && !place_meeting(x - topSpeed, y, obj_wall)) {
 	//burst

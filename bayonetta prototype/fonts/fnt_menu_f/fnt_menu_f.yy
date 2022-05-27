@@ -3,6 +3,7 @@
   "glyphOperations": 1,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Determination Mono",
   "styleName": "Regular",
   "size": 48.0,
@@ -20,6 +21,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":38,"h":77,"character":32,"shift":38,"offset":0,},
     "33": {"x":478,"y":239,"w":19,"h":77,"character":33,"shift":38,"offset":10,},
