@@ -6,6 +6,7 @@ alarm_reset = true;
 
 recoil = 0;
 stop = false;
+air = false;
 
 dashing = false;
 dashSpd = 19;

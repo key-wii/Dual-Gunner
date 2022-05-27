@@ -8,7 +8,7 @@ else if (fireGun == 2) {
 	fireGun = 1;
 }
 //audio_sound_pitch(snd_shoot, .05);
-sound_machine(snd_shoot);
+sound_machine(snd_shoot_player);
 bulls++;
 
 var ddir = direction + 180;

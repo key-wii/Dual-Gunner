@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_cannon_explosion.wav",
-  "duration": 1.595624,
+  "duration": 3.238875,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

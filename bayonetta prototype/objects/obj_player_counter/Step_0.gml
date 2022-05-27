@@ -24,14 +24,17 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 	var ddir = direction;
 	with (obj_bull_cannonball_e) {
 		if (place_meeting(x,y,other.id)) {
-			if (hp == hpMax) room_speed = 2;
+			if (hp == hpMax) {
+				image_xscale = max_size;
+				image_yscale = max_size;
+				room_speed = 2;
+			}
 			else room_speed = 50;
 			with (obj_controller) alarm_set(2, 1);
 			hp -= 1;
 			with (other) {
 				if (!big_deflect) {
 					sound_machine(snd_counter1);
-					//sound_machine(snd_counter2);
 				}
 				big_deflect = true;
 				timer = 30;

@@ -17,30 +17,30 @@ function fire_bull(dddir, small) {
 			//bullet damage scales with combo length
 			case 2: 
 				bull.pow = 1.1;
-				bull.image_xscale = 2.3;
-				bull.image_yscale = 2.3;
+				bull.image_xscale = 2.2;
+				bull.image_yscale = 2.2;
 				bull.min_size = 1.1;
 				break;
 			case 3: 
 				bull.pow = 1.2;
-				bull.image_xscale = 2.6;
-				bull.image_yscale = 2.6;
-				bull.min_size = 1.3;
+				bull.image_xscale = 2.4;
+				bull.image_yscale = 2.4;
+				bull.min_size = 1.2;
 				break;
 			case 4: 
-				bull.pow = 1.3;
-				bull.image_xscale = 2.9;
-				bull.image_yscale = 2.9;
-				bull.min_size = 1.5;
+				bull.pow = 1.5;
+				bull.image_xscale = 2.8;
+				bull.image_yscale = 2.8;
+				bull.min_size = 1.4;
 				break;
 			case 5: 
-				bull.pow = 1.4;
-				bull.image_xscale = 3.2;
-				bull.image_yscale = 3.2;
-				bull.min_size = 1.7;
+				bull.pow = 1.85;
+				bull.image_xscale = 3.1;
+				bull.image_yscale = 3.1;
+				bull.min_size = 1.65;
 				break;
 			case 6: 
-				bull.pow = 1.5;
+				bull.pow = 2.5;
 				bull.image_xscale = 3.5;
 				bull.image_yscale = 3.5;
 				bull.min_size = 2;

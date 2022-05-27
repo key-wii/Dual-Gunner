@@ -1,6 +1,6 @@
 hp = 80;
 spriteDefault = sprite_index;
-spriteHurt = spr_e_dummy_hurt;
+spriteHurt = spr_e_spread_hurt;
 
 move = instance_create_layer(x, y, "Enemy", obj_e_move);
 move.owner = id;

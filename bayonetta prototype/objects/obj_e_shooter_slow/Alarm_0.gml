@@ -5,7 +5,7 @@ if (sprite_index != spriteDefault) {
 }
 
 
-sound_machine(snd_shoot);
+sound_machine(snd_shoot_e3);
 var xx = lengthdir_x(sprite_width / 2, direction);
 var yy = lengthdir_y(sprite_width / 2, direction);
 var bull = instance_create_layer(x + xx, y + yy, "Bull_e", obj_bull_e);

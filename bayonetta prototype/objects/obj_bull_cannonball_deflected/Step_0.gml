@@ -8,6 +8,7 @@ if (place_meeting(x, y, obj_e_parent)) {
 		if (place_meeting(x,y,other.id)) {
 			if (shield) {
 				shield = false;
+				audio_stop_sound(snd_counter2);
 				sound_machine(snd_shield_break);
 				dizzy_set(610, 1300 + irandom(359));
 				//dizzy_set(310, 1300 + irandom(359));

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_counter2.wav",
-  "duration": 2.619604,
+  "duration": 0.658687,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
