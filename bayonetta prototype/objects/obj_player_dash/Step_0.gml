@@ -9,13 +9,14 @@ if (timer == 0) {
 }
 else if (timer <= -5) {
 	var mirror = instance_create_layer(x_orig, y_orig, "Floor", obj_mirror);
-	mirror.direction = dir_orig + 270;
+	mirror.direction = dir_orig - 90;
 	mirror.x1 = x_orig;
 	mirror.y1 = y_orig;
 	mirror.x2 = x;
 	mirror.y2 = y;
 	with (mirror) {
 		image_angle = direction;
+		if (direction >= 180) direction -= 180;
 		var ddis = point_distance(x1, y1, x2, y2);
 		var ddir = point_distance(x1, y1, x2, y2);
 		image_yscale = lengthdir_y(ddis, ddir);
