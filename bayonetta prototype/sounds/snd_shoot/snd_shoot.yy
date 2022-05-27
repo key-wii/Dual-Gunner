@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_shootreal.wav",
+  "soundFile": "snd_shoot.wav",
   "duration": 0.12059,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_shootreal",
+  "name": "snd_shoot",
   "tags": [],
   "resourceType": "GMSound",
 }

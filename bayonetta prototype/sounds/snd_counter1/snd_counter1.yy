@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_counter1.wav",
-  "duration": 1.262562,
+  "soundFile": "snd_counter1.mp3",
+  "duration": 6.048,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

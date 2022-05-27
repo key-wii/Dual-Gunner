@@ -1,4 +1,4 @@
-/// @description 
+/// @description Collision Detection
 jump_move(move);
 
 if (place_meeting(x, y, obj_bull_e)) {
@@ -24,7 +24,8 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 	var ddir = direction;
 	with (obj_bull_cannonball_e) {
 		if (place_meeting(x,y,other.id)) {
-			room_speed = 12;
+			if (hp == hpMax) room_speed = 2;
+			else room_speed = 50;
 			with (obj_controller) alarm_set(2, 1);
 			hp -= 1;
 			with (other) {
