@@ -19,7 +19,7 @@ if (place_meeting(x, y, obj_e_parent)) {
 				}
 				exit;
 			}
-			take_damage(other.pow / 2, kbDir);
+			take_damage(floor(other.pow / 5), kbDir);
 			var xx = lengthdir_x(5, direction);
 			var yy = lengthdir_y(5, direction);
 			splatterRadiusAt(x + xx, y + yy, 8, 16, 12);

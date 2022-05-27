@@ -1,14 +1,14 @@
 //y = room_height / 2;
 var scale = 3;
 
-hp = 220;
+hp = 270;
 spriteDefault = sprite_index;
 spriteHurt = spr_e_dummy_hurt;
 
 move = instance_create_layer(x, y, "Enemy", obj_e_move);
 move.owner = id;
 with (move) {
-	weight = 3;
+	weight = 5;
 	image_xscale = scale;
 	image_yscale = scale;
 }
