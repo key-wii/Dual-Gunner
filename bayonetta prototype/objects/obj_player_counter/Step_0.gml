@@ -41,7 +41,7 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 			}
 			if (hp > 0) exit;
 			direction = direction + 180;
-			image_angle = direction
+			image_angle = direction;
 			x += lengthdir_x(30, ddir);
 			y += lengthdir_y(30, ddir);
 			speed = clamp(speed * 2, 30, sprite_width * 3);

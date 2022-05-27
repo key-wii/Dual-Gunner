@@ -27,12 +27,14 @@ if (dashing && can_move) {
 	if (!place_meeting(x, y + yy, obj_wall)) y += yy;
 	dash_tick++;
 	if (dash_tick >= 5 && dash_dir_change < 2) dash_mid();
-	if (dash_tick == 15) {
+	if (dash_tick == dashTickMax) {
 		with (owner) {
 			point_mouse();
 			if (instance_exists(gun)) gun.dir_line = direction;
 		}
 		dashing = false;
+		dash_tick = 0;
+		dash_dir_change = 0;
 	}
 	move_wrap(true, true, 30);
 	

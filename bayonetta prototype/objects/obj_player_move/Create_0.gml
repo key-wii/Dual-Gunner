@@ -11,6 +11,7 @@ air = false;
 dashing = false;
 dashSpd = 19;
 dash_tick = 0;
+dashTickMax = 15;
 dash_dir_change = 0;
 
 topSpeed_default = 10;

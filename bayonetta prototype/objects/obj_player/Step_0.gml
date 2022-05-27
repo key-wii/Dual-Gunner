@@ -21,3 +21,7 @@ if (cooldown_jump == 0 && keyboard_check_pressed(vk_space)) {
 if (cooldown_counter == 0 && keyboard_check_pressed(ord("Q"))) {
 	instance_change(obj_player_counter, true);
 }
+
+if (keyboard_check_pressed(ord("E"))) {
+	instance_change(obj_player_dash_windup, true);
+}
