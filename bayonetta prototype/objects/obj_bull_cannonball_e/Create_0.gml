@@ -4,7 +4,7 @@ max_size = 2;
 alarm_set(0, 1);
 
 wrap = true;
-alarm_set(1, 20);
+alarm_set(1, 18);
 
 pow = 3;
 

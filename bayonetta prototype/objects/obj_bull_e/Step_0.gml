@@ -1,6 +1,7 @@
 if (place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
+			if (object_index == obj_mirror) exit;
 			splatterWall(spr_splatter_e, .5);
     
 		    with (other) {

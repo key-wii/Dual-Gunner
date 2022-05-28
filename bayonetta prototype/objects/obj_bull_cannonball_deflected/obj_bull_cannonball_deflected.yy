@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bull_cannonball_deflected",
-    "path": "sprites/spr_bull_cannonball_deflected/spr_bull_cannonball_deflected.yy",
+    "name": "spr_bull_e_cannonball_deflected",
+    "path": "sprites/spr_bull_e_cannonball_deflected/spr_bull_e_cannonball_deflected.yy",
   },
   "solid": false,
   "visible": true,

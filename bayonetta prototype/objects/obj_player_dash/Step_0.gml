@@ -9,7 +9,7 @@ if (timer == 0) {
 }
 else if (timer <= -5) {
 	var mirror = instance_create_layer(x_orig, y_orig, "Floor", obj_mirror);
-	mirror.direction = dir_orig - 90;
+	mirror.direction = dir_orig + 90;
 	mirror.x1 = x_orig;
 	mirror.y1 = y_orig;
 	mirror.x2 = x;
@@ -17,11 +17,13 @@ else if (timer <= -5) {
 	with (mirror) {
 		image_angle = direction;
 		if (direction >= 180) direction -= 180;
-		var ddis = point_distance(x1, y1, x2, y2);
+		var ddis = point_distance(x1, y1, x2, y2) - 60;
 		var ddir = point_distance(x1, y1, x2, y2);
 		image_yscale = lengthdir_y(ddis, ddir);
+		if (image_yscale < 20) instance_destroy();
 	}
 	with (move) can_move = true;
+	cooldown_dash = cooldownDashMax;
 	instance_change(obj_player, false);
 }
 else if (timer < 0) direction += 5 * dir_face;

@@ -14,4 +14,6 @@ function set_vars() {
 	cooldown_counter = 0;
 	cooldownCounterMax = 20;
 	just_countered = false;
+	cooldown_dash = 0;
+	cooldownDashMax = 10;
 }

@@ -59,7 +59,8 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 if (place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
-			splatterWallAt(spr_splatter_big, .85, other.x, other.y);
+			if (object_index != obj_mirror)
+				splatterWallAt(spr_splatter_big, .85, other.x, other.y);
 		}
 	}
 }

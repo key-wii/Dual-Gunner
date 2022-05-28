@@ -1,6 +1,6 @@
 hp = 2;
 pow = 285;
 sound_machine(snd_deflect);
-//ssSudden(1, 1, false, false);
+ssSudden(1, 1, false, false);
 
-alarm_set(1, 30);
+alarm_set(1, 28);

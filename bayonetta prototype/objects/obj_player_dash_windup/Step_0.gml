@@ -7,8 +7,9 @@ if (windup < windupMax) {
 } else {
 	direction = dir_orig;
 	var ddir = direction;
+	//ddir = direction + 180;
 	with (move) {
-		direction = ddir + 180;
+		direction = ddir;
 		can_move = true;
 		dashing = true;
 		dash_dir_change = 2; //Don't let player change direction during dash

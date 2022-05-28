@@ -22,6 +22,6 @@ if (cooldown_counter == 0 && keyboard_check_pressed(ord("Q"))) {
 	instance_change(obj_player_counter, true);
 }
 
-if (keyboard_check_pressed(ord("E"))) {
+if (cooldown_dash == 0 && keyboard_check_pressed(ord("E"))) {
 	instance_change(obj_player_dash_windup, true);
 }

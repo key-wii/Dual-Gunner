@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"18516839-6a3e-497b-831d-681a0826ee44","path":"sprites/spr_bull_cannonball_deflected/spr_bull_cannonball_deflected.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"18516839-6a3e-497b-831d-681a0826ee44","path":"sprites/spr_bull_cannonball_deflected/spr_bull_cannonball_deflected.yy",},"LayerId":{"name":"e2087f92-06b9-4b53-8284-56fa76551f19","path":"sprites/spr_bull_cannonball_deflected/spr_bull_cannonball_deflected.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bull_cannonball_deflected","path":"sprites/spr_bull_cannonball_deflected/spr_bull_cannonball_deflected.yy",},"resourceVersion":"1.0","name":"18516839-6a3e-497b-831d-681a0826ee44","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"18516839-6a3e-497b-831d-681a0826ee44","path":"sprites/spr_bull_e_cannonball_deflected/spr_bull_e_cannonball_deflected.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"18516839-6a3e-497b-831d-681a0826ee44","path":"sprites/spr_bull_e_cannonball_deflected/spr_bull_e_cannonball_deflected.yy",},"LayerId":{"name":"e2087f92-06b9-4b53-8284-56fa76551f19","path":"sprites/spr_bull_e_cannonball_deflected/spr_bull_e_cannonball_deflected.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_bull_e_cannonball_deflected","path":"sprites/spr_bull_e_cannonball_deflected/spr_bull_e_cannonball_deflected.yy",},"resourceVersion":"1.0","name":"18516839-6a3e-497b-831d-681a0826ee44","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bull_cannonball_deflected","path":"sprites/spr_bull_cannonball_deflected/spr_bull_cannonball_deflected.yy",},
+    "spriteId": {"name":"spr_bull_e_cannonball_deflected","path":"sprites/spr_bull_e_cannonball_deflected/spr_bull_e_cannonball_deflected.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"49703025-f427-41f8-9e52-fd6448a5086e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18516839-6a3e-497b-831d-681a0826ee44","path":"sprites/spr_bull_cannonball_deflected/spr_bull_cannonball_deflected.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b8d0f477-c576-4899-898a-a76abb310844","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18516839-6a3e-497b-831d-681a0826ee44","path":"sprites/spr_bull_e_cannonball_deflected/spr_bull_e_cannonball_deflected.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 30,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bull_cannonball_deflected","path":"sprites/spr_bull_cannonball_deflected/spr_bull_cannonball_deflected.yy",},
+    "parent": {"name":"spr_bull_e_cannonball_deflected","path":"sprites/spr_bull_e_cannonball_deflected/spr_bull_e_cannonball_deflected.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_bull_cannonball_deflected",
+    "name": "spr_bull_e_cannonball_deflected",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/gun stuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_bull_cannonball_deflected",
+  "name": "spr_bull_e_cannonball_deflected",
   "tags": [],
   "resourceType": "GMSprite",
 }
