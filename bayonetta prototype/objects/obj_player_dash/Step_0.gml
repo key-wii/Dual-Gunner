@@ -19,8 +19,8 @@ else if (timer <= -5) {
 		if (direction >= 180) direction -= 180;
 		var ddis = point_distance(x1, y1, x2, y2) - 60;
 		var ddir = point_distance(x1, y1, x2, y2);
-		image_yscale = lengthdir_y(ddis, ddir);
-		if (image_yscale < 20) instance_destroy();
+		image_yscale = lengthdir_y(ddis, ddir) / 20;
+		if (image_yscale < 1) instance_destroy();
 	}
 	with (move) can_move = true;
 	cooldown_dash = cooldownDashMax;

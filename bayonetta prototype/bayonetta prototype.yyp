@@ -57,6 +57,7 @@
     {"id":{"name":"spr_bull_e_cannonball","path":"sprites/spr_bull_e_cannonball/spr_bull_e_cannonball.yy",},"order":13,},
     {"id":{"name":"obj_surround","path":"objects/obj_surround/obj_surround.yy",},"order":1,},
     {"id":{"name":"obj_skills_parent","path":"objects/obj_skills_parent/obj_skills_parent.yy",},"order":13,},
+    {"id":{"name":"spr_mirror_old","path":"sprites/spr_mirror_old/spr_mirror_old.yy",},"order":56,},
     {"id":{"name":"snd_throwWaveBig","path":"sounds/snd_throwWaveBig/snd_throwWaveBig.yy",},"order":3,},
     {"id":{"name":"sound_machine","path":"scripts/sound_machine/sound_machine.yy",},"order":1,},
     {"id":{"name":"obj_player_dash","path":"objects/obj_player_dash/obj_player_dash.yy",},"order":15,},

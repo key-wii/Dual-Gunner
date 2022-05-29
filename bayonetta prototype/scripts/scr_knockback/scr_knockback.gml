@@ -45,5 +45,6 @@ function knockbacked_player3(knockback, knockbackDir) {
 		kBack = true;
 		alarm_set(5, 1);
 		move_wrap(true, true, 30);
+		can_move = true;
 	}
 }
