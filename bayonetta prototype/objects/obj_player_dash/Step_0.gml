@@ -17,7 +17,7 @@ else if (timer <= -5) {
 	with (mirror) {
 		image_angle = direction;
 		if (direction >= 180) direction -= 180;
-		var ddis = point_distance(x1, y1, x2, y2) - 60;
+		var ddis = point_distance(x1, y1, x2, y2) - 30;
 		var ddir = point_distance(x1, y1, x2, y2);
 		image_yscale = lengthdir_y(ddis, ddir) / 20;
 		if (image_yscale < 1) instance_destroy();
