@@ -27,7 +27,7 @@ if (place_meeting(x, y, obj_wall)) {
 	else var size = 1.25;
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
-			if (object_index != obj_mirror)
+			if (object_get_parent(object_index) != obj_wall_nosplatter)
 				splatterWallAt(spr_splatter, size, other.x, other.y);
 		}
 	}

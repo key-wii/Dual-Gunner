@@ -1,7 +1,7 @@
 if (hp == hpMax && place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
-			if (object_index == obj_mirror) exit;
+			if (object_get_parent(object_index) == obj_wall_nosplatter) exit;
 			splatterWall(spr_splatter_e, 2);
     
 		    with (other) {

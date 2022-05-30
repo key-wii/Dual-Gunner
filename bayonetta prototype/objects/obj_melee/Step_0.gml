@@ -59,7 +59,7 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 if (place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
-			if (object_index != obj_mirror)
+			if (object_get_parent(object_index) != obj_wall_nosplatter)
 				splatterWallAt(spr_splatter_big, .85, other.x, other.y);
 		}
 	}

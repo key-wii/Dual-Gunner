@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemy",
-    "path": "folders/Objects/enemy.yy",
+    "name": "fodder",
+    "path": "folders/Objects/enemy/fodder.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_e_move2",

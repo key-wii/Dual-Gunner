@@ -10,11 +10,12 @@ if (gun2dir != 0 && bulls > 0) with (gun) {
 }
 
 //DEBUG
-draw_set_alpha(.5);
+draw_set_alpha(.6);
 draw_set_halign(fa_middle);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_placeholder);
 draw_text(x, y - 140, "combo");
+if (alarm_get(2) > 0 && alarm_get(2) < 12) draw_set_alpha(alarm_get(2) * .05);
 var size = ds_list_size(combo_now);
 for (var i = 0; i < size; i++)
 	draw_text((x - (size * 32) + 64 * i) + 32, y - 100, string(combo_now[| i]));

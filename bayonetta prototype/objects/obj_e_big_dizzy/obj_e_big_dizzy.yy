@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemy",
-    "path": "folders/Objects/enemy.yy",
+    "name": "hoedown",
+    "path": "folders/Objects/enemy/hoedown.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_e_big_dizzy",

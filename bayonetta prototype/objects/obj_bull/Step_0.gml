@@ -27,9 +27,14 @@ if (place_meeting(x, y, obj_e_parent)) {
 if (place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
-			if (object_index == obj_mirror) {
-				if (!timerAddedAlready) timer = clamp(timer + 2.5, 0, timerMax);
-				timerAddedAlready = true;
+			if (object_get_parent(object_index) == obj_wall_nosplatter) {
+				if (object_index == obj_mirror) {
+					if (!timerAddedAlready) timer = clamp(timer + 2.5, 0, timerMax);
+					timerAddedAlready = true;
+				}
+				else if (object_index == obj_boxer_trap) {
+					other.wall_hits += 5;
+				}
 			} else {
 				splatterWall(spr_splatter, .5);
 				splatterWallAt(spr_splatter, .05 + random(.1), x + random_range(-35, 35), y + random_range(-35, 35));

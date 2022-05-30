@@ -1,2 +1,2 @@
-/// @description Destroy self if touching wall
+/// @description Destroy self if touching
 instance_destroy();
