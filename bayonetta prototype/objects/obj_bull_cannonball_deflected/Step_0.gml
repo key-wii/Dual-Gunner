@@ -6,6 +6,9 @@ if (place_meeting(x, y, obj_e_parent)) {
 	}
 	with (obj_e_parent) {
 		if (place_meeting(x,y,other.id)) {
+			if (invincible) {
+				break;
+			}
 			if (shield) {
 				shield = false;
 				audio_stop_sound(snd_counter2);

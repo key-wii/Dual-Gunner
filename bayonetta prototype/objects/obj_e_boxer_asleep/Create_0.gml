@@ -1,7 +1,7 @@
 var scale = 2;
 
-hp = 300;
-spriteDefault = sprite_index;
+hp = 80;
+spriteDefault = spr_e_boxer;
 spriteHurt = spr_e_dummy_hurt;
 
 move = instance_create_layer(x, y, "Enemy", obj_e_move_big);
@@ -21,7 +21,7 @@ event_inherited();
 
 image_xscale = scale;
 image_yscale = scale;
-shield = true;
+invincible = true;
 spin = 0;
 dizzyState = obj_e_big_dizzy;
 

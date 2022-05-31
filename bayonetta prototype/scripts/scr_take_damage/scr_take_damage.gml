@@ -1,16 +1,16 @@
 function take_damage(knockback, knockbackDir) {
 	sprite_index = spriteHurt;
 	alarm_set(9, 7);
-	room_speed = 50;
+	if (room_speed > 50) room_speed = 50;
+	with (obj_controller) alarm_set(2, 1);
 	
 	hp -= other.pow;
 	if (hp <= 0) {
 		instance_destroy();
 		exit;
 	}
-	with (obj_controller) alarm_set(2, 1);
 	
-	knockbacked(knockback, knockbackDir);
+	if (!bodyPart) knockbacked(knockback, knockbackDir);
 	if (dizzy_dmg) {
 		dizzy_set(100, knockback * 12);
 	}
@@ -19,16 +19,16 @@ function take_damage(knockback, knockbackDir) {
 function take_damage3(knockback, knockbackDir) {
 	sprite_index = spriteHurt;
 	alarm_set(9, 7);
-	room_speed = 50;
+	if (room_speed > 50) room_speed = 50;
+	with (obj_controller) alarm_set(2, 2);
 	
 	hp -= other.pow;
 	if (hp <= 0) {
 		instance_destroy();
 		exit;
 	}
-	with (obj_controller) alarm_set(2, 2);
 	
-	knockbacked3(knockback, knockbackDir);
+	if (!bodyPart) knockbacked3(knockback, knockbackDir);
 	if (dizzy_dmg) {
 		dizzy_set(100, knockback * 12);
 	}
