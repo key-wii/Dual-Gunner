@@ -1,5 +1,5 @@
 if (hp > 0) exit;
-with (owner) {
+if (instance_exists(owner)) with (owner) {
 	arms--;
 	if (arms <= 0) {
 		with (trap) alarm_set(1, 1); //Remove arena trap

@@ -29,8 +29,12 @@ if (place_meeting(x, y, obj_wall)) {
 		if (place_meeting(x, y, other.id)) {
 			if (object_get_parent(object_index) == obj_wall_nosplatter) {
 				if (object_index == obj_mirror) {
-					if (!timerAddedAlready) timer = clamp(timer + 2.5, 0, timerMax);
-					timerAddedAlready = true;
+					if (!timerAddedAlready) {
+						if (image_alpha < 1) image_alpha += .3;
+						if (image_alpha > 1) image_alpha = 1;
+						timer = clamp(timer + 10, 0, timerMax);
+						timerAddedAlready = true;
+					}
 				}
 				else if (object_index == obj_boxer_trap) {
 					other.wall_hits += 5;

@@ -1,6 +1,10 @@
 /// @description 
 if (hold) {
-	with (move) direction += 180;
+	var moreMirrors = ds_list_size(mirrors) > 1;
+	with (move) {
+		direction += 180;
+		if (moreMirrors) can_move = false;
+	}
 	direction -= 75 * dir_face;
 	
 	if (ds_list_size(mirrors) > 0) {
@@ -15,17 +19,13 @@ if (hold) {
 				instance_destroy();
 			}
 			if (ds_list_size(mirrors) == 0) {
-				var xx = x_orig;
-				var yy = y_orig;
 				with (move) {
 					can_move = true;
 					dashSpd = 19;
-					x = xx;
-					y = yy;
 				}
 				instance_change(obj_player, false);
 			} else {
-				
+				timer += 8;
 			}
 			nextDelay = nextDelayMax;
 		}

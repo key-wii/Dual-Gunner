@@ -2,18 +2,16 @@ if (place_meeting(x, y, obj_e_parent)) {
 	var kbDir = direction;
 	with (obj_e_parent) {
 		if (place_meeting(x,y,other.id) and (ds_list_find_index(other.enemiesHit,id) == -1)) {
-			if (shield || invincible) {
-				
-				break;
+			if (!shield && !invincible) {
+				take_damage(other.pow * 2, kbDir);
+				ds_list_add(other.enemiesHit, id);
+				sound_machine(snd_hit_wave);
+				ssSteady(2 * other.pow, 8, false, false);
+				/*if (other.pow > other.default_pow) splatter(20, 34);
+				else splatter(6, 24);*/
+				if (other.pow > other.default_pow) splatterBig(48, 48, .15);
+				else splatterBig(34, 34, .1);
 			}
-			take_damage(other.pow * 2, kbDir);
-			ds_list_add(other.enemiesHit, id);
-			sound_machine(snd_hit_wave);
-			ssSteady(2 * other.pow, 8, false, false);
-			/*if (other.pow > other.default_pow) splatter(20, 34);
-			else splatter(6, 24);*/
-			if (other.pow > other.default_pow) splatterBig(48, 48, .15);
-			else splatterBig(34, 34, .1);
 		}
 	}
 }

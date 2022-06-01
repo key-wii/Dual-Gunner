@@ -1,6 +1,7 @@
 /// @description 
 draw_self();
-/*draw_set_color(c_blue);
+/*draw_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_top, true);
+draw_set_color(c_blue);
 draw_set_font(fnt_placeholder);
 draw_text(x, y, "Dir " + string(direction));
 draw_set_color(c_white);
