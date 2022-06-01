@@ -9,7 +9,7 @@ with (owner) {
 		alarm_set(1, 0);
 		alarm_set(2, 0);
 		alarm_set(3, 0);
-		dizzy_set(999999999, 1300 + irandom(359)); //Become dizzy for a loooooong time
+		dizzy_set(-9999, 1300 + irandom(359)); //Become dizzy for a loooooong time
 		room_speed = 2
 		with (obj_controller) alarm_set(2, 1);
 		ssSteady(16, 15, true, true);

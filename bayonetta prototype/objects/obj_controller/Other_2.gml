@@ -1,3 +1,8 @@
+//music_machine(msc_music);
+global.block = ord("Q");
+global.dash = vk_space;
+global.taunt = ord("E");
+
 global.partSystem = part_system_create();
 part_system_depth(global.partSystem, layer_get_depth("Controller") - 1);
 global.partSystemAbove = part_system_create();
@@ -43,5 +48,3 @@ part_type_orientation(global.partDizzy192B, 0, 359, .5, 0, 0);
 part_type_alpha3(global.partDizzy192B, .8, 1, 0);
 part_type_blend(global.partDizzy192B, true);
 part_type_life(global.partDizzy192B, 100, 100);
-
-music_machine(msc_music);

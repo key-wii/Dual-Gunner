@@ -13,6 +13,7 @@ if (windup < windupMax) {
 		can_move = true;
 		dashing = true;
 		dash_dir_change = 2; //Don't let player change direction during dash
+		dashSpd = 25;
 	}
 	instance_change(obj_player_dash, true);
 }

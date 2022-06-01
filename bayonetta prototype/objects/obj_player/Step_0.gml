@@ -14,14 +14,14 @@ if (mouse_check_button_pressed(mb_right)) {
 	melee();
 }
 
-if (cooldown_jump == 0 && keyboard_check_pressed(vk_space)) {
-	instance_change(obj_player_jump, true);
+if (cooldown_jump == 0 && keyboard_check_pressed(global.taunt)) {
+	//instance_change(obj_player_jump, true);
 }
 
-if (cooldown_counter == 0 && keyboard_check_pressed(ord("Q"))) {
+if (cooldown_counter == 0 && keyboard_check_pressed(global.block)) {
 	instance_change(obj_player_counter, true);
 }
 
-if (cooldown_dash == 0 && keyboard_check_pressed(ord("E"))) {
+if (cooldown_dash == 0 && keyboard_check_pressed(global.dash)) {
 	instance_change(obj_player_dash_windup, true);
 }

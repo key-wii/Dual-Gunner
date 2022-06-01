@@ -1,4 +1,4 @@
-for (var i = 0; i < 1000; ++i) {
+/*for (var i = 0; i < 1000; ++i) {
 	if (!place_meeting(x + i, y, other)) {
 		x += i;
 		break;
