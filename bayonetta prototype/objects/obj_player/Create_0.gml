@@ -24,6 +24,8 @@ gun2dir = 0;
 
 set_vars();
 
+mirrors = ds_list_create();
+
 first_hit = L;
 last_hit = false;
 combo_now = ds_list_create();

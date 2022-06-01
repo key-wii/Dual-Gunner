@@ -14,6 +14,8 @@ if (timer == 0) {
 }
 else if (timer <= -5 || block || attackL || attackR) {
 	var mirror = instance_create_layer(x_orig, y_orig, "Floor", obj_mirror);
+	mirror.owner = id;
+	mirrors[| ds_list_size(mirrors)] = mirror;
 	mirror.direction = dir_orig + 90;
 	mirror.x1 = x_orig;
 	mirror.y1 = y_orig;
@@ -21,7 +23,10 @@ else if (timer <= -5 || block || attackL || attackR) {
 	mirror.y2 = y;
 	with (mirror) {
 		image_angle = direction;
-		if (direction >= 180) direction -= 180;
+		if (direction >= 180) {
+			direction -= 180;
+			flipped = true;
+		}
 		var ddis = point_distance(x1, y1, x2, y2) - sprite_width - 100;
 		image_yscale = ddis / 20;
 		if (image_yscale < 1) instance_destroy();
@@ -30,7 +35,7 @@ else if (timer <= -5 || block || attackL || attackR) {
 		can_move = true;
 		dashSpd = 19;
 	}
-	cooldown_dash = cooldownDashMax;
+	if (!hold) cooldown_dash = cooldownDashMax;
 	instance_change(obj_player, false);
 }
 else if (timer < 0) direction += 5 * dir_face;

@@ -1,11 +1,12 @@
 /// @description 
-hp = 80;
+hp = 1;
+//hp = 80;
 move = id;
 weight = 9999;
 
 event_inherited();
 
-bodyPart = true;
+//bodyPart = true;
 originAdjust = 15;
 x_adjust = 0;
 y_adjust = 0;

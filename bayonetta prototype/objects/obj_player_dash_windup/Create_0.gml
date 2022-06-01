@@ -10,6 +10,8 @@ x_orig = x;
 y_orig = y;
 with (move) can_move = false;
 
+hold = true;
+
 //with (obj_player_move) 
 
 //sound_machine(snd_);
