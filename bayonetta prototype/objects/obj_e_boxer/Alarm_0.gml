@@ -19,7 +19,7 @@ if (charge == chargeMax) {
 			break;
 	}
 	with (attack_arm) {
-		len_adjust = 40;
+		//len_adjust = 0;
 		dir_adjust = 0;
 		alarm_set(3, 1);
 	}

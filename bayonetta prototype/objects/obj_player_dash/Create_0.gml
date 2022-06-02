@@ -2,7 +2,7 @@
 image_xscale = 1;
 image_yscale = 1;
 
-timer = move.dashTickMax;
+timer = 15;
 
 nextDelayMax = 7;
 nextDelay = 0;

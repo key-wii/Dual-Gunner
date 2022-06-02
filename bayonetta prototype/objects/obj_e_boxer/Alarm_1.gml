@@ -4,7 +4,7 @@ charging = false;
 charge = chargeMax;
 attacking = true;
 
-var scale = 4;
+var scale = 5;
 with (attack_arm) {
 	image_xscale = scale;
 	image_yscale = scale;

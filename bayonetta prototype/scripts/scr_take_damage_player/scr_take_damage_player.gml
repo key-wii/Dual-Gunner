@@ -1,10 +1,12 @@
 function take_damage_player(knockback, knockbackDir) {
 	if (global.nextRoom) exit;
-	room_speed = 20;
-	with (obj_controller) alarm_set(2, 2);
-	sprite_index = spriteHurt;
+	if (room_speed > 20) { 
+		room_speed = 20;
+		with (obj_controller) alarm_set(2, 2);
+	}
 	alarm_set(9, 7);
 	spr_hitstun();
+	sprite_index = spriteHurt;
 	
 	hp -= other.pow;
 	/*if (hp <= 0) {

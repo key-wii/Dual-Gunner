@@ -1,4 +1,6 @@
 function melee(){
+	alarm_set(8, 0);
+	
 	if (!instance_exists(obj_melee)) {
 		point_mouse();
 		instance_change(obj_player_melee, true);

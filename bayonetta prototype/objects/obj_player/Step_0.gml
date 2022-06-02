@@ -22,6 +22,6 @@ if (cooldown_counter == 0 && keyboard_check_pressed(global.block)) {
 	instance_change(obj_player_counter, true);
 }
 
-if (cooldown_dash == 0 && keyboard_check_pressed(global.dash)) {
-	instance_change(obj_player_dash_windup, true);
+if (keyboard_check_pressed(global.dash)) {
+	dashSkill();
 }

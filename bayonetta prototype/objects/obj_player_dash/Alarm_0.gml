@@ -1,13 +1,11 @@
 /// @description 
 if (hold) {
 	var moreMirrors = ds_list_size(mirrors) > 1;
-	with (move) {
-		direction += 180;
-		if (moreMirrors) can_move = false;
-	}
+	with (move) direction += 180;
 	direction -= 75 * dir_face;
 	
 	if (ds_list_size(mirrors) > 0) {
+		with (move) can_move = false;
 		if (nextDelay <= 0) {
 			var ddir = dir_orig;
 			with (mirrors[| 0]) {
