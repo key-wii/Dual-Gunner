@@ -9,12 +9,10 @@ if (windup < windupMax) {
 	var ddir = direction;
 	//ddir = direction + 180;
 	with (move) {
-		direction = ddir;
 		can_move = true;
-		dashing = true;
 		dash_dir_change = 2; //Don't let player change direction during dash
-		dashSpd = 30;
 	}
+	dash2(30);
 	instance_change(obj_player_dash, true);
 }
 image_angle = direction;

@@ -8,10 +8,6 @@ y_adjust = 0;
 
 dir_face = -1;
 
-//if (!instance_exists(obj_player_move))
-move = instance_create_layer(x, y, "Player", obj_player_move);
-move.owner = id;
-
 //if (!instance_exists(obj_partner))
 /*partner = instance_create_layer(x, y, "Player", obj_partner);
 partner.hp = hp;
@@ -21,6 +17,10 @@ gun = instance_create_layer(x, y, "Player", obj_arrow);
 gun.owner = id;
 gun.radius = sprite_width;
 gun2dir = 0;
+
+//if (!instance_exists(obj_player_move))
+move = instance_create_layer(x, y, "Player", obj_player_move);
+move.owner = id;
 
 set_vars();
 

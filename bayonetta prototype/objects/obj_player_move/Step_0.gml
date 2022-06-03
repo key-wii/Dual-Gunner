@@ -159,6 +159,33 @@ if (xMove != 0 && yMove != 0) {
 x += xMove;
 y += yMove;
 
+//not for movement, just to keep direction consistent
+if (xMove != 0) {
+	if (xMove > 0) {
+		if (yMove > 0) direction = 315;
+		else if (yMove < 0) direction = 45;
+		else direction = 0;
+	} else {
+		if (yMove > 0) direction = 225;
+		else if (yMove < 0) direction = 135;
+		else direction = 180;
+	}
+} else if (yMove > 0) direction = 270;
+else if (yMove < 0) direction = 90;
+/*var moveDir = 15;
+if (xMove != 0) {
+	if (xMove > 0) {
+		if (yMove > 0) direction = clamp(315, direction - moveDir, direction + moveDir);
+		else if (yMove < 0) direction = clamp(45, direction - moveDir, direction + moveDir);
+		else direction = clamp(0, direction - moveDir, direction + moveDir);
+	} else {
+		if (yMove > 0) direction = clamp(225, direction - moveDir, direction + moveDir);
+		else if (yMove < 0) direction = clamp(135, direction - moveDir, direction + moveDir);
+		else direction = clamp(180, direction - moveDir, direction + moveDir);
+	}
+} else if (yMove > 0) direction = clamp(270, direction - moveDir, direction + moveDir);
+else if (yMove < 0) direction = clamp(90, direction - moveDir, direction + moveDir);*/
+
 //keep moving a bit 1 frame after stopping
 if (just_stopped &&
 	!keyboard_check(ord("A")) && !keyboard_check(ord("D")) &&

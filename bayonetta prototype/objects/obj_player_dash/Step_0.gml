@@ -16,7 +16,7 @@ else if (timer <= -5 || block || attackL || attackR) {
 	var mirror = instance_create_layer(x_orig, y_orig, "Floor", obj_mirror);
 	mirror.owner = id;
 	mirrors[| ds_list_size(mirrors)] = mirror;
-	mirror.direction = dir_orig + 90;
+	mirror.direction = move.direction + 90;
 	mirror.x1 = x_orig;
 	mirror.y1 = y_orig;
 	mirror.x2 = x;
@@ -31,12 +31,7 @@ else if (timer <= -5 || block || attackL || attackR) {
 		image_yscale = ddis / 20;
 		if (image_yscale < 1) instance_destroy();
 	}
-	with (move) {
-		can_move = true;
-		dashSpd = 19;
-	}
-	if (!hold) cooldown_dash = cooldownDashMax;
-	instance_change(obj_player, false);
+	dashToIdle();
 }
 else if (timer < 0) direction += 5 * dir_face;
 else direction += (50 - timer) * dir_face;
