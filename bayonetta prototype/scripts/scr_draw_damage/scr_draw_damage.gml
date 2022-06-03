@@ -34,6 +34,7 @@ function draw_damage(num) {
 		direction = 90;
 		speed = .05;
 		alarm_set(0, 100);
+		alarm_set(1, 1);
 	}
 	with (obj_text_dmg) depth -= 1;
 	with (damage_text) {

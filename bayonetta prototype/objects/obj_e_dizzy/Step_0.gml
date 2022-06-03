@@ -1,4 +1,5 @@
 /// @description Jump to move object, Spin
+event_inherited();
 jump_move(move);
 
 if (spin > 0) {

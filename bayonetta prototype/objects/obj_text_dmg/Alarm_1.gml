@@ -1,4 +1,4 @@
-/// @description 
+/// @description Change position
 if (instance_exists(owner)) {
 	var tx = owner.textX; //target x
 	var ty = owner.textY; //target y
