@@ -4,6 +4,7 @@ function take_damage(knockback, knockbackDir) {
 	if (room_speed > 50) room_speed = 50;
 	with (obj_controller) alarm_set(2, 1);
 	
+	draw_damage(other.pow);
 	hp -= other.pow;
 	if (hp <= 0) {
 		instance_destroy();
@@ -22,6 +23,7 @@ function take_damage3(knockback, knockbackDir) {
 	if (room_speed > 50) room_speed = 50;
 	with (obj_controller) alarm_set(2, 2);
 	
+	draw_damage(other.pow);
 	hp -= other.pow;
 	if (hp <= 0) {
 		instance_destroy();

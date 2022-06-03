@@ -1,4 +1,6 @@
 /// @description Collision Detection
+if (wiggle == 0) event_inherited();
+
 if (!lethal || global.nextRoom) exit;
 if (place_meeting(x, y, obj_mirror)) {
 	with (obj_mirror) {

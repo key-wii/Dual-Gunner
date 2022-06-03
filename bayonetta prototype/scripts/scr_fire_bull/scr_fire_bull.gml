@@ -34,7 +34,7 @@ function fire_bull(dddir, small) {
 				bull.min_size = 1.4;
 				break;
 			case 5: 
-				bull.pow = 1.85;
+				bull.pow = 1.9;
 				bull.image_xscale = 3.1;
 				bull.image_yscale = 3.1;
 				bull.min_size = 1.65;
@@ -61,7 +61,7 @@ function fire_bull(dddir, small) {
 	}
 	if (alarm_get(1) <= 6) with (bull) {
 		//last bullet always does flat 15 damage
-		pow = 15;
+		pow = clamp(other.combo_length * 3 + 2, 1, 1000);
 		drop_casing(dddir, true);
 		alarm_set(0, 0);
 		if (small) {

@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "surface stuff",
+    "path": "folders/Objects/surface stuff.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_splatter_controller",

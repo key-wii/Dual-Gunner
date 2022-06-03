@@ -18,6 +18,8 @@ if (just_reset) {
 } else alarm_set(0, meleeCharge / 6);
 just_reset = false;
 
+combo_length = ds_list_size(combo_now);
+
 /*for (var i = 0; i < ds_list_size(temp); i++)
 	combo_now[| i] = temp[| i];
 ds_list_destroy(temp);*/

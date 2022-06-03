@@ -1,5 +1,5 @@
 hp = 2;
-pow = 285;
+pow = 250;
 sound_machine(snd_deflect);
 ssSudden(1, 1, false, false);
 

@@ -1,2 +1,2 @@
 /// @description Destroy self if touching
-timer = 0;
+//timer = 0;

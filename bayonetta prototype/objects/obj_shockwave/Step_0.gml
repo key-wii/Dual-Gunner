@@ -6,7 +6,7 @@ if (place_meeting(x, y, obj_e_parent)) {
 				take_damage(other.pow * 2, kbDir);
 				ds_list_add(other.enemiesHit, id);
 				sound_machine(snd_hit_wave);
-				ssSteady(2 * other.pow, 8, false, false);
+				ssSteady(clamp(2 * other.pow, 1, 15), 8, false, false);
 				/*if (other.pow > other.default_pow) splatter(20, 34);
 				else splatter(6, 24);*/
 				if (other.pow > other.default_pow) splatterBig(48, 48, .15);

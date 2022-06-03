@@ -10,6 +10,7 @@ gun2dir = 30 * dir_face;
 fireGun = 1;
 
 last_shot = false;
+combo_length = ds_list_size(combo_now);
 
 alarm_set(0, 5);
 alarm_set(1, 78);

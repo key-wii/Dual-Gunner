@@ -3,6 +3,9 @@ global.block = ord("Q");
 global.dash = vk_space;
 global.taunt = ord("E");
 
+global.damage_depth = 0;
+
+
 global.partSystem = part_system_create();
 part_system_depth(global.partSystem, layer_get_depth("Controller") - 1);
 global.partSystemAbove = part_system_create();

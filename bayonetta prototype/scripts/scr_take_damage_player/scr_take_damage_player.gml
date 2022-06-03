@@ -7,6 +7,8 @@ function take_damage_player(knockback, knockbackDir) {
 	alarm_set(9, 7);
 	spr_hitstun();
 	sprite_index = spriteHurt;
+	image_xscale = 1;
+	image_yscale = 1;
 	
 	hp -= other.pow;
 	/*if (hp <= 0) {
