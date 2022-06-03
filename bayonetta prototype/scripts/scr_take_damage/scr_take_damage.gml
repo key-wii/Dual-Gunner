@@ -6,6 +6,7 @@ function take_damage(knockback, knockbackDir) {
 	
 	draw_damage(other.pow);
 	hp -= other.pow;
+	draw_hp();
 	if (hp <= 0) {
 		instance_destroy();
 		exit;
@@ -25,6 +26,7 @@ function take_damage3(knockback, knockbackDir) {
 	
 	draw_damage(other.pow);
 	hp -= other.pow;
+	draw_hp();
 	if (hp <= 0) {
 		instance_destroy();
 		exit;

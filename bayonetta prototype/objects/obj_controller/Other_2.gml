@@ -3,6 +3,7 @@ global.block = ord("Q");
 global.dash = vk_space;
 global.taunt = ord("E");
 
+global.cameraAdjust = 100;
 global.damage_depth = 0;
 
 

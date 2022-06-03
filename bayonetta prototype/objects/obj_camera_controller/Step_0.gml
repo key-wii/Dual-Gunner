@@ -66,7 +66,7 @@ if (shakeMax != 0) {
 }
 
 //Set Camera Pos
-camera_set_view_pos(view_camera[0], cameraX + 100, cameraY + 100);
+camera_set_view_pos(view_camera[0], cameraX + global.cameraAdjust, cameraY + global.cameraAdjust);
 
 //Parallax
 /*layer_x("Parallax_0", cameraX * .76);

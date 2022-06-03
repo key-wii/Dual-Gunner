@@ -2,4 +2,11 @@
 if (len_adjust < 0) {
 	len_adjust += 8;
 	alarm_set(0, 1);
-} else if (len_adjust > 0) len_adjust = 0;
+} else if (len_adjust >= 0) {
+	len_adjust = 0;
+	awoke = false;
+}
+
+if (len_adjust >= -50) {
+	invincible = false;
+}

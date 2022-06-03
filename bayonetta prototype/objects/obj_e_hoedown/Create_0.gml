@@ -1,7 +1,8 @@
 //y = room_height / 2;
 var scale = 3;
 
-hp = 255;
+maxHp = 255;
+hp = maxHp;
 spriteDefault = sprite_index;
 spriteHurt = spr_e_dummy_hurt;
 

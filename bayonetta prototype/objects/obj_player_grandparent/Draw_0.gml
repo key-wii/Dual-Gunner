@@ -14,6 +14,7 @@ draw_set_alpha(.6);
 draw_set_halign(fa_middle);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_placeholder);
+draw_set_color(c_white);
 draw_text(x, y - 140, "combo");
 if (alarm_get(2) > 0 && alarm_get(2) < 12) draw_set_alpha(alarm_get(2) * .05);
 var size = ds_list_size(combo_now);

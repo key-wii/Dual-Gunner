@@ -1,4 +1,5 @@
-hp = 40;
+maxHp = 40;
+hp = maxHp;
 spriteDefault = sprite_index;
 spriteHurt = spr_e_dummy_hurt;
 

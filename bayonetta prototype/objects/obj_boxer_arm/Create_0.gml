@@ -1,11 +1,15 @@
 /// @description 
-hp = 80;
+maxHp = 80;
+hp = maxHp;
 move = id;
 weight = 9999;
 
 event_inherited();
 
 bodyPart = true;
+invincible = true;
+awoke = true;
+
 originAdjust = 15;
 x_adjust = 0;
 y_adjust = 0;

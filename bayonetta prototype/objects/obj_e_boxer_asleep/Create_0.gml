@@ -1,6 +1,7 @@
 var scale = 2;
 
-hp = 80;
+maxHp = 80;
+hp = maxHp;
 spriteDefault = spr_e_boxer;
 spriteHurt = spr_e_dummy_hurt;
 

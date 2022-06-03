@@ -33,7 +33,7 @@ function draw_damage(num) {
 		image_alpha = 1;
 		direction = 90;
 		speed = .05;
-		alarm_set(0, 100);
+		alarm_set(0, 50);
 		alarm_set(1, 1);
 	}
 	with (obj_text_dmg) depth -= 1;
@@ -53,6 +53,24 @@ function draw_damage(num) {
 	if (hp - num <= -9.9) draw_overkill();
 }
 
+function draw_hp() {
+	if (!instance_exists(hp_gauge)) {
+		hp_gauge = instance_create_layer(x, y, "UI", obj_hp_gauge);
+		hp_gauge.owner = id;
+		hp_gauge.maxHp = maxHp;
+		hp_gauge.hp = hp;
+		hp_gauge.hpDrawn = hp;
+	} else with (hp_gauge) {
+		hp = other.hp;
+		
+		alarm_set(0, 60);
+		if (image_alpha < 1) {
+			image_alpha = 1;
+			alarm_set(1, 1);
+		}
+	}
+}
+
 function draw_overkill() {
 	var dep = layer_get_depth(layer_get_id("Floor"));
 	var text = instance_create_depth(x, y, dep - 1, obj_text_parent);
@@ -68,6 +86,6 @@ function draw_overkill() {
 		colOl2 = c_black;
 		fnt = fnt_dmg10;
 		depth -= global.damage_depth;
-		alarm_set(0, 300);
+		alarm_set(0, 250);
 	}
 }
