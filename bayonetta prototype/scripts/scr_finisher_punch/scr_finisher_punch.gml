@@ -1,6 +1,7 @@
 function finisher_punch(dir, face, hits) {
 	var ppow = .1 + .1 * hits;
-	if (enemyToFinish.hp <= ppow) {
+	var ppowNext = .1 + .1 * hits + 1;
+	if (enemyToFinish.hp <= ppow + ppowNext) {
 		finisher_punch_last(dir, face, hits);
 		exit;
 	}
