@@ -11,7 +11,8 @@ timerMax = 300;
 alarm_set(1, timerMax);
 first_hit = true;
 last_hit = false;
-hitGoal = 15;
+//hitGoal = 15;
+hitGoal = 12;
 
 dizzyReturn = enemyToFinish.dizzy;
 if (dizzyReturn < 100 && dizzyReturn != -9999) dizzyReturn = 100; 
