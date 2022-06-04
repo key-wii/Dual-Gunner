@@ -10,6 +10,7 @@ function take_damage_player(knockback, knockbackDir) {
 	image_xscale = 1;
 	image_yscale = 1;
 	
+	mpReduce(other.pow * 3);
 	hp -= other.pow;
 	/*if (hp <= 0) {
 		sound_machine(snd_dead);
