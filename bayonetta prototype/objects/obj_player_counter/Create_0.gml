@@ -3,7 +3,8 @@ image_xscale = .1;
 image_yscale = .1;
 
 grow = true;
-timer = 160;
+timerMax = 160;
+timer = timerMax;
 big_deflect = false;
 
 /*prev_topSpeed = obj_player_move.topSpeed;

@@ -2,8 +2,7 @@ sprite_default = sprite_index;
 spriteHurt = spr_hurt;
 hp = 10;
 maxMp = 8;
-mp = 0;
-//dTrigger = false;
+//mp = global.mp;
 
 //y = room_height / 2;
 x_adjust = 0;
@@ -14,7 +13,8 @@ dir_face = -1;
 mpGauge = instance_create_layer(x, y, "Player", obj_mp);
 mpGauge.owner = id;
 mpGauge.maxMp = maxMp;
-mpGauge.mp = mp;
+//dwmpGauge.mp = mp;
+enemyToFinish = instance_nearest(x, y, obj_e_dizzy);
 
 //if (!instance_exists(obj_partner))
 /*partner = instance_create_layer(x, y, "Player", obj_partner);

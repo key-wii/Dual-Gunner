@@ -42,8 +42,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "player",
-    "path": "folders/Objects/player.yy",
+    "name": "unused",
+    "path": "folders/Objects/player/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_jump",

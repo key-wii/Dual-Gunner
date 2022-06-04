@@ -24,3 +24,5 @@ if (timer == 0) {
 	else alarm_set(2, 60); //Maintain combo for 60 more frames
 	instance_change(obj_player, false);
 }
+
+event_inherited();

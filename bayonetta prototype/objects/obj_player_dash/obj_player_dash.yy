@@ -43,8 +43,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "player",
-    "path": "folders/Objects/player.yy",
+    "name": "dash",
+    "path": "folders/Objects/player/dash.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_dash",

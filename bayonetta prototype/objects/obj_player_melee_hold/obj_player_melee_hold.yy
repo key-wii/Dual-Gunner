@@ -44,8 +44,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "player",
-    "path": "folders/Objects/player.yy",
+    "name": "melee",
+    "path": "folders/Objects/player/melee.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_melee_hold",

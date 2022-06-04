@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "unused",
-    "path": "folders/Objects/unused.yy",
+    "name": "player_abilities",
+    "path": "folders/Objects/player_abilities.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_slash",

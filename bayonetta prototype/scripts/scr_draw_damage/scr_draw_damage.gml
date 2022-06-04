@@ -33,7 +33,7 @@ function draw_damage(num) {
 		image_alpha = 1;
 		direction = 90;
 		speed = .05;
-		alarm_set(0, 50);
+		alarm_set(0, 10);
 		alarm_set(1, 1);
 	}
 	with (obj_text_dmg) depth -= 1;

@@ -19,3 +19,5 @@ if (place_meeting(x, y, obj_e_parent)) {
 		}
 	}
 }
+
+coll_destroy_bull_e();
