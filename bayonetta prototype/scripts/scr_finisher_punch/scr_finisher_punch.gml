@@ -25,6 +25,7 @@ function finisher_punch(dir, face, hits) {
 }
 
 function finisher_punch_last(dir, face, hits) {
+	if (last_hit) exit;
 	last_hit = true;
 	alarm_set(3, 0);
 	if (room_speed > 10) {
