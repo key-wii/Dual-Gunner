@@ -36,5 +36,6 @@ alarm_set(3, 1);
 
 mpGauge.visible = false;
 gun.visible = false;
+move.arrow.visible = false;
 instance_destroy(obj_skills_parent);
 instance_destroy(obj_mirror);

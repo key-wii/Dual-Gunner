@@ -4,7 +4,7 @@ function take_damage(knockback, knockbackDir) {
 	if (room_speed > 50) room_speed = 50;
 	with (obj_controller) alarm_set(2, 1);
 	
-	if (obj_mp.visible) mpAdd(clamp(other.pow / 10, .1, 1));
+	if (obj_mp.visible) mpAdd(clamp(other.pow / 25, .01, .25));
 	draw_damage(other.pow);
 	hp -= other.pow;
 	draw_hp();
@@ -25,7 +25,7 @@ function take_damage3(knockback, knockbackDir) {
 	if (room_speed > 50) room_speed = 50;
 	with (obj_controller) alarm_set(2, 2);
 	
-	if (obj_mp.visible) mpAdd(clamp(other.pow / 10, .1, 1));
+	if (obj_mp.visible) mpAdd(clamp(other.pow / 25, .01, .25));
 	draw_damage(other.pow);
 	hp -= other.pow;
 	draw_hp();

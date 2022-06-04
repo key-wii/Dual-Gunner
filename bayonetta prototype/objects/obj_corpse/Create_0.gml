@@ -23,5 +23,5 @@ alarm_set(1, 25);
 alarm_set(3, 1);
 
 
-
+if (obj_mp.visible) mpAdd(1);
 win = false;
