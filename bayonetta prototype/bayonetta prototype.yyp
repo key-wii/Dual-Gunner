@@ -107,7 +107,7 @@
     {"id":{"name":"obj_splatter_e","path":"objects/obj_splatter_e/obj_splatter_e.yy",},"order":2,},
     {"id":{"name":"obj_bull_e","path":"objects/obj_bull_e/obj_bull_e.yy",},"order":0,},
     {"id":{"name":"draw_text_colour_outline","path":"scripts/draw_text_colour_outline/draw_text_colour_outline.yy",},"order":3,},
-    {"id":{"name":"Room0","path":"rooms/Room0/Room0.yy",},"order":3,},
+    {"id":{"name":"Room5","path":"rooms/Room5/Room5.yy",},"order":3,},
     {"id":{"name":"obj_brass","path":"objects/obj_brass/obj_brass.yy",},"order":3,},
     {"id":{"name":"spr_e_shooter","path":"sprites/spr_e_shooter/spr_e_shooter.yy",},"order":5,},
     {"id":{"name":"fnt_dmg1","path":"fonts/fnt_dmg1/fnt_dmg1.yy",},"order":4,},
@@ -232,11 +232,11 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room0","path":"rooms/Room0/Room0.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
+    {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

@@ -8,4 +8,6 @@ if (instance_exists(owner)) {
 	var yy = lengthdir_y(ddis, ddir);
 	x = clamp(tx, tx - xx, tx + xx);
 	y = clamp(ty, ty - yy, ty + yy);
+	x = clamp(x, 100 + r, room_width - 100 - r); //stay in boundary of room
+	y = clamp(y, 100 + r, room_height - 100 - r); //stay in boundary of room
 }

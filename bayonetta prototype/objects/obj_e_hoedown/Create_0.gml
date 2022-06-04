@@ -9,7 +9,7 @@ spriteHurt = spr_e_dummy_hurt;
 move = instance_create_layer(x, y, "Enemy", obj_e_move);
 move.owner = id;
 with (move) {
-	weight = 6;
+	weight = 3;
 	image_xscale = scale;
 	image_yscale = scale;
 }
