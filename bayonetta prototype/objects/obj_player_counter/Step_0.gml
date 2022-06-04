@@ -5,8 +5,10 @@ if (place_meeting(x, y, obj_bull_e)) {
 	var ddir = direction;
 	with (obj_bull_e) {
 		if (place_meeting(x,y,other.id)) {
-			room_speed = 50;
-			with (obj_controller) alarm_set(2, 1);
+			if (room_speed > 50) {
+				room_speed = 50;
+				with (obj_controller) alarm_set(2, 1);
+			}
 			hp -= 1;
 			if (hp > 0) exit;
 			x += lengthdir_x(30, ddir);
@@ -27,10 +29,15 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 			if (hp == hpMax) {
 				image_xscale = max_size;
 				image_yscale = max_size;
-				room_speed = 2;
+				if (room_speed > 2) {
+					room_speed = 2;
+					with (obj_controller) alarm_set(2, 1);
+				}
 			}
-			else room_speed = 50;
-			with (obj_controller) alarm_set(2, 1);
+			else if (room_speed > 50) {
+				room_speed = 50;
+				with (obj_controller) alarm_set(2, 1);
+			}
 			hp -= 1;
 			with (other) {
 				if (!big_deflect) {

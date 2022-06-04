@@ -2,12 +2,20 @@
 image_xscale = 1;
 image_yscale = 1;
 layer = layer_get_id("Above");
+dir_adjust = 0;
 
 mpReduce(8);
 alarm_set(0, 1);
-alarm_set(1, 300);
 
-if (enemyToFinish.dizzy > 0) enemyToFinish.dizzy = 50;
+timerMax = 300;
+alarm_set(1, timerMax);
+first_hit = true;
+last_hit = false;
+hitGoal = 15;
+
+dizzyReturn = enemyToFinish.dizzy;
+if (dizzyReturn < 100 && dizzyReturn != -9999) dizzyReturn = 100; 
+enemyToFinish.dizzy = dizzyReturn;
 alarm_set(2, 1);
 
 with (obj_player_move) {

@@ -136,6 +136,7 @@
     {"id":{"name":"obj_hook","path":"objects/obj_hook/obj_hook.yy",},"order":3,},
     {"id":{"name":"scr_wicked_weave","path":"scripts/scr_wicked_weave/scr_wicked_weave.yy",},"order":10,},
     {"id":{"name":"scr_reset_cam_vals","path":"scripts/scr_reset_cam_vals/scr_reset_cam_vals.yy",},"order":0,},
+    {"id":{"name":"obj_punch_last","path":"objects/obj_punch_last/obj_punch_last.yy",},"order":15,},
     {"id":{"name":"obj_bull_cannonball_deflected","path":"objects/obj_bull_cannonball_deflected/obj_bull_cannonball_deflected.yy",},"order":7,},
     {"id":{"name":"spr_clip_original","path":"sprites/spr_clip_original/spr_clip_original.yy",},"order":10,},
     {"id":{"name":"fnt_dmg4","path":"fonts/fnt_dmg4/fnt_dmg4.yy",},"order":6,},

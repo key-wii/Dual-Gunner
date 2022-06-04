@@ -1,10 +1,14 @@
 sound_machine(snd_dead);
-if (instance_number(obj_e_parent) > 1){
-	room_speed = 20;
-	with (obj_controller) alarm_set(2, 1);
+if (instance_number(obj_e_parent) > 1) {
+	if (room_speed > 20) {
+		room_speed = 20;
+		with (obj_controller) alarm_set(2, 1);
+	}
 } else {
-	room_speed = 10;
-	alarm_set(4, 1);
+	if (room_speed > 10) room_speed = 10;
+	var ag = 1;
+	with (obj_controller) if (alarm_get(2) > 0) ag = alarm_get(2);
+	alarm_set(4, ag);
 }
 
 image_alpha = .2;

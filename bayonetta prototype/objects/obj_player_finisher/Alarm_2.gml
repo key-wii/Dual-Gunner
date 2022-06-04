@@ -4,6 +4,6 @@ if (!instance_exists(enemyToFinish)) {
 	alarm_set(1, 1);
 	alarm_set(3, 0);
 } else {
-	if (enemyToFinish.dizzy > 0) enemyToFinish.dizzy = 50;
+	enemyToFinish.dizzy = dizzyReturn;
 	alarm_set(2, 1);
 }

@@ -5,6 +5,7 @@ image_yscale -= .01;
 if (image_xscale == 1) {
 	instance_destroy(obj_finisher_prompt2);
 	instance_create_layer(x, y, "Bull", obj_explosion);
+	if (instance_exists(enemyToFinish)) enemyToFinish.dizzy = dizzyReturn;
 	
 	layer = layer_get_id("Player");
 	with (obj_player_move) {

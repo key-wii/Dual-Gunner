@@ -3,25 +3,39 @@ var cooldown = 5;
 switch (dir) {
 	case L:
 		if (keyboard_check_pressed(global.block)) {
-			finisher_punch(direction, dir_face, hits);
+			if (alarm_get(1) <= 20 && hits >= hitGoal) {
+				finisher_punch_last(direction, dir_face, hits);
+			} else {
+				finisher_punch(direction, dir_face, hits);
+				alarm_set(3, cooldown);
+			}
 			with (obj_finisher_prompt2) text = "E";
 			dir = R;
 			dir_face *= -1;
 			hits++;
-			alarm_set(3, cooldown);
-			alarm_set(1, alarm_get(1) + 2);
+			if (first_hit) {
+				if (alarm_get(1) > 1) alarm_set(1, timerMax);
+				first_hit = false;
+			} else alarm_set(1, alarm_get(1) + 2);
 			exit;
 		}
 		break;
 	case R:
 		if (keyboard_check_pressed(global.taunt)) {
-			finisher_punch(direction, dir_face, hits);
+			if (alarm_get(1) <= 20 && hits >= hitGoal) {
+				finisher_punch_last(direction, dir_face, hits);
+			} else {
+				finisher_punch(direction, dir_face, hits);
+				alarm_set(3, cooldown);
+			}
 			with (obj_finisher_prompt2) text = "Q";
 			dir = L;
 			dir_face *= -1;
 			hits++;
-			alarm_set(3, cooldown);
-			alarm_set(1, alarm_get(1) + 2);
+			if (first_hit) {
+				if (alarm_get(1) > 1) alarm_set(1, timerMax);
+				first_hit = false;
+			} else alarm_set(1, alarm_get(1) + 2);
 			exit;
 		}
 		break;
