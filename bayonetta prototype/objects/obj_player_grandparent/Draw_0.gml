@@ -12,7 +12,7 @@ if (instance_exists(enemyToFinish)) {
 draw_set_color(c_white);
 draw_set_circle_precision(64);
 
-//Draw gun(s)
+//Draw second gun
 var ttheta = direction + gun2dir;
 if (gun2dir != 0 && bulls > 0) with (gun) {
 	if (ttheta >= 360) ttheta -= 360;

@@ -7,6 +7,7 @@ direction += 30 * dir_face;
 if (hdir <= -150) {
 	alarm_set(7, 3);
 	rock++;
+	taunt_text();
 }
 else alarm_set(6, 1);
 

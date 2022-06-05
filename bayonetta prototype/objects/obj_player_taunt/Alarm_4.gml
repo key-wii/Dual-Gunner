@@ -5,4 +5,5 @@ image_yscale = 1;
 with (obj_player_move) stop = false;
 gun.visible = true;
 move.arrow.visible = true;
+cooldown_taunt = cooldownTauntMax;
 instance_change(obj_player, false);

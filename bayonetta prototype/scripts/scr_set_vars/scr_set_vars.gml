@@ -5,15 +5,13 @@ function set_vars() {
 	last_shot = false;
 	just_meleed = false;
 	just_reset = true;
-	/*shockwaveCharge = 12;
-	just_shockwaved = false;
-	hookCharge = 6;
-	just_hooked = false;*/
-	cooldown_jump = 0;
-	cooldownJumpMax = 5;
+	/*cooldown_jump = 0;
+	cooldownJumpMax = 5;*/
 	cooldown_counter = 0;
 	cooldownCounterMax = 20;
 	just_countered = false;
+	cooldown_taunt = 0;
+	cooldownTauntMax = 10;
 	cooldown_dash = 0;
 	cooldownDashMax = 10;
 }

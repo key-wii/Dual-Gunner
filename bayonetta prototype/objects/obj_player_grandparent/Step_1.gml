@@ -1,7 +1,5 @@
 /// @description Reduce Cooldowns & Check if finisher is possible
-if (cooldown_jump > 0) cooldown_jump--;
-if (cooldown_counter > 0) cooldown_counter--;
-if (cooldown_dash > 0) cooldown_dash--;
+cooldowns_reduce();
 
 if (instance_exists(obj_e_dizzy)) {
 	enemyToFinish = instance_nearest(x, y, obj_e_dizzy);
