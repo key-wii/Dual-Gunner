@@ -21,7 +21,7 @@ if (mouse_check_button_pressed(mb_right)) {
 	melee();
 }
 if (cooldown_jump == 0 && keyboard_check_pressed(global.taunt)) {
-	//instance_change(obj_player_jump, true);
+	instance_change(obj_player_taunt, true);
 }
 if (cooldown_counter == 0 && keyboard_check_pressed(global.block)) {
 	instance_change(obj_player_counter, true);

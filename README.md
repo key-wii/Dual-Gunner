@@ -10,7 +10,8 @@ Tap Spacebar ---------- Dash, leave behind Mirror
 Tap Spacebar Twice ---- Explode your Mirrors
 
 Tap Q ----------------- Block & Counter
-Tap E ----------------- Taunt NOT IMPLEMENTED YET
+Tap E ----------------- Fast Taunt
+Hold E ---------------- Long Taunt
 
 Tap Q + E ------------- Finisher (Costs 8 Mana)
 Click L + R ----------- Trigger Hyper Mode (Costs 1 Mana & Drains Mana Over Time) NOT IMPLEMENTED YET
