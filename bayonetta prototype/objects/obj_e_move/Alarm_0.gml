@@ -1,4 +1,4 @@
-if (kBack || owner.dizzy > 0) {
+if (kBack || owner.dizzy > 0 || owner.dizzy == -9999) {
 	alarm_set(0, 1);
 	exit;
 }
