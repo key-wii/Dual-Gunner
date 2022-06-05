@@ -15,7 +15,6 @@ if (image_xscale == 1) {
 	mpGauge.visible = true;
 	gun.visible = true;
 	move.arrow.visible = true;
-	cooldown_jump = cooldownJumpMax;
 	instance_change(obj_player, false);
 }
 else alarm_set(1, 1);

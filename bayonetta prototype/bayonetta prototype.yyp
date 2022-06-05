@@ -25,6 +25,7 @@
     {"id":{"name":"spr_bull_explode","path":"sprites/spr_bull_explode/spr_bull_explode.yy",},"order":4,},
     {"id":{"name":"obj_partner","path":"objects/obj_partner/obj_partner.yy",},"order":0,},
     {"id":{"name":"obj_camera_controller","path":"objects/obj_camera_controller/obj_camera_controller.yy",},"order":1,},
+    {"id":{"name":"obj_text_overkill","path":"objects/obj_text_overkill/obj_text_overkill.yy",},"order":5,},
     {"id":{"name":"spr_partner","path":"sprites/spr_partner/spr_partner.yy",},"order":0,},
     {"id":{"name":"music_machine","path":"scripts/music_machine/music_machine.yy",},"order":0,},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":2,},

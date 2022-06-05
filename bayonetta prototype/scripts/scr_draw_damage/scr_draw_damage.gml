@@ -72,8 +72,8 @@ function draw_hp() {
 }
 
 function draw_overkill() {
-	var dep = layer_get_depth(layer_get_id("Floor"));
-	var text = instance_create_depth(x, y, dep - 1, obj_text_parent);
+	var dep = layer_get_depth(layer_get_id("UI"));
+	var text = instance_create_depth(x, y, dep - 1, obj_text_overkill);
 	with (text) {
 		txt = "OVERKILL";
 		var ran = irandom_range(-2, 1);
