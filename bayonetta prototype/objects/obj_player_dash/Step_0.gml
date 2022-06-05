@@ -4,6 +4,10 @@ jump_move(move);
 var block = cooldown_counter == 0 && keyboard_check_pressed(global.block);
 var attackL = mouse_check_button_pressed(mb_left);
 var attackR = mouse_check_button_pressed(mb_right);
+if (hyper_pressed > 0) {
+	attackL = false;
+	attackR = false;
+}
 
 timer--;
 if (timer == 0) {

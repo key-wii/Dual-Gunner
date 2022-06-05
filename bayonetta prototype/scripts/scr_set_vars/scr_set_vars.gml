@@ -14,4 +14,7 @@ function set_vars() {
 	cooldownTauntMax = 10;
 	cooldown_dash = 0;
 	cooldownDashMax = 10;
+	cooldown_hyper = 0;
+	cooldownHyperMax = 30;
+	hyper_pressed = 0;
 }

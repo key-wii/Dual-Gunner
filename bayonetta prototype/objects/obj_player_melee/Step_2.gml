@@ -1,3 +1,9 @@
+//Finisher cancels melee
+finisher();
+
+//Hyper cancels melee
+hyper_check(true);
+
 if (chargeup) direction -= 34 * dir_face;
 /*if (just_meleed && tick == -1) direction -= 70 * dir_face;
 else if (chargeup) direction -= (15 - alarm_get(0)) * dir_face;*/

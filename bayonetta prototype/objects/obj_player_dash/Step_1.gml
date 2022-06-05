@@ -13,3 +13,6 @@ if (timer > move.dashTickMax - 4 && keyboard_check_pressed(global.dash)) {
 if (timer <= 8 && keyboard_check_pressed(global.dash)) {
 	dashSkill();
 }
+
+//Hyper during dash
+hyper_check(false);

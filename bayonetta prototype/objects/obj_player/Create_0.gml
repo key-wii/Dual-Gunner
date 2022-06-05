@@ -3,6 +3,8 @@ spriteHurt = spr_hurt;
 hp = 10;
 maxMp = 8;
 //mp = global.mp;
+hyper = false;
+hyper_timer = 0;
 
 //y = room_height / 2;
 x_adjust = 0;

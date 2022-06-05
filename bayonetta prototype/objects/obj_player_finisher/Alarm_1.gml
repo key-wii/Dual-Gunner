@@ -15,6 +15,7 @@ if (image_xscale == 1) {
 	mpGauge.visible = true;
 	gun.visible = true;
 	move.arrow.visible = true;
+	alarm_set(2, 60); //Drop combo in 60 steps
 	instance_change(obj_player, false);
 }
 else alarm_set(1, 1);

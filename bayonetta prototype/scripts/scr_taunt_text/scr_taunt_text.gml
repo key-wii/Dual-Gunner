@@ -16,8 +16,8 @@ function taunt_text() {
 			case 5: str = "GOT"; break;
 		}
 		txt = str;
-		col1 = $FFCDFF; //light pink
-		col2 = $FF95FF; //pink
+		col1 = global.c_lightpink;
+		col2 = global.c_pink;
 		colOl1 = c_black;
 		colOl2 = c_black;
 		/*image_angle = ddir - 90;

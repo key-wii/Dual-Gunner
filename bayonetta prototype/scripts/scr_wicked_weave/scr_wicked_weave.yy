@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "skill_helpers",
-    "path": "folders/Scripts/player/skill_helpers.yy",
+    "name": "basic attack",
+    "path": "folders/Scripts/player/basic attack.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_wicked_weave",

@@ -7,11 +7,39 @@ global.mp = 0;
 global.cameraAdjust = 100;
 global.damage_depth = 0;
 
+global.c_pink = $FF95FF;
+global.c_lightpink = $FFCDFF;
 
 global.partSystem = part_system_create();
 part_system_depth(global.partSystem, layer_get_depth("Controller") - 1);
 global.partSystemAbove = part_system_create();
 part_system_depth(global.partSystem, layer_get_depth("Above") - 1);
+
+global.partHyper = part_type_create();
+part_type_shape(global.partHyper, pt_shape_spark);
+part_type_color2(global.partHyper, global.c_lightpink, global.c_pink);
+part_type_size(global.partHyper, .5, .5, -.001, -.01);
+part_type_speed(global.partHyper, 3, 3, .5, .1);
+part_type_direction(global.partHyper, 0, 359, 0, 1);
+part_type_alpha2(global.partHyper, .6, 0);
+part_type_blend(global.partHyper, true);
+part_type_life(global.partHyper, 5, 5);
+
+global.partHyperStart = part_type_create();
+part_type_shape(global.partHyperStart, pt_shape_disk);
+part_type_color2(global.partHyperStart, global.c_lightpink, global.c_pink);
+part_type_size(global.partHyperStart, .2, .2, .2, 0);
+part_type_alpha3(global.partHyperStart, .95, .95, 0);
+part_type_blend(global.partHyperStart, true);
+part_type_life(global.partHyperStart, 30, 30);
+
+global.partHyperEnd = part_type_create();
+part_type_shape(global.partHyperEnd, pt_shape_disk);
+part_type_color2(global.partHyperEnd, global.c_pink, global.c_lightpink);
+part_type_size(global.partHyperEnd, 6, 6, -.2, 0);
+part_type_alpha3(global.partHyperEnd, .95, .95, 0);
+part_type_blend(global.partHyperEnd, true);
+part_type_life(global.partHyperEnd, 30, 30);
 
 global.partDash = part_type_create();
 part_type_sprite(global.partDash, spr_part_dash, false, false, false);

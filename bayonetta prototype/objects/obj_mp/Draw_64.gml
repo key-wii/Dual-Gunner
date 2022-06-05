@@ -1,11 +1,21 @@
 /// @description 
 var grow = 0;
 //var grow = 2 * mp;
-var xx = x - global.cameraAdjust;
-var yy = y - global.cameraAdjust;
+var ran_r = 0;
+var ran_t = 0;
+if (hyper) {
+	ran_r = irandom(3); //random radius
+	ran_t = irandom(359); //random theta
+}
+var xx = x - global.cameraAdjust + lengthdir_x(ran_r, ran_t);
+var yy = y - global.cameraAdjust + lengthdir_y(ran_r, ran_t);
+var col = c_blue;
+/*if (hyper) var col = c_fuchsia;
+else if (mp >= 4) var col = c_aqua;*/
+if (hyper || mp >= 4) var col = c_aqua;
 // draw_circular_bar(x, y, value, max, colour, radius, transparency, width)
-draw_circular_bar(xx, yy, 1, 1, c_white, r + grow, image_alpha / 2, w + grow); //gauge background
-draw_circular_bar(xx, yy, floor(mp), maxMp, c_blue, r + grow, image_alpha, w + grow);
+draw_circular_bar(xx, yy, 1, 1, c_white, r + grow, image_alpha * .5, w + grow); //gauge background
+draw_circular_bar(xx, yy, floor(mp), maxMp, col, r + grow, image_alpha * .8, w + grow);
 
 
 draw_set_color(c_white);

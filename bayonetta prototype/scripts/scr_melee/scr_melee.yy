@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "skills",
-    "path": "folders/Scripts/player/skills.yy",
+    "name": "basic attack",
+    "path": "folders/Scripts/player/basic attack.yy",
   },
   "resourceVersion": "1.0",
   "name": "scr_melee",

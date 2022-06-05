@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "basic attack",
-    "path": "folders/Scripts/player/basic attack.yy",
+    "name": "hyper",
+    "path": "folders/Scripts/player/skills/hyper.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_check_combo",
+  "name": "scr_hyperToIdle",
   "tags": [],
   "resourceType": "GMScript",
 }
