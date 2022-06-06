@@ -1,4 +1,5 @@
 /// @description 
+hyper = false;
 flipped = false;
 x1 = 0;
 x2 = 0;

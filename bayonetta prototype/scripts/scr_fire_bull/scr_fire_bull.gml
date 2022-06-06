@@ -73,6 +73,13 @@ function fire_bull(dddir, small) {
 		}
 		alarm_set(3, 1);
 	}
+	if (hyper) with (bull) {
+		pow = floor(pow * 1.25 * 10);
+		pow /= 10;
+		image_xscale *= 1.25;
+		image_yscale *= 1.25;
+		min_size *= 1.1;
+	}
 }
 
 function drop_casing(dddir, clip) {

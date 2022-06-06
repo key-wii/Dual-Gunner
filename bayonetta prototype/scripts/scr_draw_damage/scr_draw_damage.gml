@@ -5,7 +5,9 @@ function draw_damage(num) {
 	global.damage_depth++;
 	with (text) {
 		depth -= global.damage_depth;
-			 if (num >= 15) fnt = fnt_dmg8;
+			 if (num >= 999) fnt = fnt_dmg10;
+		else if (num >= 500) fnt = fnt_dmg9;
+		else if (num >= 15) fnt = fnt_dmg8;
 		else if (num >= 12) fnt = fnt_dmg7;
 		else if (num >= 10) fnt = fnt_dmg6;
 		else if (num >= 8) fnt = fnt_dmg5;
@@ -38,14 +40,16 @@ function draw_damage(num) {
 	}
 	with (obj_text_dmg) depth -= 1;
 	with (damage_text) {
-			 if (dmg >= 900) fnt = fnt_dmg10;
-		else if (dmg >= 800) fnt = fnt_dmg9;
-		else if (dmg >= 700) fnt = fnt_dmg8;
-		else if (dmg >= 600) fnt = fnt_dmg7;
-		else if (dmg >= 500) fnt = fnt_dmg6;
-		else if (dmg >= 400) fnt = fnt_dmg5;
-		else if (dmg >= 300) fnt = fnt_dmg4;
-		else if (dmg >= 200) fnt = fnt_dmg3;
+			 if (dmg >= 9999) fnt = fnt_dmg12;
+		else if (dmg >= 7000) fnt = fnt_dmg11;
+		else if (dmg >= 5000) fnt = fnt_dmg10;
+		else if (dmg >= 4000) fnt = fnt_dmg9;
+		else if (dmg >= 3000) fnt = fnt_dmg8;
+		else if (dmg >= 2000) fnt = fnt_dmg7;
+		else if (dmg >= 1000) fnt = fnt_dmg6;
+		else if (dmg >= 750) fnt = fnt_dmg5;
+		else if (dmg >= 500) fnt = fnt_dmg4;
+		else if (dmg >= 250) fnt = fnt_dmg3;
 		else if (dmg >= 100) fnt = fnt_dmg2;
 		else fnt = fnt_dmg1;
 	}

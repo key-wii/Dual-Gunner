@@ -35,6 +35,10 @@ else if (timer <= -5 || block || attackL || attackR) {
 		image_yscale = ddis / 20;
 		if (image_yscale < 1) instance_destroy();
 	}
+	if (hyper) with (mirror) {
+		hyper = true;
+		image_xscale *= 1.25;
+	}
 	dashToIdle();
 }
 else if (timer < 0) direction += 5 * dir_face;

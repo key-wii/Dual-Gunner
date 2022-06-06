@@ -1,6 +1,8 @@
 /// @description Collision Detection
 jump_move(move);
 
+var hyp = hyper;
+
 if (place_meeting(x, y, obj_bull_e)) {
 	var ddir = direction;
 	with (obj_bull_e) {
@@ -18,6 +20,12 @@ if (place_meeting(x, y, obj_bull_e)) {
 			speed = clamp(speed * 2, 24, sprite_width * 3);
 			instance_change(obj_bull_deflected, true);
 			wrap = false;
+			if (hyp) {
+				pow = floor(pow * 1.25 * 10);
+				pow /= 10;
+				image_xscale *= 1.25;
+				image_yscale *= 1.25;
+			}
 		}
 	}
 }
@@ -55,6 +63,12 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 			instance_change(obj_bull_cannonball_deflected, true);
 			wrap = true;
 			room_speed = 60;
+			if (hyp) {
+				pow = floor(pow * 1.25 * 10);
+				pow /= 10;
+				image_xscale *= 1.25;
+				image_yscale *= 1.25;
+			}
 		}
 	}
 }

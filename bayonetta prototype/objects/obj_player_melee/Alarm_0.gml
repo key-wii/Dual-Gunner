@@ -12,6 +12,11 @@ atk.image_angle = atk.direction;
 atk.owner = id;
 atk.move = move;
 atk.image_yscale *= dir_face;
+if (hyper) with (atk) {
+	hyper = true;
+	image_xscale *= 1.25;
+	image_yscale *= 1.25;
+}
 var ddir = start_dir;
 with (move) { 
 	var xx = lengthdir_x(12, ddir);
