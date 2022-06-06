@@ -29,7 +29,7 @@ global.partHyperStart = part_type_create();
 part_type_shape(global.partHyperStart, pt_shape_disk);
 part_type_color2(global.partHyperStart, global.c_lightpink, global.c_pink);
 part_type_size(global.partHyperStart, .2, .2, .2, 0);
-part_type_alpha3(global.partHyperStart, .95, .95, 0);
+part_type_alpha3(global.partHyperStart, .7, .7, 0);
 part_type_blend(global.partHyperStart, true);
 part_type_life(global.partHyperStart, 30, 30);
 
@@ -37,7 +37,7 @@ global.partHyperEnd = part_type_create();
 part_type_shape(global.partHyperEnd, pt_shape_disk);
 part_type_color2(global.partHyperEnd, global.c_pink, global.c_lightpink);
 part_type_size(global.partHyperEnd, 6, 6, -.2, 0);
-part_type_alpha3(global.partHyperEnd, .95, .95, 0);
+part_type_alpha3(global.partHyperEnd, .7, .7, 0);
 part_type_blend(global.partHyperEnd, true);
 part_type_life(global.partHyperEnd, 30, 30);
 
