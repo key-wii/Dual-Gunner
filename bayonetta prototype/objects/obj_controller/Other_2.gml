@@ -9,6 +9,9 @@ global.damage_depth = 0;
 
 global.c_pink = $FF95FF;
 global.c_lightpink = $FFCDFF;
+global.c_pink2 = $FF00FF;
+global.c_orange = $F8941D;
+global.c_yellow = $C7E51B;
 
 global.partSystem = part_system_create();
 part_system_depth(global.partSystem, layer_get_depth("Controller") - 1);

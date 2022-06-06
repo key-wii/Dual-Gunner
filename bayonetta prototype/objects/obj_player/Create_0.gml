@@ -12,6 +12,9 @@ y_adjust = 0;
 
 dir_face = -1;
 
+hpBar = instance_create_layer(x, y, "Player", obj_hp);
+hpBar.owner = id;
+
 mpGauge = instance_create_layer(x, y, "Player", obj_mp);
 mpGauge.owner = id;
 mpGauge.maxMp = maxMp;
