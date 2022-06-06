@@ -209,6 +209,7 @@
     {"id":{"name":"spr_e_corpse","path":"sprites/spr_e_corpse/spr_e_corpse.yy",},"order":0,},
     {"id":{"name":"spr_melee","path":"sprites/spr_melee/spr_melee.yy",},"order":0,},
     {"id":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"order":2,},
+    {"id":{"name":"obj_combo","path":"objects/obj_combo/obj_combo.yy",},"order":12,},
     {"id":{"name":"spr_explosion_1","path":"sprites/spr_explosion_1/spr_explosion_1.yy",},"order":18,},
     {"id":{"name":"fnt_dmg7","path":"fonts/fnt_dmg7/fnt_dmg7.yy",},"order":9,},
     {"id":{"name":"snd_slash","path":"sounds/snd_slash/snd_slash.yy",},"order":10,},

@@ -1,5 +1,4 @@
-/// @description Insert description here
-
+/// @description 
 var w = display_get_gui_width() * .25;
 var space = 10;
 var _hp = 0;

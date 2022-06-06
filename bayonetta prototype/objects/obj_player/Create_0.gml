@@ -4,7 +4,6 @@ hp = 10;
 maxMp = 8;
 //mp = global.mp;
 hyper = false;
-hyper_timer = 0;
 
 //y = room_height / 2;
 x_adjust = 0;
@@ -12,6 +11,8 @@ y_adjust = 0;
 
 dir_face = -1;
 
+comboUI = instance_create_layer(x, y, "Player", obj_combo);
+comboUI.owner = id;
 hpBar = instance_create_layer(x, y, "Player", obj_hp);
 hpBar.owner = id;
 
