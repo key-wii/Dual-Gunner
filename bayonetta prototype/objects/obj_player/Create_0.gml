@@ -11,9 +11,9 @@ y_adjust = 0;
 
 dir_face = -1;
 
-comboUI = instance_create_layer(x, y, "Player", obj_combo);
+comboUI = instance_create_layer(x, y, "UI", obj_combo);
 comboUI.owner = id;
-hpBar = instance_create_layer(x, y, "Player", obj_hp);
+hpBar = instance_create_layer(x, y, "UI", obj_hp);
 hpBar.owner = id;
 
 mpGauge = instance_create_layer(x, y, "Player", obj_mp);
