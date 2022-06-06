@@ -231,7 +231,7 @@
     {"id":{"name":"obj_player_jump","path":"objects/obj_player_jump/obj_player_jump.yy",},"order":0,},
     {"id":{"name":"snd_dead","path":"sounds/snd_dead/snd_dead.yy",},"order":2,},
     {"id":{"name":"snd_chargeWave","path":"sounds/snd_chargeWave/snd_chargeWave.yy",},"order":11,},
-    {"id":{"name":"obj_corpse","path":"objects/obj_corpse/obj_corpse.yy",},"order":9,},
+    {"id":{"name":"obj_corpse","path":"objects/obj_corpse/obj_corpse.yy",},"order":7,},
     {"id":{"name":"snd_deflect","path":"sounds/snd_deflect/snd_deflect.yy",},"order":6,},
     {"id":{"name":"spr_splatter_big","path":"sprites/spr_splatter_big/spr_splatter_big.yy",},"order":1,},
     {"id":{"name":"spr_smoke_3","path":"sprites/spr_smoke_3/spr_smoke_3.yy",},"order":15,},
