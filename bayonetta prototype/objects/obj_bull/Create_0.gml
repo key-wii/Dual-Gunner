@@ -10,3 +10,5 @@ pow = 1;
 
 turn_dir = 0;
 wall_hits = 0;
+//wallHitMax = 20;
+wallHitMax = 4;

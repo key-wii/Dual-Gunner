@@ -36,9 +36,9 @@ if (place_meeting(x, y, obj_wall)) {
 						timerAddedAlready = true;
 					}
 				}
-				else if (object_index == obj_boxer_trap) {
+				/*else if (object_index == obj_boxer_trap) {
 					other.wall_hits += 5;
-				}
+				}*/
 			} else {
 				splatterWall(spr_splatter, .5);
 				splatterWallAt(spr_splatter, .05 + random(.1), x + random_range(-35, 35), y + random_range(-35, 35));
@@ -48,7 +48,7 @@ if (place_meeting(x, y, obj_wall)) {
 			with (other) {
 				collide_wall();
 				wall_hits++;
-				if (wall_hits > 20) {
+				if (wall_hits > wallHitMax) {
 					instance_change(obj_bull_explode, true);
 					exit;
 				}

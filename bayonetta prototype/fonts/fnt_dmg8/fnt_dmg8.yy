@@ -129,8 +129,8 @@
   "canGenerateBitmap": true,
   "maintainGms1Font": false,
   "parent": {
-    "name": "Fonts",
-    "path": "folders/Fonts.yy",
+    "name": "damage",
+    "path": "folders/Fonts/damage.yy",
   },
   "resourceVersion": "1.0",
   "name": "fnt_dmg8",
