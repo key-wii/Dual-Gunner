@@ -14,8 +14,8 @@
   "soundFile": "snd_cannon_explosion.wav",
   "duration": 3.238875,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "enemy",
+    "path": "folders/Sounds/enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_cannon_explosion",

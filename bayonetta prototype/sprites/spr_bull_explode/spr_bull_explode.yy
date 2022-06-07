@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "gun stuff",
-    "path": "folders/Sprites/gun stuff.yy",
+    "name": "player abilities",
+    "path": "folders/Sprites/player abilities.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bull_explode",

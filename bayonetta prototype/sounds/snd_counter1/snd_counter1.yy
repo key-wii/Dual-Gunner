@@ -14,8 +14,8 @@
   "soundFile": "snd_counter1.wav",
   "duration": 3.311646,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "player",
+    "path": "folders/Sounds/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_counter1",

@@ -14,8 +14,8 @@
   "soundFile": "snd_dead.wav",
   "duration": 0.805283,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "enemy",
+    "path": "folders/Sounds/enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_dead",

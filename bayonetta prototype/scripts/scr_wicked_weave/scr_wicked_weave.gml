@@ -1,5 +1,5 @@
 function wicked_weave(dir) {
-	sound_machine(snd_throwWaveBig);
+	sound_machine(snd_throwWave);
 	var xx = lengthdir_x(sprite_width / 2, dir);
 	var yy = lengthdir_y(sprite_width / 2, dir);
 	var wave = instance_create_layer(x + xx, y + yy, "Player", obj_shockwave);
@@ -18,7 +18,7 @@ function wicked_weave(dir) {
 }
 
 function wicked_weave_big(dir) {
-	sound_machine(snd_throwWave);
+	sound_machine(snd_throwWaveBig);
 	var xx = lengthdir_x(sprite_width / 4, dir);
 	var yy = lengthdir_y(sprite_width / 4, dir);
 	var wave = instance_create_layer(x + xx, y + yy, "Player", obj_shockwave);

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "old, not in use",
+    "path": "folders/Sprites/old, not in use.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_melee_big",

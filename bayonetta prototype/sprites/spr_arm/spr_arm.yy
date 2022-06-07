@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/player.yy",
+    "name": "player abilities",
+    "path": "folders/Sprites/player abilities.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_arm",

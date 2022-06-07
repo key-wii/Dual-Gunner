@@ -14,8 +14,8 @@
   "soundFile": "snd_shoot_e2.wav",
   "duration": 0.33542,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "enemy",
+    "path": "folders/Sounds/enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_shoot_e2",

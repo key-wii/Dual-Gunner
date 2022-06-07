@@ -7,6 +7,7 @@ if (place_meeting(x, y, obj_bull_e)) {
 		if (place_meeting(x,y,other.id)) {
 			hp -= 1;
 			if (hp > 0) exit;
+			sound_machine(snd_mirror);
 			x += lengthdir_x(30, ddir);
 			y += lengthdir_y(30, ddir);
 			var _ad = direction - ddir;

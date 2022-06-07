@@ -14,8 +14,8 @@
   "soundFile": "snd_hoedown_charge.wav",
   "duration": 1.314603,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "enemy",
+    "path": "folders/Sounds/enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_hoedown_charge",

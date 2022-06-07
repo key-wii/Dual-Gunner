@@ -14,8 +14,8 @@
   "soundFile": "snd_hook.wav",
   "duration": 0.614082,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "unused",
+    "path": "folders/Sounds/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_hook",

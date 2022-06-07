@@ -14,8 +14,8 @@
   "soundFile": "snd_jump.wav",
   "duration": 0.475624,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "unused",
+    "path": "folders/Sounds/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_jump",
