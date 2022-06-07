@@ -1,6 +1,5 @@
 w = display_get_gui_width();
-h_mod = 1.16;
-h = display_get_gui_height() / h_mod;
+h = display_get_gui_height();
 x = w / 2;
 y = h * 1.2 - (h / 16);
 
@@ -15,10 +14,10 @@ space = 10;
 box_w = 30;
 box_h = 30;
 //yy = h - (h / 1.9) + 92;
-final_box_w = room_width - (space * 2);
-final_box_h = room_height / 4;
+final_box_w = w - (space * 2);
+final_box_h = h / 4;
 
-boxLeft = room_width / 2 - box_w / 2;
+boxLeft = w / 2 - box_w / 2;
 //boxTop = h - box_h - space;
 boxTop = y;
 

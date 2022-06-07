@@ -1,10 +1,10 @@
 //Draws box and up to 4 lines of text
 function draw_textbox(box_left, box_top, box_w, box_h, txtSpd, txtSnd, sndModifer, drawPortrait) {
-	draw_set_halign(fa_middle);
+	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_set_font(fnt_textbox);
 
-	var spr;
+	var spr = spr_textbox;
 	draw_9slice(box_left, box_top, box_w, box_h, spr, 0);
 	//var por_h = box_h - p_space * 2;	NOT USING PORTRAIT
 	//if (drawPortrait) draw_sprite_stretched(portrait, 0, box_left + p_space, box_top + p_space, por_h, por_h);
@@ -24,12 +24,11 @@ function draw_textbox(box_left, box_top, box_w, box_h, txtSpd, txtSnd, sndModife
 	var lines = string_count("\n", textPart) + 1;
 	textHeight /= lines;
 	var xxx = w / 2 + space / 4;
-	var yyy = h - box_h + (box_h / 4) - (lines * 15) + (lines * 7);
-	//allows up to 4 lines of text
-	switch (lines) {
-		case 3: yyy += 15; break;
-		case 4: yyy += 22; break;
-	}
+	var yyy = h - box_h + (box_h / 4);
+	/*switch (lines) {
+		case 3: yyy += 1; break;
+		case 5: yyy += 1; break;
+	}*/
 	//draw_text(xxx + (por_h / 2) + 7, yyy + textHeight, textPart);	NOT USING PORTRAIT RN
-	draw_text(xxx, yyy + /*text_y +*/ textHeight, textPart);
+	draw_text(xxx, yyy + textHeight, textPart);
 }

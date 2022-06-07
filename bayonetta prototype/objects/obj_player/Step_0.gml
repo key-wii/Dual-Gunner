@@ -1,8 +1,8 @@
 jump_move(move);
 
-audio_stop_sound(snd_chargeWave);
+//audio_stop_sound(snd_chargeWave);
 
-if (just_countered) exit;
+if (global.cutscene || just_countered) exit;
 
 //Finisher
 if (keyboard_check(global.taunt) && keyboard_check(global.block) && 

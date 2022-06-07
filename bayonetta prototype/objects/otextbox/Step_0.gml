@@ -1,6 +1,4 @@
 /// @description After win: Go to previous room by clicking anywhere
-if (!global.victory) exit;
-
 var _clicked = mouse_check_button_pressed(mb_left) || mouse_check_button_pressed(mb_right);
 var _released = mouse_check_button_released(mb_left) || mouse_check_button_released(mb_right);
 
@@ -11,7 +9,14 @@ if (_clicked) {
 if (_released) {
 	if (mouse_x >= 0 && mouse_x <= room_width && mouse_y >= 0 && mouse_y < room_height &&
 		clicking) {
-			combat_end();
+			if (finished) {
+				with (owner) nextBox = true;
+			} else {
+				sound_machine(textSnd);
+				charCount = 99999;
+				box_w = final_box_w;
+				box_h = final_box_h;
+			}
 	}
 	if (clicking)
 		clicking = false;

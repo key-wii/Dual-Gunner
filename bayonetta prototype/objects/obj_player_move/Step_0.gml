@@ -1,3 +1,5 @@
+if (global.cutscene) exit;
+
 xMove = 0;
 yMove = 0;
 if (recoil > 0) {

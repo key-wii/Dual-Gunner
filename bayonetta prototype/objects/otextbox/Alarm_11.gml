@@ -1,7 +1,7 @@
 /// @description Grow textbx
 if (box_h == final_box_h) box_w = clamp((box_w + 25), 0, final_box_w);
 box_h = clamp((box_h + 10), 0, final_box_h);
-boxLeft = room_width / 2 - box_w / 2;
+boxLeft = w / 2 - box_w / 2;
 boxTop = h - box_h - space;
 
 
