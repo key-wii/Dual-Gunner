@@ -1,7 +1,7 @@
 /// @description Start cutscene, First textbox
 global.cutscene = true;
 
-tbox = instance_create_layer(0, 0, "UI", oTextbox);
+tbox = instance_create_layer(0, 0, "UI", obj_textbox);
 tbox.owner = id;
 tbox.fullText =
 	"This is how long a textline can be! It is verrrrrrryyyyyyyyyyyyy long.";

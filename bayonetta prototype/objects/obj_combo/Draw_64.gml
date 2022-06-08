@@ -1,5 +1,5 @@
 /// @description 
-if (!instance_exists(owner)) exit;
+if (!global.drawUI || !instance_exists(owner)) exit;
 
 draw_set_alpha(.6);
 draw_set_halign(fa_middle);

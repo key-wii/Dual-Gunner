@@ -1,7 +1,6 @@
-/// @description End cutscene
+/// @description Display controls
 instance_destroy(tbox);
-global.cutscene = false;
+tbox = instance_create_layer(0, 0, "UI", obj_display_controls);
+tbox.owner = id;
 
-with (obj_e_cutscene) {
-	instance_change(prevObject, true);
-}
+nextBox = false;

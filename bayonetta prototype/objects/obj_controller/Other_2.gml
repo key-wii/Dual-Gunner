@@ -7,6 +7,7 @@ global.mp = 0;
 global.cameraAdjust = 100;
 global.damage_depth = 0;
 global.cutscene = false;
+global.drawUI = true;
 
 global.c_pink = $FF95FF;
 global.c_lightpink = $FFCDFF;

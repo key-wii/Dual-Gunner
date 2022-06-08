@@ -1,4 +1,6 @@
 /// @description 
+if (!global.drawUI) exit;
+
 var w = display_get_gui_width() * .25;
 var space = 10;
 var _hp = 0;
