@@ -1,5 +1,5 @@
 /// @description 
-var grow = 0;
+/*var grow = 0;
 //var grow = 2 * mp;
 var ran_r = 0;
 var ran_t = 0;
@@ -10,8 +10,6 @@ if (hyper) {
 var xx = x - global.cameraAdjust + lengthdir_x(ran_r, ran_t);
 var yy = y - global.cameraAdjust + lengthdir_y(ran_r, ran_t);
 var col = c_blue;
-/*if (hyper) var col = c_fuchsia;
-else if (mp >= 4) var col = c_aqua;*/
 if (hyper || mp >= 4) var col = c_aqua;
 // draw_circular_bar(x, y, value, max, colour, radius, transparency, width)
 draw_circular_bar(xx, yy, 1, 1, c_white, r + grow, image_alpha * .5, w + grow); //gauge background

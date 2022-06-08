@@ -16,7 +16,8 @@ Hold E ---------------- Long Taunt
 Tap Q + E ------------- Finisher (Costs 8 Mana)
 Click L + R ----------- Activate/Deactivate Hyper Mode (Costs 1 Mana)
 
-ESC ------------------- Close Window
+Enter ----------------- Pause/Unpause
+ESC ------------------- Pause/Close Game
 
 
 

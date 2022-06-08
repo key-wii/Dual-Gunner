@@ -1,4 +1,4 @@
-//if (global.unpausing) exit;
+if (global.unpausing) exit;
 
 global.start = true;
 global.nextRoom = false;

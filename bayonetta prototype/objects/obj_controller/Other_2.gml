@@ -2,12 +2,34 @@
 global.block = ord("Q");
 global.dash = vk_space;
 global.taunt = ord("E");
+global.pause1 = vk_enter;
+global.pause2 = vk_escape;
 
 global.mp = 0;
 global.cameraAdjust = 100;
 global.damage_depth = 0;
 global.cutscene = false;
 global.drawUI = true;
+global.unpausing = false;
+global.strControls = "Controls\n\n" +
+"WASD ------------------ Movement\n" +
+"Mouse ----------------- Aim\n\n" +
+
+"Tap L/R Click --------- Deflect Projectile\n" +
+"Hold L Click ---------- Shot Type A\n" +
+"Hold R Click ---------- Shot Type B\n\n" +
+
+"Tap Spacebar ---------- Dash, leave behind Mirror\n" +
+"Tap Spacebar Twice ---- Explode your Mirrors\n\n" +
+
+"Tap Q ----------------- Block & Counter\n" +
+"Tap E ----------------- Fast Taunt\n" +
+"Hold E ---------------- Long Taunt\n\n" +
+
+"Tap Q + E ------------- Finisher (Costs 8 Mana)\n" +
+"Click L + R ----------- Activate/Deactivate Hyper Mode (Costs 1 Mana)\n\n" +
+
+"Enter ----------------- Pause/Unpause";
 
 global.c_pink = $FF95FF;
 global.c_lightpink = $FFCDFF;

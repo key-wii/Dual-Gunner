@@ -18,7 +18,7 @@ burstSpeed_default = 11;
 topSpeed = topSpeed_default;
 burstSpeed = burstSpeed_default;
 
-arrow = instance_create_layer(x, y, "Player", obj_arrow_move);
+arrow = instance_create_layer(x, y, "Floor", obj_arrow_move);
 arrow.owner = id;
 arrow.radius = sprite_width - 10;
 

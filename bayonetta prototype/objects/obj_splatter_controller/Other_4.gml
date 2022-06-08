@@ -1,3 +1,4 @@
+if (global.unpausing) exit;
 surf = surface_create(room_width, room_height);
 
 

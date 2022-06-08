@@ -1,3 +1,5 @@
+global.unpausing = false;
+
 shakeSudden = 0;
 shakeSteady = 0;
 shakeMax = 0;
