@@ -14,7 +14,7 @@ Tap E ----------------- Fast Taunt
 Hold E ---------------- Long Taunt
 
 Tap Q + E ------------- Finisher (Costs 8 Mana)
-Click L + R ----------- Trigger Hyper Mode (Costs 1 Mana & Drains Mana Over Time) NOT IMPLEMENTED YET
+Click L + R ----------- Activate/Deactivate Hyper Mode (Costs 1 Mana)
 
 ESC ------------------- Close Window
 
