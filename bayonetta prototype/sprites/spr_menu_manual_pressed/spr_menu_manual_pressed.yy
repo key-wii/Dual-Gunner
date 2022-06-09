@@ -41,7 +41,7 @@
     "spriteId": {"name":"spr_menu_manual_pressed","path":"sprites/spr_menu_manual_pressed/spr_menu_manual_pressed.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 15.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
