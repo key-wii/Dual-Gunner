@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_menu_flame",
-    "path": "sprites/spr_menu_flame/spr_menu_flame.yy",
+    "name": "spr_menu_manual",
+    "path": "sprites/spr_menu_manual/spr_menu_manual.yy",
   },
   "solid": false,
   "visible": true,

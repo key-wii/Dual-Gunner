@@ -2,8 +2,9 @@
 var _clicked = mouse_check_button_pressed(mb_left) || mouse_check_button_pressed(mb_right);
 var _released = mouse_check_button_released(mb_left) || mouse_check_button_released(mb_right);
 
-if (_clicked) {
+if (_clicked && !global.cutscene) {
 	clicking = true;
+	sprite_index = spritePressed;
 }
 //Triggers when player lets go of mouse click within half a second after pressing it
 if (_released) {
@@ -16,6 +17,8 @@ if (_released) {
 				timeline_position = 0;
 			}
 	}
-	if (clicking)
+	if (clicking) {
 		clicking = false;
+		sprite_index = spriteDefault;
+	}
 }
