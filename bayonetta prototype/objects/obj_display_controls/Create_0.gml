@@ -26,6 +26,7 @@ alarm_set(10, 1);
 
 clicking = false;
 
+textSpd = 1;
 textSnd = snd_text1;
 
 image_alpha = .1;

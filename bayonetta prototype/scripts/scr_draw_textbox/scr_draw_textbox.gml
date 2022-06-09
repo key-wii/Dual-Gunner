@@ -3,6 +3,7 @@ function draw_textbox(box_left, box_top, box_w, box_h, txtSpd, txtSnd, sndModife
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_set_font(fnt_textbox);
+	draw_set_color(c_lime);
 
 	var spr = spr_textbox;
 	draw_9slice(box_left, box_top, box_w, box_h, spr, 0);

@@ -1,8 +1,11 @@
-/// @description End cutscene
-instance_destroy(tbox);
-global.cutscene = false;
+/// @description Next textbox, item get sfx
+tbox.fullText =
+	"Obtained: Control Manual";
+	
+tbox.charCount = 0;
+tbox.finished = false;
+
 nextBox = false;
 
-with (obj_e_cutscene) {
-	instance_change(prevObject, true);
-}
+tbox.textSpd = .6;
+sound_machine(snd_textItemObtained);

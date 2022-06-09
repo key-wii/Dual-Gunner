@@ -28,4 +28,5 @@ clicking = false;
 
 //textfile = "intro.txt"; NOT USING TEXTFILE
 //portrait = spr_por_0;	NOT USING PORTRAIT
+textSpd = .4;
 textSnd = snd_text1;
