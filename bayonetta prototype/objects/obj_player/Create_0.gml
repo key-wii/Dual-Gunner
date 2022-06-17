@@ -29,8 +29,9 @@ partner.owner = id;
 partner.radius = partner.sprite_width + sprite_width;*/
 gun = instance_create_layer(x, y, "Player", obj_arrow);
 gun.owner = id;
-gun.radius = sprite_width;
+gun.radius = sprite_width * .5 + 4;
 gun2dir = 0;
+prev_theta = direction;
 
 //if (!instance_exists(obj_player_move))
 move = instance_create_layer(x, y, "Player", obj_player_move);

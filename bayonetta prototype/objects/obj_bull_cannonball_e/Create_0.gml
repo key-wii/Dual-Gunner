@@ -10,3 +10,6 @@ pow = 3;
 
 hpMax = 4;
 hp = hpMax;
+
+prevXs = ds_list_create();
+prevYs = ds_list_create();
