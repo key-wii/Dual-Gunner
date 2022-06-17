@@ -33,7 +33,9 @@ global.strControls = "Controls\n\n" +
 
 global.c_pink = $FF95FF;
 global.c_lightpink = $FFCDFF;
+global.c_lightpink2 = make_color_rgb(253, 229, 214);
 global.c_pink2 = $FF00FF;
+global.c_pink3 = make_color_rgb(237, 0, 140);
 global.c_orange = $F8941D;
 global.c_yellow = $C7E51B;
 

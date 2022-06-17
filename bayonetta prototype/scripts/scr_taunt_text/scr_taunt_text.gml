@@ -20,6 +20,7 @@ function taunt_text() {
 		col2 = global.c_pink;
 		colOl1 = c_black;
 		colOl2 = c_black;
+		fnt = fnt_dmg1;
 		/*image_angle = ddir - 90;
 		if (image_angle > 90 && image_angle < 270) image_angle -= 180;*/
 	}
