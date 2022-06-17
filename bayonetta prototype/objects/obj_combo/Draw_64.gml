@@ -7,7 +7,7 @@ draw_set_valign(fa_middle);
 draw_set_font(fnt_placeholder);
 draw_set_color(c_white);
 
-var xx = display_get_gui_width() * .3;
+var xx = display_get_gui_width() * .85;
 var space = 30;
 
 draw_text(xx, space, "combo");
