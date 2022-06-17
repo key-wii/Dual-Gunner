@@ -1,3 +1,4 @@
+image_speed = 0;
 sprite_default = sprite_index;
 spriteHurt = spr_hurt;
 hp = 10;
@@ -33,12 +34,13 @@ gun.radius = sprite_width * .5 + 4;
 gun2dir = 0;
 prev_theta = direction;
 
+prev_ang = image_angle;
+
 //if (!instance_exists(obj_player_move))
 move = instance_create_layer(x, y, "Player", obj_player_move);
 move.owner = id;
 
 set_vars();
-
 mirrors = ds_list_create();
 
 first_hit = L;

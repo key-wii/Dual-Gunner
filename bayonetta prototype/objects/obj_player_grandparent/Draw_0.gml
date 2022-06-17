@@ -1,16 +1,13 @@
-//Draw diamond around enemy capable of being Finished
-draw_set_circle_precision(4);
-draw_set_color(c_fuchsia);
-if (instance_exists(enemyToFinish)) {
-	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width, true);
-	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 1, true);
-	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 2, true);
-	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 3, true);
-	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 6, true);
-	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 7, true);
-}
-draw_set_color(c_white);
-draw_set_circle_precision(64);
+//Draw cape
+var _d = angle_difference(image_angle, prev_ang);
+var dir = clamp(prev_ang + _d, prev_ang - 15, prev_ang + 15);
+draw_sprite_ext(spr_cape, 0, x, y,
+	image_xscale, image_yscale, dir, c_white, 1);
+
+//Draw heart
+draw_sprite_ext(spr_heart, 0, x, y,
+	image_xscale, image_yscale, dir, c_white, 1);
+
 
 //Draw second gun
 var ttheta = direction + gun2dir;
@@ -29,8 +26,23 @@ with (gun) {
 	var yy = owner.y + lengthdir_y(radius, ttheta);
 	
 	draw_sprite_ext(spr_gun2, image_index, xx, yy,
-	image_xscale, -image_yscale, ttheta, c_white, image_alpha)
+		image_xscale, image_yscale, ttheta, c_white, image_alpha)
 }
+
+
+//Draw diamond around enemy capable of being Finished
+draw_set_circle_precision(4);
+draw_set_color(c_fuchsia);
+if (instance_exists(enemyToFinish)) {
+	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width, true);
+	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 1, true);
+	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 2, true);
+	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 3, true);
+	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 6, true);
+	draw_circle(enemyToFinish.x, enemyToFinish.y, enemyToFinish.sprite_width + 7, true);
+}
+draw_set_color(c_white);
+draw_set_circle_precision(64);
 
 /*draw_set_halign(fa_middle);
 draw_set_font(fnt_placeholder);
