@@ -22,6 +22,8 @@ if (timer == 0) {
 		alarm_set(2, 1); //Reset combo from before counter
 	}
 	else alarm_set(2, 60); //Maintain combo for 60 more frames
+	gun.visible = true;
+	move.arrow.visible = true;
 	instance_change(obj_player, false);
 }
 

@@ -6,4 +6,5 @@ if (hand >= 0) {
 	draw_sprite_ext(spr_hand, hand, x + hx, y + hy, 4, 4 * h_face, dir_orig + hdir, c_white, 1);
 }
 
+draw_body();
 //event_inherited();
