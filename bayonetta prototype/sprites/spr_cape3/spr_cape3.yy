@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/player.yy",
+    "name": "unused for now",
+    "path": "folders/Sprites/unused for now.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cape3",
