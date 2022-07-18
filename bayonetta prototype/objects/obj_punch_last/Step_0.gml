@@ -6,6 +6,8 @@ if (place_meeting(x, y, obj_e_parent)) {
 				room_speed = 8;
 				with (obj_controller) alarm_set(2, 90);
 				
+				sound_machine(snd_punch);
+				sound_machine(snd_punch2);
 				knockbacked(1, kbDir);
 				take_damage3(clamp(other.pow / 2, 12, 12) / (move.weight * 3), kbDir + 125 * other.dir_face);
 				ds_list_add(other.enemiesHit, id);

@@ -8,6 +8,7 @@ if (place_meeting(x, y, obj_e_parent)) {
 					with (obj_controller) alarm_set(2, 1);
 				}
 				
+				sound_machine(snd_punch);
 				knockbacked(1, kbDir);
 				take_damage3(clamp(other.pow / 2, 12, 12) / (move.weight * 3), kbDir + 125 * other.dir_face);
 				ds_list_add(other.enemiesHit, id);

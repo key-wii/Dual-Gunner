@@ -4,3 +4,5 @@ image_xscale = image_yscale;
 
 pow = 10;
 enemiesHit = ds_list_create();
+
+sound_machine(snd_explosion);
