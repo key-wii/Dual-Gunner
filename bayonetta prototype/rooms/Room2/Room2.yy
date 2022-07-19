@@ -56,7 +56,6 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_2384E913","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_1BBF50D8","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_32DB7276","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_155E8618","path":"rooms/Room2/Room2.yy",},
@@ -78,6 +77,7 @@
     {"name":"inst_568221F6","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_4EB896C5","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_7A73ABE9","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_2384E913","path":"rooms/Room2/Room2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

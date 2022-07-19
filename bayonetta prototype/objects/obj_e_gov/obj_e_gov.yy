@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_e_dummy",
-    "path": "sprites/spr_e_dummy/spr_e_dummy.yy",
+    "name": "spr_e_gov",
+    "path": "sprites/spr_e_gov/spr_e_gov.yy",
   },
   "solid": false,
   "visible": true,

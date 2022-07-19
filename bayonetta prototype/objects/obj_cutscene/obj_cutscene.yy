@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_cutscene0",
+  "name": "obj_cutscene",
   "tags": [],
   "resourceType": "GMObject",
 }

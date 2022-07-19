@@ -1,5 +1,6 @@
 function hyper_check(cancel) {
 	//Activate Hyper Mode
+	if (!global.unlockedHyper) exit;
 	if (/*cooldown_hyper == 0 && */mouse_check_button(mb_left) && mouse_check_button(mb_right)) {
 		if (!hyper && mp >= 4) {
 			hyper_pressed++;

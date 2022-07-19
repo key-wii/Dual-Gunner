@@ -18,6 +18,10 @@
 		}
 	}
 }*/
+if (!global.unlockedDeflect) {
+	coll_destroy_bull_e();
+	exit;
+}
 var hyp = hyper;
 
 if (place_meeting(x, y, obj_bull_e)) {
@@ -81,4 +85,4 @@ if (place_meeting(x, y, obj_wall)) {
 	}
 }
 
-move_wrap(true, true, -70);
+//move_wrap(true, true, -70);

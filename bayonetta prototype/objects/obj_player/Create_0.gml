@@ -12,6 +12,8 @@ y_adjust = 0;
 
 dir_face = -1;
 
+instance_create_layer(0, 0, "UI", obj_cursor);
+
 comboUI = instance_create_layer(x, y, "UI", obj_combo);
 comboUI.owner = id;
 hpBar = instance_create_layer(x, y, "UI", obj_hp);

@@ -13,4 +13,4 @@ if (instance_exists(owner)) {
 	y = owner.y + lengthdir_y(radius, theta);
 }
 
-move_wrap(true, true, -70);
+//move_wrap(true, true, -70);

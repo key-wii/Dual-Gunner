@@ -1,7 +1,8 @@
 function destroy_minions(minion) {
-	//if (hp <= 0) with (obj_e_parent) hp = 1;
 	with (minion) {
-		with (move) instance_destroy();
-		instance_destroy();
+		if (minion == obj_e_spawn) instance_destroy();
+		else if (hp > 1) hp = 1;
+		/*with (move) instance_destroy();
+		instance_destroy();*/
 	}
 }
