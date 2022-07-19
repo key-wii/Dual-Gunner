@@ -19,6 +19,7 @@
     {"id":{"name":"obj_player_air_parent","path":"objects/obj_player_air_parent/obj_player_air_parent.yy",},"order":4,},
     {"id":{"name":"obj_splatter_controller","path":"objects/obj_splatter_controller/obj_splatter_controller.yy",},"order":1,},
     {"id":{"name":"spr_slash","path":"sprites/spr_slash/spr_slash.yy",},"order":7,},
+    {"id":{"name":"scr_fire_bull_e","path":"scripts/scr_fire_bull_e/scr_fire_bull_e.yy",},"order":5,},
     {"id":{"name":"spr_e_gov","path":"sprites/spr_e_gov/spr_e_gov.yy",},"order":19,},
     {"id":{"name":"snd_hoedown_charge","path":"sounds/snd_hoedown_charge/snd_hoedown_charge.yy",},"order":5,},
     {"id":{"name":"obj_e_hoedown","path":"objects/obj_e_hoedown/obj_e_hoedown.yy",},"order":0,},

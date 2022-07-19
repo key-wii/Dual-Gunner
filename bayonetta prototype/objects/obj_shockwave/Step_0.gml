@@ -33,4 +33,4 @@ if (place_meeting(x, y, obj_wall)) {
 
 coll_destroy_bull_e();
 
-move_wrap(true, true, -50);
+//move_wrap(true, true, -50);
