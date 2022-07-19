@@ -23,3 +23,5 @@ hpY_adjust = 0;
 hpLen_adjust = 150;
 hpX = x + hpX_adjust;
 hpY = y + hpY_adjust;
+
+minions = array_create();
