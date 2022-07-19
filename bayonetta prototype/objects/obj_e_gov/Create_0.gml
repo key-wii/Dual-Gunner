@@ -1,7 +1,7 @@
 maxHp = 200;
 hp = maxHp;
 spriteDefault = sprite_index;
-spriteHurt = spr_e_spread_hurt;
+spriteHurt = spr_e_dummy_hurt;
 
 move = instance_create_layer(x, y, "Enemy", obj_e_move);
 move.owner = id;
@@ -14,3 +14,5 @@ alarm_set(1, 5);
 
 event_inherited();
 dizzy_dmg = true;
+
+wideCounter = 0;
