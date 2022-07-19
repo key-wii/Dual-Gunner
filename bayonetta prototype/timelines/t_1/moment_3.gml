@@ -1,12 +1,16 @@
-/// @description Next textbox X2
+/// @description Next textbox X3
 var str = "";
 switch (tboxCount) {
 	case 0: str =
-		"Eliminate the target.\n" +
-		"Use any means necessary."; break;
+		"Eliminate all enemies\n" +
+		"then evacuate the vacinity."; break;
 	case 1: str =
-		"As usual, make sure to check the manual\n" +
-		"before you initiate combat."; break;
+		"Experiment with a mix of\n" +
+		"Left and Right attacks\n" +
+		"to feel out different combos."; break;
+	case 2: str =
+		"Remember the last attack in a\n" +
+		"full combo unleashes up to 2 AoE blasts."; break;
 }
 tbox.fullText = str;
 	

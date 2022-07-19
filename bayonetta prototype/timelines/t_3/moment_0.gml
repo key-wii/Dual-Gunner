@@ -4,7 +4,8 @@ global.cutscene = true;
 tbox = instance_create_layer(0, 0, "UI", obj_textbox);
 tbox.owner = id;
 tbox.fullText =
-	"Nice work.";
+	"They've busted out the heavy artillery now.\n" +
+	"I'm unlocking one of your defensive abilities for this.";
 	
 with (obj_e_parent) {
 	prevObject = object_index;
@@ -16,3 +17,6 @@ instance_destroy(obj_e_move_parent);
 
 tboxCount = 0;
 tboxMax = 3;
+textSpd = .8;
+
+global.unlockedCounter = true;

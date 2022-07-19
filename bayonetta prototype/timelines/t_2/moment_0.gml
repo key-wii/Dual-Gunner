@@ -4,7 +4,7 @@ global.cutscene = true;
 tbox = instance_create_layer(0, 0, "UI", obj_textbox);
 tbox.owner = id;
 tbox.fullText =
-	"Nice work.";
+	"You're surrounded.";
 	
 with (obj_e_parent) {
 	prevObject = object_index;
@@ -15,4 +15,4 @@ with (obj_e_parent) {
 instance_destroy(obj_e_move_parent);
 
 tboxCount = 0;
-tboxMax = 3;
+tboxMax = 2;

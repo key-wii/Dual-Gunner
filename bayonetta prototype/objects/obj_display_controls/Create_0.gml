@@ -78,4 +78,4 @@ strControls =
 	strFinisher +
 	strHyper +
 
-	"Enter ----------------- Pause/Unpause";
+	"Enter ----------------- Open/Close Inventory";
