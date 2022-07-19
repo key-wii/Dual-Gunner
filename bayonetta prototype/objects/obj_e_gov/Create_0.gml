@@ -8,10 +8,8 @@ move.owner = id;
 x_adjust = 0;
 y_adjust = 0;
 
-alarm_set(0, 60);
-
-var player = obj_player_move;
-if (instance_exists(player)) direction = point_direction(x, y, player.x, player.y);
+alarm_set(0, 0);
+alarm_set(1, 5);
 
 event_inherited();
 dizzy_dmg = true;

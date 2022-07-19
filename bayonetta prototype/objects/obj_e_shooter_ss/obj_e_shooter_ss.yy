@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_e_dummy",
-    "path": "sprites/spr_e_dummy/spr_e_dummy.yy",
+    "name": "spr_e_ss",
+    "path": "sprites/spr_e_ss/spr_e_ss.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,16 +29,15 @@
     {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemy",
-    "path": "folders/Objects/enemy.yy",
+    "name": "fodder",
+    "path": "folders/Objects/enemy/fodder.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_e_gov",
+  "name": "obj_e_shooter_ss",
   "tags": [],
   "resourceType": "GMObject",
 }
