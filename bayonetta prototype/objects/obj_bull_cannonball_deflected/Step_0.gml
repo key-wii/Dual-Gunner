@@ -48,5 +48,3 @@ if (place_meeting(x, y, obj_e_parent)) {
 		}
 	}
 }*/
-
-if (wrap) move_wrap(true, true, -70);

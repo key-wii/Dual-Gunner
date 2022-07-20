@@ -5,9 +5,21 @@ if (place_meeting(x, y, obj_wall)) {
 			splatterWall(spr_splatter_e, .5);
     
 		    with (other) {
-				instance_change(obj_bull_explode, true);
-				sprite_index = spr_bull_explode_e;
-				exit;
+				if (!wallHitBuffer) wall_hits++;
+				wallHitBuffer = true;
+				alarm_set(2, 1);
+				if (wall_hits > wallHitMax) {
+					instance_change(obj_bull_explode, true);
+					sprite_index = spr_bull_explode_e;
+					exit;
+				}
+				bull_bounce();
+				var ddir = point_direction(other.x, other.y, x, y);
+				x += lengthdir_x(10, ddir);
+				y += lengthdir_y(10, ddir);
+				/*var ddir = point_direction(other.x, other.y, x, y);
+				var _ad = direction - ddir;
+				direction = (ddir + 180) - _ad;*/
 			}
 		}
 	}

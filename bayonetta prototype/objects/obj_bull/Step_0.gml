@@ -44,6 +44,7 @@ if (place_meeting(x, y, obj_wall)) {
 				splatterWallAt(spr_splatter, .05 + random(.1), x + random_range(-35, 35), y + random_range(-35, 35));
 				splatterWallAt(spr_splatter, .05 + random(.1), x + random_range(-35, 35), y + random_range(-35, 35));
 			}
+			if (object_index == obj_border) exit;
     
 			with (other) {
 				collide_wall();
@@ -52,27 +53,10 @@ if (place_meeting(x, y, obj_wall)) {
 					instance_change(obj_bull_explode, true);
 					exit;
 				}
-				//bounce off wall
-				turn(60);
-				/*var enemy = instance_nearest(x, y, obj_e_parent);
-				if (instance_exists(enemy)) {
-					turn(60);
-					var ddis = point_distance(x, y, enemy.x, enemy.y);
-					var max_turn = 45;
-					if (ddis < 100) {
-						//aim for nearest enemy
-						var last_dir = direction;
-						direction = point_direction(x, y, enemy.x, enemy.y);
-						var diff = direction - last_dir;
-						var diff2 = last_dir - direction;
-						if (abs(diff) > max_turn && abs(diff2) > max_turn)
-							if (diff > max_turn) direction = last_dir + max_turn;
-							else if (diff < -max_turn) direction = last_dir - max_turn;
-					}
-				} else {
-					turn(60);
-				}*/
-				image_angle = direction;
+				bull_bounce();
+				/*var ddir = point_direction(other.x, other.y, x, y);
+				x += lengthdir_x(10, ddir);
+				y += lengthdir_y(10, ddir);*/
 				if (image_xscale > min_size && alarm_get(0) >= 0) image_xscale = min_size;
 				if (image_yscale > min_size && alarm_get(0) >= 0) image_yscale = min_size;
 			}
@@ -81,5 +65,3 @@ if (place_meeting(x, y, obj_wall)) {
 }
 
 //coll_destroy_bull_e();
-
-if (wrap) move_wrap(true, true, -70);

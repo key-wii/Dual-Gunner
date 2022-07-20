@@ -6,7 +6,7 @@ alarm_set(0, 1);
 wrap = true;
 alarm_set(1, 18);
 
-pow = 6;
+pow = 7;
 
 hpMax = 4;
 hp = hpMax;

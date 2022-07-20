@@ -18,7 +18,11 @@ if (place_meeting(x, y, obj_bull_e)) {
 			direction = direction + 180;
 			image_angle = direction;
 			speed = clamp(speed * 2, 24, sprite_width * 3);
-			instance_change(obj_bull_deflected, true);
+			var deflectObj = obj_bull_deflected;
+			switch(object_index) {
+				case obj_bull_e_bounce: deflectObj = obj_bull_bounce_deflected; break;
+			}
+			instance_change(deflectObj, true);
 			wrap = false;
 			if (hyp) {
 				pow = floor(pow * 1.25 * 10);

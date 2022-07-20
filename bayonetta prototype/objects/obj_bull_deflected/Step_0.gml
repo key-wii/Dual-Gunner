@@ -37,5 +37,3 @@ if (place_meeting(x, y, obj_wall)) {
 		}
 	}
 }
-
-if (wrap) move_wrap(true, true, -70);
