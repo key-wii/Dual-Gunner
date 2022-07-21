@@ -4,7 +4,7 @@ global.cutscene = true;
 tbox = instance_create_layer(0, 0, "UI", obj_textbox);
 tbox.owner = id;
 tbox.fullText =
-	"I've got your next abilities lined up.";
+	"I've got your next ability lined up.";
 	
 with (obj_e_parent) {
 	prevObject = object_index;
