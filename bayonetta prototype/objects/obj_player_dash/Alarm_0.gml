@@ -15,6 +15,8 @@ if (dashExplode) {
 				var xx = lengthdir_x(sprite_height / 2, ddir);
 				var yy = lengthdir_y(sprite_height / 2, ddir);
 				var expl = instance_create_layer(x + xx, y + yy, "Bull", obj_explosion);
+				expl.direction = image_angle + 90;
+				expl.image_angle = expl.direction;
 				if (hyper) with (expl) {
 					pow = floor(pow * 1.25 * 10);
 					pow /= 10;

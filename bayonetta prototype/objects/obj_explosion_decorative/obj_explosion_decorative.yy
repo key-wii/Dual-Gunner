@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_explosion_3",
-    "path": "sprites/spr_explosion_3/spr_explosion_3.yy",
+    "name": "spr_explosion_nonlethal",
+    "path": "sprites/spr_explosion_nonlethal/spr_explosion_nonlethal.yy",
   },
   "solid": false,
   "visible": true,
