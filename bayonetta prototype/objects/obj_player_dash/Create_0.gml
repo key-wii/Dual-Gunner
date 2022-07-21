@@ -2,6 +2,7 @@
 image_xscale = 1;
 image_yscale = 1;
 
+dir_orig_move = move.direction;
 timer = move.dashTickMax;
 
 nextDelayMax = 7;
