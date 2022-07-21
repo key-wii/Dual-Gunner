@@ -4,7 +4,7 @@ global.cutscene = true;
 tbox = instance_create_layer(0, 0, "UI", obj_textbox);
 tbox.owner = id;
 tbox.fullText =
-	".";
+	"Almost done!";
 	
 with (obj_e_parent) {
 	prevObject = object_index;
@@ -13,6 +13,3 @@ with (obj_e_parent) {
 	sprite_index = spr;
 }
 instance_destroy(obj_e_move_parent);
-
-tboxCount = 0;
-tboxMax = 2;
