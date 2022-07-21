@@ -1,7 +1,13 @@
 if (place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
-			if (object_get_parent(object_index) == obj_wall_nosplatter) exit;
+			if (object_get_parent(object_index) == obj_wall_nosplatter) {
+				if (destructible) with (other) {
+					instance_change(obj_bull_explode, true);
+					sprite_index = spr_bull_explode_e;
+				}
+				exit;	
+			}
 			splatterWall(spr_splatter_e, .5);
     
 		    with (other) {
