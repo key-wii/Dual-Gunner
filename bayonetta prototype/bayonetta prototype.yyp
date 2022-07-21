@@ -131,6 +131,7 @@
     {"id":{"name":"spr_e_dummy","path":"sprites/spr_e_dummy/spr_e_dummy.yy",},"order":1,},
     {"id":{"name":"t_2","path":"timelines/t_2/t_2.yy",},"order":3,},
     {"id":{"name":"spr_menu_grenade_b","path":"sprites/spr_menu_grenade_b/spr_menu_grenade_b.yy",},"order":1,},
+    {"id":{"name":"obj_demo_end","path":"objects/obj_demo_end/obj_demo_end.yy",},"order":18,},
     {"id":{"name":"fnt_controls","path":"fonts/fnt_controls/fnt_controls.yy",},"order":18,},
     {"id":{"name":"snd_hurt","path":"sounds/snd_hurt/snd_hurt.yy",},"order":7,},
     {"id":{"name":"obj_player_melee_hold","path":"objects/obj_player_melee_hold/obj_player_melee_hold.yy",},"order":1,},
