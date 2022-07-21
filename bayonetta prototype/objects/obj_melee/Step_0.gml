@@ -35,8 +35,11 @@ if (place_meeting(x, y, obj_bull_e)) {
 			direction = ddir;
 			image_angle = direction;
 			speed = clamp(speed * 2, 10, sprite_width * 1.5);
-			instance_change(obj_bull_deflected, true);
-			wrap = false;
+			var deflectObj = obj_bull_deflected;
+			switch(object_index) {
+				case obj_bull_e_bounce: deflectObj = obj_bull_bounce_deflected; break;
+			}
+			instance_change(deflectObj, true);
 			if (hyp) {
 				pow = floor(pow * 1.25 * 10);
 				pow /= 10;
@@ -65,7 +68,6 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 			y += lengthdir_y(30, ddir);
 			speed = clamp(speed * 2, 30, sprite_width * 3);
 			instance_change(obj_bull_cannonball_deflected, true);
-			wrap = true;
 			if (hyp) {
 				pow = floor(pow * 1.25 * 10);
 				pow /= 10;

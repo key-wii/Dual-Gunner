@@ -2,13 +2,14 @@
 if (wiggle == 0 || awoke) event_inherited();
 
 if (!lethal || global.nextRoom) exit;
-if (place_meeting(x, y, obj_mirror)) {
-	with (obj_mirror) {
+if (place_meeting(x, y, obj_wall_nosplatter)) {
+	with (obj_wall_nosplatter) {
 		if (place_meeting(x,y,other.id)) {
-			room_speed = 20;
-			with (obj_controller) alarm_set(2, 1);
-			sound_machine(snd_shield_break);
-			instance_destroy();
+			if (destructible) {
+				if (object_index == obj_mirror) sound_machine(snd_shield_break);
+				explode_nonlethal(direction);
+				instance_destroy();
+			}
 		}
 	}
 }

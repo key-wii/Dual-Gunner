@@ -23,7 +23,6 @@ if (place_meeting(x, y, obj_bull_e)) {
 				case obj_bull_e_bounce: deflectObj = obj_bull_bounce_deflected; break;
 			}
 			instance_change(deflectObj, true);
-			wrap = false;
 			if (hyp) {
 				pow = floor(pow * 1.25 * 10);
 				pow /= 10;
@@ -65,7 +64,6 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 			y += lengthdir_y(30, ddir);
 			speed = clamp(speed * 2, 30, sprite_width * 3);
 			instance_change(obj_bull_cannonball_deflected, true);
-			wrap = true;
 			room_speed = 60;
 			if (hyp) {
 				pow = floor(pow * 1.25 * 10);

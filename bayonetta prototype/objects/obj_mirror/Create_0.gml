@@ -1,4 +1,5 @@
 /// @description 
+destructible = true;
 hyper = false;
 flipped = false;
 x1 = 0;

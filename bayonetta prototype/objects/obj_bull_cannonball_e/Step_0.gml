@@ -1,8 +1,18 @@
 if (hp == hpMax && place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
-			if (object_get_parent(object_index) == obj_wall_nosplatter) exit;
-			splatterWall(spr_splatter_e, 2);
+			if (object_get_parent(object_index) == obj_wall_nosplatter) {
+				if (destructible) {
+					with (other) {
+						explode_nonlethal(direction);
+						instance_change(obj_bull_explode, true);
+						sprite_index = spr_bull_explode_e;
+					}
+					instance_destroy();
+				}
+				else exit;
+			}
+			else splatterWall(spr_splatter_e, 2);
     
 		    with (other) {
 				instance_change(obj_bull_explode, true);

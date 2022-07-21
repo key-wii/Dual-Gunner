@@ -37,6 +37,32 @@ if (place_meeting(x, y, obj_e_parent)) {
 	}
 }
 
+if (place_meeting(x, y, obj_wall)) {
+	hp--;
+	if (hp > 0) exit;
+	with (obj_wall) {
+		if (place_meeting(x, y, other.id)) {
+			if (object_get_parent(object_index) == obj_wall_nosplatter) {
+				if (destructible) {
+					with (other) {
+						explode_nonlethal(direction);
+						instance_change(obj_bull_explode, true);
+					}
+					instance_destroy();
+				}
+				else exit;
+			}
+			else {
+				splatterWall(spr_splatter, .5);
+				splatterWallAt(spr_splatter, .05 + random(.025), x + random_range(-35, 35), y + random_range(-35, 35));
+				splatterWallAt(spr_splatter, .05 + random(.025), x + random_range(-35, 35), y + random_range(-35, 35));
+			}
+    
+		    with (other) instance_change(obj_bull_explode, true);
+		}
+	}
+}
+
 /*if (place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
