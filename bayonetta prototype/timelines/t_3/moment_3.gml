@@ -11,8 +11,7 @@ switch (tboxCount) {
 		textSpd = .8;
 		break;
 	case 2: str =
-		"I updated the manual in your inventory to reflect this.\n" +
-		"Now go kick some ass!"; break;
+		"I updated the manual in your inventory to reflect this."; break;
 }
 tbox.fullText = str;
 

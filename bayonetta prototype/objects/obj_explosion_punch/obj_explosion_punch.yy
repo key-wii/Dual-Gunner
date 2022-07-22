@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_explosion",
-    "path": "sprites/spr_explosion/spr_explosion.yy",
+    "name": "spr_explosion_nonlethal",
+    "path": "sprites/spr_explosion_nonlethal/spr_explosion_nonlethal.yy",
   },
   "solid": false,
   "visible": true,
@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_skills_parent",
-    "path": "objects/obj_skills_parent/obj_skills_parent.yy",
+    "name": "obj_explosion",
+    "path": "objects/obj_explosion/obj_explosion.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -28,10 +28,6 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall_destructible","path":"objects/obj_wall_destructible/obj_wall_destructible.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -40,7 +36,7 @@
     "path": "folders/Objects/player_abilities.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_explosion",
+  "name": "obj_explosion_punch",
   "tags": [],
   "resourceType": "GMObject",
 }

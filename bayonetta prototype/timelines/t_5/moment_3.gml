@@ -12,10 +12,6 @@ switch (tboxCount) {
 		"Double tap Spacebar to explode that wall for AoE damage.";
 		textSpd = 1;
 		break;
-	case 3: str =
-		"Make good use of this ability.";
-		textSpd = .6;
-		break;
 }
 tbox.fullText = str;
 

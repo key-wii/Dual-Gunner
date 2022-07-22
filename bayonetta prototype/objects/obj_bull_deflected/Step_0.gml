@@ -8,17 +8,17 @@ if (place_meeting(x, y, obj_e_parent)) {
 				exit;
 			}
 			take_damage(other.pow, kbDir);
-			var xx = lengthdir_x(5, direction);
-			var yy = lengthdir_y(5, direction);
-			splatterRadiusAt(x + xx, y + yy, 8, 16, 12);
-		}
-		sound_machine(snd_hit_bull);
-		ssSudden(1, 1, false, false);
-		with (other) {
-			image_xscale = 2;
-			image_yscale = 2;
-			speed = 0;
-			instance_change(obj_bull_explode, true);
+			sound_machine(snd_hit_bull);
+			ssSudden(1, 1, false, false);
+			with (other) {
+				var xx = lengthdir_x(5, direction);
+				var yy = lengthdir_y(5, direction);
+				splatterRadiusAt(x + xx, y + yy, 8, 16, 12);
+				image_xscale = 2;
+				image_yscale = 2;
+				speed = 0;
+				instance_change(obj_bull_explode, true);
+			}
 		}
 	}
 }

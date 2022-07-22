@@ -14,8 +14,8 @@
   "soundFile": "snd_textitemobtained.wav",
   "duration": 1.045333,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "need to replace later",
+    "path": "folders/Sounds/player/need to replace later.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_textItemObtained",

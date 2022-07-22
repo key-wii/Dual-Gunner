@@ -2,7 +2,7 @@ if (hp == hpMax && place_meeting(x, y, obj_wall)) {
 	with (obj_wall) {
 		if (place_meeting(x, y, other.id)) {
 			if (object_get_parent(object_index) == obj_wall_nosplatter) {
-				if (destructible) {
+				if (destructible && object_index != obj_mirror) {
 					with (other) {
 						explode_nonlethal(direction);
 						instance_change(obj_bull_explode, true);

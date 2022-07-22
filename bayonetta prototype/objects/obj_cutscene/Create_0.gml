@@ -8,6 +8,7 @@ switch(room) {
 	case Room_Lv5: timeline_index = t_5; break;
 	case Room_Lv6: timeline_index = t_6; break;
 	case Room_Lv7: timeline_index = t_7; break;
+	case Room_End: timeline_index = t_demo_end; break;
 }
 timeline_running = true;
 nextBox = false;

@@ -8,3 +8,5 @@ alarm_set(1, 28);
 
 prevXs = ds_list_create();
 prevYs = ds_list_create();
+
+silent = false;

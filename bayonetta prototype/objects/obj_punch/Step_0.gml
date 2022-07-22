@@ -17,7 +17,7 @@ if (place_meeting(x, y, obj_e_parent)) {
 				
 				var xx = lengthdir_x(sprite_width, kbDir + 30 * other.dir_face);
 				var yy = lengthdir_y(sprite_width, kbDir + 30 * other.dir_face);
-				var expl = instance_create_layer(x + xx, y + yy, "Bull", obj_explosion_decorative);
+				var expl = instance_create_layer(x + xx, y + yy, "Bull", obj_explosion_punch);
 				expl.image_speed *= 2;
 			}
 		}

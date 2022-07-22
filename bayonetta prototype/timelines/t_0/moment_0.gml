@@ -4,7 +4,7 @@ global.cutscene = true;
 tbox = instance_create_layer(0, 0, "UI", obj_textbox);
 tbox.owner = id;
 tbox.fullText =
-	"Operation 27: Governor Takedown";
+	"VR Operation 0: VIP Takedown";
 	//"This is how long a textline can be! It is verrrrrrryyyyyyyyyyyyy long.";
 	
 with (obj_e_parent) {
