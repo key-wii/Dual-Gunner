@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_explosion.wav",
-  "duration": 1.762771,
+  "duration": 1.268729,
   "parent": {
     "name": "need to replace later",
     "path": "folders/Sounds/player/need to replace later.yy",

@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "fodder",
-    "path": "folders/Objects/enemy/fodder.yy",
+    "name": "projectiles",
+    "path": "folders/Objects/enemy/fodder/projectiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bull_e_bounce",

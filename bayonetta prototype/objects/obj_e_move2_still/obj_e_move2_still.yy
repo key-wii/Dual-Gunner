@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "fodder",
-    "path": "folders/Objects/enemy/fodder.yy",
+    "name": "move objects",
+    "path": "folders/Objects/enemy/fodder/move objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_e_move2_still",
