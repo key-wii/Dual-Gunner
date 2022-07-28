@@ -2,7 +2,7 @@
 
 if (charge == chargeMax) {
 	charging = true;
-	//sound_machine(snd_hoedown_charge);
+	sound_machine(snd_punch_e_windup);
 	with (armL) alarm_set(1, 0);
 	with (armR) alarm_set(1, 0);
 	

@@ -6,7 +6,7 @@
     "path": "folders/Scripts/player/dmg & physics.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_turn",
+  "name": "scr_bull_bounce_mirror",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -35,6 +35,7 @@ if (place_meeting(x, y, obj_wall)) {
 						timer = clamp(timer + 10, 0, timerMax);
 						timerAddedAlready = true;
 					}
+					exit;
 				}
 				/*else if (object_index == obj_boxer_trap) {
 					other.wall_hits += 5;
@@ -47,6 +48,9 @@ if (place_meeting(x, y, obj_wall)) {
 			if (object_index == obj_border) exit;
     
 			with (other) {
+				hp--;
+				if (hp > 0) exit;
+				hp = hpMax;
 				collide_wall();
 				wall_hits++;
 				if (wall_hits > wallHitMax) {

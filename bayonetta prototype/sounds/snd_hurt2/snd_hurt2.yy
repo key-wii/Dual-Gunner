@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.1,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_hurt.wav",
-  "duration": 0.213152,
+  "soundFile": "snd_hurt2.wav",
+  "duration": 1.253333,
   "parent": {
-    "name": "player",
-    "path": "folders/Sounds/player.yy",
+    "name": "need to replace later",
+    "path": "folders/Sounds/player/need to replace later.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_hurt",
+  "name": "snd_hurt2",
   "tags": [],
   "resourceType": "GMSound",
 }

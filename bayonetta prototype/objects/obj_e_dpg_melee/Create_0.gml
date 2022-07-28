@@ -29,4 +29,4 @@ tick = -1;
 hold = true;
 
 
-audio_stop_sound(snd_chargeWave);
+//audio_stop_sound(snd_chargeWave);

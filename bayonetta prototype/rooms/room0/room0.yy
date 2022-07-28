@@ -25,7 +25,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":780.0,"y":780.0,"resourceVersion":"1.0","name":"inst_6CEE69BC_1","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":2,"gridY":2,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_e_boxer_asleep","path":"objects/obj_e_boxer_asleep/obj_e_boxer_asleep.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":270.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":780.0,"y":482.0,"resourceVersion":"1.0","name":"inst_6416D262_1","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_e_dpg","path":"objects/obj_e_dpg/obj_e_dpg.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":780.0,"y":482.0,"resourceVersion":"1.0","name":"inst_21D938D6","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":4,"gridY":2,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_surface","path":"objects/obj_surface/obj_surface.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":200.0,"resourceVersion":"1.0","name":"inst_7B5A3A78_2_1_1_1_1_1_1","tags":[],"resourceType":"GMRInstance",},
@@ -53,8 +53,8 @@
     {"name":"inst_1EB4B488_1_1_1_1_1_1","path":"rooms/Room0/Room0.yy",},
     {"name":"inst_32C121AB_1_1_1_1_1_1","path":"rooms/Room0/Room0.yy",},
     {"name":"inst_7B5A3A78_2_1_1_1_1_1_1","path":"rooms/Room0/Room0.yy",},
-    {"name":"inst_6416D262_1","path":"rooms/Room0/Room0.yy",},
     {"name":"inst_6CEE69BC_1","path":"rooms/Room0/Room0.yy",},
+    {"name":"inst_21D938D6","path":"rooms/Room0/Room0.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -26,6 +26,19 @@ if (place_meeting(x, y, obj_bull_e)) {
 	}
 }
 
+if (place_meeting(x, y, obj_bull)) {
+	var ddir = direction;
+	with (obj_bull) {
+		if (place_meeting(x,y,other.id)) {
+			hp--;
+			if (hp > 0) exit;
+			sound_machine(snd_mirror);
+			hp = hpMax;
+			bull_bounce_mirror(ddir);
+		}
+	}
+}
+
 if (place_meeting(x, y, obj_bull_cannonball_e)) {
 	var ddir = direction;
 	with (obj_bull_cannonball_e) {
@@ -46,14 +59,11 @@ if (place_meeting(x, y, obj_bull_cannonball_e)) {
 				if (timer < 30) timer = 30;
 			}
 			if (hp > 0) exit;
-			var _ad = direction - ddir;
-			direction = (ddir + 180) - _ad;
-			image_angle = direction;
+			bull_bounce_mirror(ddir);
 			x += lengthdir_x(30, ddir);
 			y += lengthdir_y(30, ddir);
 			speed = clamp(speed * 2, 30, sprite_width * 3);
 			instance_change(obj_bull_cannonball_deflected, true);
-			wrap = true;
 			room_speed = 60;
 			if (hyp) {
 				pow = floor(pow * 1.25 * 10);

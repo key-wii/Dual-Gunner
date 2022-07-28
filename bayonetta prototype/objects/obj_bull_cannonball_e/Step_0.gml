@@ -56,6 +56,7 @@ if (place_meeting(x, y, obj_player_parent)) {
 			 reset_combo();
 		}
 		sound_machine(snd_hurt);
+		sound_machine(snd_hurt2);
 		ssSudden(3, 8, false, false);
 		knockbacked_player3(sprite_width, kbDir);
 		room_speed = 10;

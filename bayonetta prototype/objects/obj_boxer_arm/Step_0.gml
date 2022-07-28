@@ -50,6 +50,7 @@ if (place_meeting(x, y, obj_player_parent)) {
 			
 			other.alreadyHit = true;
 			sound_machine(snd_hurt);
+			sound_machine(snd_hurt3);
 			ssSudden(8, 8, false, false);
 			knockbacked_player3(sprite_width, kbDir);
 			room_speed = 4;

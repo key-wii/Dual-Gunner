@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.4,
+  "volume": 0.1,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,8 +14,8 @@
   "soundFile": "snd_chargeWave.wav",
   "duration": 2.959615,
   "parent": {
-    "name": "player",
-    "path": "folders/Sounds/player.yy",
+    "name": "unused",
+    "path": "folders/Sounds/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_chargeWave",
