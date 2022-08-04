@@ -1,14 +1,12 @@
 /// @description Projectile(s)
 	 if (fireGun == 1) {
-	fire_bull(direction, false);
+	fire_bull_e(snd_shoot_player, direction, obj_bull_e_dpg, 0, 0, 12, 1, 1);
 	fireGun = 2;
 }
 else if (fireGun == 2) {
-	fire_bull(direction + gun2dir, true);
+	fire_bull_e(snd_shoot_player, direction + gun2dir, obj_bull_e_dpg, 0, 0, 12, 1, 1);
 	fireGun = 1;
 }
-//audio_sound_pitch(snd_shoot, .05);
-sound_machine(snd_shoot_player);
 bulls++;
 
 var ddir = direction + 180;

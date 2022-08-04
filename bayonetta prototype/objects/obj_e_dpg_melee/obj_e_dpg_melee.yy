@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "spr_dpg",
+    "path": "sprites/spr_dpg/spr_dpg.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_e_parent",
-    "path": "objects/obj_e_parent/obj_e_parent.yy",
+    "name": "obj_e_dpg_parent",
+    "path": "objects/obj_e_dpg_parent/obj_e_dpg_parent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

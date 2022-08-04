@@ -1,8 +1,8 @@
 //Finisher cancels gun
-finisher();
+//finisher();
 
 //Hyper during gun
-hyper_check(false);
+//hyper_check(false);
 
 prev_ang = image_angle;
 

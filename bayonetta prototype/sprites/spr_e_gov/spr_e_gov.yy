@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "enemies",
-    "path": "folders/Sprites/enemies.yy",
+    "name": "fodder",
+    "path": "folders/Sprites/enemies/fodder.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_e_gov",

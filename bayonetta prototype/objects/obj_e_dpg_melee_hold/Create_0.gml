@@ -1,5 +1,4 @@
 var dir = start_dir;
-point_mouse();
 if (direction > dir + 90) direction = dir;
 else if (direction < dir - 90) direction = dir;
 image_angle = direction;
@@ -18,3 +17,6 @@ alarm_set(1, 78);
 
 just_reset = false;
 bulls = 0;
+
+
+move.dashing = true;

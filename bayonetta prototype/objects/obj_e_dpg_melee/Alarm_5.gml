@@ -3,4 +3,4 @@ if (hold) {
 	alarm_set(5, 1);
 	exit;
 }
-wicked_weave(start_dir);
+wicked_weave_e(start_dir);

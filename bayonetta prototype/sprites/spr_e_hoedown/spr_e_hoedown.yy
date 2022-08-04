@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "enemies",
-    "path": "folders/Sprites/enemies.yy",
+    "name": "hoedown",
+    "path": "folders/Sprites/enemies/hoedown.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_e_hoedown",

@@ -1,7 +1,7 @@
 /// @description Melee
 if (dir_face == 1) sound_machine(snd_slash);
 else sound_machine(snd_slash2);
-var atk = instance_create_layer(x, y, "Player", obj_melee);
+var atk = instance_create_layer(x, y, "Player", obj_melee_e);
 if (first) with (atk) {
 	first = true;
 	image_xscale *= 1.25;
