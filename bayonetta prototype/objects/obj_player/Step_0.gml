@@ -28,20 +28,21 @@ if (global.unlockedHyper) {
 	if (mouse_check_button_released(mb_left) || mouse_check_button_released(mb_right)) hyper_pressed = 0;
 }
 
-if (mouse_check_button_pressed(mb_left)) {
+if (lAtkInput) {
 	dir_face = 1;
 	melee();
 }
-if (mouse_check_button_pressed(mb_right)) {
+if (rAtkInput) {
 	dir_face = -1;
 	melee();
 }
-if (cooldown_taunt == 0 && keyboard_check_pressed(global.taunt) && global.unlockedTaunt) {
+
+if (cooldown_taunt == 0 && tauntInput && global.unlockedTaunt) {
 	instance_change(obj_player_taunt, true);
 }
-if (cooldown_counter == 0 && keyboard_check_pressed(global.block) && global.unlockedCounter) {
+if (cooldown_counter == 0 &&  counterInput && global.unlockedCounter) {
 	instance_change(obj_player_counter, true);
 }
-if (keyboard_check_pressed(global.dash) && global.unlockedDash) {
+if (dashInput && global.unlockedDash) {
 	dashSkill();
 }

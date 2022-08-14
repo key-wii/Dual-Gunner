@@ -47,25 +47,37 @@ if (dashing && can_move) {
 	exit;
 }
 
-if (keyboard_check(ord("W")) && keyboard_check(ord("A")) && keyboard_check(ord("S")) ||
-	keyboard_check(ord("W")) && keyboard_check(ord("A")) && keyboard_check(ord("D")) ||
-	keyboard_check(ord("A")) && keyboard_check(ord("S")) && keyboard_check(ord("D")) ||
-	keyboard_check(ord("A")) && keyboard_check(ord("S")) && keyboard_check(ord("D")) ||
-	keyboard_check(ord("W")) && keyboard_check(ord("A")) && keyboard_check(ord("S"))
-	&& keyboard_check(ord("D"))) {
+var lInput = keyboard_check(ord("A")) ||
+	gamepad_button_check(0, gp_padl) || gamepad_axis_value(0, gp_axislh) <= -.5 ||
+	gamepad_button_check(4, gp_padl) || gamepad_axis_value(4, gp_axislh) <= -.5;
+var rInput = keyboard_check(ord("D")) ||
+	gamepad_button_check(0, gp_padr) || gamepad_axis_value(0, gp_axislh) >= .5 ||
+	gamepad_button_check(4, gp_padr) || gamepad_axis_value(4, gp_axislh) >= .5;
+var dInput = keyboard_check(ord("S")) ||
+	gamepad_button_check(0, gp_padd) || gamepad_axis_value(0, gp_axislv) >= .5 ||
+	gamepad_button_check(4, gp_padd) || gamepad_axis_value(4, gp_axislv) >= .5;
+var uInput = keyboard_check(ord("W")) ||
+	gamepad_button_check(0, gp_padu) || gamepad_axis_value(0, gp_axislv) <= -.5 ||
+	gamepad_button_check(4, gp_padu) || gamepad_axis_value(4, gp_axislv) <= -.5;
+if (uInput && lInput && dInput ||
+	uInput && lInput && rInput ||
+	lInput && dInput && rInput ||
+	lInput && dInput && rInput ||
+	uInput && lInput && dInput
+	&& rInput) {
 		too_many_keys = true;
 } else {
 	too_many_keys = false;
 }
-if (keyboard_check(ord("W")) && keyboard_check(ord("S")) ||
-	keyboard_check(ord("A")) && keyboard_check(ord("D"))) {
+if (uInput && dInput ||
+	lInput && rInput) {
 		opposing_keys = true;
 } else {
 	opposing_keys = false;
 }
 if (stop) opposing_keys = true;
 
-if (keyboard_check(ord("A")) && !too_many_keys && !opposing_keys && !place_meeting(x - topSpeed, y, obj_wall)) {
+if (lInput && !too_many_keys && !opposing_keys && !place_meeting(x - topSpeed, y, obj_wall)) {
 	//burst
 	if (can_move && just_moved && last_Hdir = Hdir.right && !touching_wall && !place_meeting(x - burstSpeed, y, obj_wall)) {
 			xMove -= -burstSpeed;
@@ -87,7 +99,7 @@ if (keyboard_check(ord("A")) && !too_many_keys && !opposing_keys && !place_meeti
 		alarm_set(4, 20);
 	} 
 }
-if (keyboard_check(ord("D")) && !too_many_keys && !opposing_keys && !place_meeting(x + topSpeed, y, obj_wall)) {
+if (rInput && !too_many_keys && !opposing_keys && !place_meeting(x + topSpeed, y, obj_wall)) {
 	//burst
 	if (can_move && just_moved && last_Hdir = Hdir.left && !touching_wall && !place_meeting(x + burstSpeed, y, obj_wall)) {
 			xMove += burstSpeed;
@@ -109,7 +121,7 @@ if (keyboard_check(ord("D")) && !too_many_keys && !opposing_keys && !place_meeti
 		alarm_set(4, 20);
 	}
 }
-if (keyboard_check(ord("S")) && !too_many_keys && !opposing_keys && !place_meeting(x, y + topSpeed, obj_wall)) {
+if (dInput && !too_many_keys && !opposing_keys && !place_meeting(x, y + topSpeed, obj_wall)) {
 	//burst
 	if (can_move && just_moved && last_Vdir = Vdir.up && !touching_wall && !place_meeting(x, y + burstSpeed, obj_wall)) {
 			yMove += burstSpeed;
@@ -131,7 +143,7 @@ if (keyboard_check(ord("S")) && !too_many_keys && !opposing_keys && !place_meeti
 		alarm_set(4, 20);
 	} 
 }
-if (keyboard_check(ord("W")) && !too_many_keys && !opposing_keys && !place_meeting(x, y - topSpeed, obj_wall)) {
+if (uInput && !too_many_keys && !opposing_keys && !place_meeting(x, y - topSpeed, obj_wall)) {
 	//burst
 	if (can_move && just_moved && last_Vdir = Vdir.down && !touching_wall && !place_meeting(x, y - burstSpeed, obj_wall)) {
 			yMove -= -burstSpeed;
@@ -190,8 +202,8 @@ else if (yMove < 0) direction = clamp(90, direction - moveDir, direction + moveD
 
 //keep moving a bit 1 frame after stopping
 if (just_stopped &&
-	!keyboard_check(ord("A")) && !keyboard_check(ord("D")) &&
-	!keyboard_check(ord("S")) && !keyboard_check(ord("W"))) {
+	!lInput && !rInput &&
+	!dInput && !uInput) {
 		var sspd = topSpeed / 2 + 1;
 			 if (last_Hdir == Hdir.left	&&	!place_meeting(x - sspd, y, obj_wall))	x -= sspd;
 		else if (last_Hdir == Hdir.right && !place_meeting(x + sspd, y, obj_wall))	x += sspd;

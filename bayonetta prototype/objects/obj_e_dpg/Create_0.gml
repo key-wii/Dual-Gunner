@@ -37,3 +37,4 @@ prev_theta = direction;
 prev_ang = image_angle;
 
 set_vars();
+pow = 15; //used for bumping into other enemies

@@ -27,6 +27,7 @@ event_inherited();
 
 image_xscale = scale;
 image_yscale = scale;
+pow = 15; //used for bumping into other enemies
 shield = true;
 spin = 0;
 dizzyState = obj_e_big_dizzy;

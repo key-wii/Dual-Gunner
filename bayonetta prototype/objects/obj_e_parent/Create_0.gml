@@ -7,6 +7,7 @@ dizzyState = obj_e_dizzy;
 bodyPart = false;
 invincible = false;
 shield = false;
+pow = 1.5; //used for bumping into other enemies
 
 damage_text = instance_create_layer(x, y, "UI", obj_text_dmg);
 instance_destroy(damage_text);
