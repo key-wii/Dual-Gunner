@@ -47,18 +47,6 @@ if (dashing && can_move) {
 	exit;
 }
 
-var lInput = keyboard_check(ord("A")) ||
-	gamepad_button_check(0, gp_padl) || gamepad_axis_value(0, gp_axislh) <= -.5 ||
-	gamepad_button_check(4, gp_padl) || gamepad_axis_value(4, gp_axislh) <= -.5;
-var rInput = keyboard_check(ord("D")) ||
-	gamepad_button_check(0, gp_padr) || gamepad_axis_value(0, gp_axislh) >= .5 ||
-	gamepad_button_check(4, gp_padr) || gamepad_axis_value(4, gp_axislh) >= .5;
-var dInput = keyboard_check(ord("S")) ||
-	gamepad_button_check(0, gp_padd) || gamepad_axis_value(0, gp_axislv) >= .5 ||
-	gamepad_button_check(4, gp_padd) || gamepad_axis_value(4, gp_axislv) >= .5;
-var uInput = keyboard_check(ord("W")) ||
-	gamepad_button_check(0, gp_padu) || gamepad_axis_value(0, gp_axislv) <= -.5 ||
-	gamepad_button_check(4, gp_padu) || gamepad_axis_value(4, gp_axislv) <= -.5;
 if (uInput && lInput && dInput ||
 	uInput && lInput && rInput ||
 	lInput && dInput && rInput ||
