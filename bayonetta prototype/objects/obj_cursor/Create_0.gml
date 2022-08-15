@@ -12,7 +12,7 @@ if variable_instance_exists(global, "cursorX") {
 }
 
 just_used_axis = false;
-spdMax = 30;
+spdMax = 40;
 haxis = 0;
 vaxis = 0;
 haxis2 = 0;
