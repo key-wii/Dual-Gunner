@@ -6,6 +6,9 @@ global.pause1 = vk_enter;
 global.pause2 = vk_escape;
 
 window_set_cursor(cr_none);
+global.cursorX = mouse_x;
+global.cursorY = mouse_y;
+global.controllerDisconnected = false;
 
 global.mp = 0;
 global.cameraAdjust = 100;

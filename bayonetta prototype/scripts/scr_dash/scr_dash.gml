@@ -3,23 +3,23 @@ function dash() {
 		dashSpd = 19;
 		dash_tick = 0;
 		dash_dir_change = 0;
-		if (keyboard_check(ord("W")) && keyboard_check(ord("S"))) {
+		if (uInput && dInput) {
 			//do nothing
-		} else if (keyboard_check(ord("W"))) {
+		} else if (uInput) {
 			dashing = true;
 			direction = 90;
-		} else if (keyboard_check(ord("S"))) {
+		} else if (dInput) {
 			dashing = true;
 			direction = 270;
 		}
-		if (keyboard_check(ord("A")) && keyboard_check(ord("D"))) {
+		if (lInput && rInput) {
 			//do nothing
-		} else if (keyboard_check(ord("A"))) {
+		} else if (lInput) {
 			dashing = true;
 			if (direction == 90) direction += 45;
 			else if (direction == 270) direction -= 45;
 			else direction = 180;
-		} else if (keyboard_check(ord("D"))) {
+		} else if (rInput) {
 			dashing = true;
 			if (direction == 90) direction -= 45;
 			else if (direction == 270) direction += 45;
@@ -31,23 +31,23 @@ function dash() {
 function dash2(spd) {
 	with (move) if (can_move) {
 		dashSpd = spd;
-		if (keyboard_check(ord("W")) && keyboard_check(ord("S"))) {
+		if (uInput && dInput) {
 			//do nothing
-		} else if (keyboard_check(ord("W"))) {
+		} else if (uInput) {
 			dashing = true;
 			direction = 90;
-		} else if (keyboard_check(ord("S"))) {
+		} else if (dInput) {
 			dashing = true;
 			direction = 270;
 		}
-		if (keyboard_check(ord("A")) && keyboard_check(ord("D"))) {
+		if (lInput && rInput) {
 			//do nothing
-		} else if (keyboard_check(ord("A"))) {
+		} else if (lInput) {
 			dashing = true;
 			if (direction == 90) direction += 45;
 			else if (direction == 270) direction -= 45;
 			else direction = 180;
-		} else if (keyboard_check(ord("D"))) {
+		} else if (rInput) {
 			dashing = true;
 			if (direction == 90) direction -= 45;
 			else if (direction == 270) direction += 45;

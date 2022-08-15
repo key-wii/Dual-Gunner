@@ -2,7 +2,7 @@
 var cooldown = 5;
 switch (dir) {
 	case L:
-		if (keyboard_check_pressed(global.block)) {
+		if (finisherPunchLInput_pressed) {
 			if (alarm_get(1) <= 20 && hits >= hitGoal) {
 				finisher_punch_last(direction, dir_face, hits);
 			} else {
@@ -21,7 +21,7 @@ switch (dir) {
 		}
 		break;
 	case R:
-		if (keyboard_check_pressed(global.taunt)) {
+		if (finisherPunchRInput_pressed) {
 			if (alarm_get(1) <= 20 && hits >= hitGoal) {
 				finisher_punch_last(direction, dir_face, hits);
 			} else {

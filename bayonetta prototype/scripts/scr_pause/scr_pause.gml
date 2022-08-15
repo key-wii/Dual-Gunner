@@ -1,5 +1,5 @@
 function pause() {
-	if (!instance_exists(obj_player)) exit;
+	if (!instance_exists(obj_player_grandparent)) exit;
 	
 	//get screenshot for pause menu background
 	var width = surface_get_width(application_surface),
@@ -26,6 +26,8 @@ function pause() {
 	if (global.level == 9 && global.checkpoint >= 5) pauseSnd = false;
 	if (pauseSnd) audio_pause_sound(global.bgm);*/
 
+	global.cursorX = obj_cursor.x;
+	global.cursorY = obj_cursor.y;
 	global.currentRoom = room;
 	global.unpausing = true;
 	room_goto(Room_Pause);
@@ -40,5 +42,6 @@ function unpause() {
 	part_system_automatic_draw(global.partSystem, true);
 	part_system_automatic_draw(global.partSystemAbove, true);
 	
+	global.controllerDisconnected = false;
 	room_goto(global.currentRoom);
 }

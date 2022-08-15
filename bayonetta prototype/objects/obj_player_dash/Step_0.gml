@@ -1,9 +1,18 @@
 jump_move(move);
 
+//Check if player double tapped input
+if (timer > move.dashTickMax - 4 && dashInput_pressed) {
+	dashExplode = true;
+}
+//Input buffer next dash
+if (timer <= 8 && dashInput_pressed) {
+	dashSkill();
+}
+
 //Dash can be canceled into any of these
-var block = cooldown_counter == 0 && keyboard_check_pressed(global.block);
-var attackL = mouse_check_button_pressed(mb_left);
-var attackR = mouse_check_button_pressed(mb_right);
+var block = cooldown_counter == 0 && counterInput_pressed;
+var attackL = lAtkInput_pressed;
+var attackR = rAtkInput_pressed;
 if (hyper_pressed > 0) {
 	attackL = false;
 	attackR = false;

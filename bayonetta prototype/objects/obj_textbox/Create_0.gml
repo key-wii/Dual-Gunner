@@ -24,6 +24,8 @@ ready_text = false;
 //alarm_set(0, 1);
 alarm_set(10, 1);
 
+confirmInput_pressed = false;
+confirmInput_released = false;
 clicking = false;
 
 //textfile = "intro.txt"; NOT USING TEXTFILE

@@ -1,5 +1,9 @@
 jump_move(move);
 
+if (dashInput_pressed) {
+	dashExplode = true;
+}
+
 var ddir = abs(windupMax * 2) - abs(windup);
 if (windup < windupMax) {
 	windup++;

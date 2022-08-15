@@ -37,10 +37,10 @@ if (rAtkInput_pressed) {
 	melee();
 }
 
-if (cooldown_taunt == 0 && tauntInput && global.unlockedTaunt) {
+if (cooldown_taunt == 0 && tauntInput_pressed && global.unlockedTaunt) {
 	instance_change(obj_player_taunt, true);
 }
-if (cooldown_counter == 0 && counterInput && global.unlockedCounter) {
+if (cooldown_counter == 0 && counterInput_pressed && global.unlockedCounter) {
 	instance_change(obj_player_counter, true);
 }
 if (dashInput && global.unlockedDash) {

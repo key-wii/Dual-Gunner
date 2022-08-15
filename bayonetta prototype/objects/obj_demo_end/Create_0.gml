@@ -6,3 +6,5 @@ image_yscale = -3;
 room_speed = 60;
 
 displayText = false;
+
+event_inherited();
