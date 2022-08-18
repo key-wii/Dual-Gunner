@@ -13,3 +13,5 @@ with (obj_player_move) stop = true;
 
 gun.visible = false;
 move.arrow.visible = false;
+
+alarm_set(8, 0);

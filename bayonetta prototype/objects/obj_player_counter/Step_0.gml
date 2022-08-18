@@ -1,6 +1,17 @@
 /// @description Collision Detection
 jump_move(move);
 
+// Dash cancels block
+if (dashInput_pressed) {
+	image_xscale = 1;
+	image_yscale = 1;
+	cooldown_counter = cooldownCounterMax;
+	with (obj_player_move) stop = false;
+	gun.visible = true;
+	move.arrow.visible = true;
+	dashSkill();
+}
+
 var hyp = hyper;
 
 if (place_meeting(x, y, obj_bull_e)) {

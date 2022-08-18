@@ -7,4 +7,4 @@ first = false;
 
 //moreKnockBack = 0;
 
-if (instance_exists(obj_player_move)) with (obj_player_move) dashing = false;
+//if (instance_exists(obj_player_move)) with (obj_player_move) dashing = false;

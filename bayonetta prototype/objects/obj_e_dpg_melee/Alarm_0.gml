@@ -23,8 +23,7 @@ with (move) {
 	var yy = lengthdir_y(12, ddir);
 	if (!place_meeting(x + xx, y, obj_wall)) x += xx;
 	if (!place_meeting(x, y + yy, obj_wall)) y += yy;
-}
-with (move) {
+	dashing = false;
 	topSpeed = .1;
 	burstSpeed = .1;
 }
