@@ -1,7 +1,11 @@
 function melee(){
 	alarm_set(8, 0);
 	
-	if (!instance_exists(obj_melee)) {
+	if (hyper && !just_meleed) {
+		point_mouse();
+		instance_change(obj_player_punch_chargeup, true);
+	}
+	else if (!hyper && !instance_exists(obj_melee)) {
 		point_mouse();
 		instance_change(obj_player_melee, true);
 	} else {

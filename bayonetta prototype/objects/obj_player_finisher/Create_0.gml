@@ -35,6 +35,8 @@ else {
 hits = 0;
 alarm_set(3, 1);
 
+if (hyper) hyper_end(false);
+
 mpGauge.visible = false;
 gun.visible = false;
 move.arrow.visible = false;

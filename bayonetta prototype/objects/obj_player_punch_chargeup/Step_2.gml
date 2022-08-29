@@ -4,7 +4,7 @@ finisher();
 //Hyper cancels melee
 hyper_check(true);
 
-direction = direction + 16 * dir_face * -1;
+direction -= /*5*/ 1.5 * dir_face * -1;
 image_angle = direction;
 
 prev_ang = image_angle;
