@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_boxer_trap",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"745d7099-4d4c-4a5e-a83f-80e3b37057e0","path":"sprites/spr_boxer_trap/spr_boxer_trap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"745d7099-4d4c-4a5e-a83f-80e3b37057e0","path":"sprites/spr_boxer_trap/spr_boxer_trap.yy",},"LayerId":{"name":"b7e3cfe0-d47e-402b-953e-6d3a87342233","path":"sprites/spr_boxer_trap/spr_boxer_trap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boxer_trap","path":"sprites/spr_boxer_trap/spr_boxer_trap.yy",},"resourceVersion":"1.0","name":"745d7099-4d4c-4a5e-a83f-80e3b37057e0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"745d7099-4d4c-4a5e-a83f-80e3b37057e0",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_boxer_trap","path":"sprites/spr_boxer_trap/spr_boxer_trap.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_boxer_trap",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0be9bba5-7c1e-40f8-9bd2-90a5f4f9bb9d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"745d7099-4d4c-4a5e-a83f-80e3b37057e0","path":"sprites/spr_boxer_trap/spr_boxer_trap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"0be9bba5-7c1e-40f8-9bd2-90a5f4f9bb9d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"745d7099-4d4c-4a5e-a83f-80e3b37057e0","path":"sprites/spr_boxer_trap/spr_boxer_trap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,14 +61,9 @@
     "yorigin": 350,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_boxer_trap","path":"sprites/spr_boxer_trap/spr_boxer_trap.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_boxer_trap",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b7e3cfe0-d47e-402b-953e-6d3a87342233","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b7e3cfe0-d47e-402b-953e-6d3a87342233","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": {
     "left": 0,
@@ -96,8 +94,4 @@
     "name": "boxer",
     "path": "folders/Sprites/enemies/boxer.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_boxer_trap",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

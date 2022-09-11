@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bull_e_cannonball",
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"18516839-6a3e-497b-831d-681a0826ee44","path":"sprites/spr_bull_e_cannonball/spr_bull_e_cannonball.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"18516839-6a3e-497b-831d-681a0826ee44","path":"sprites/spr_bull_e_cannonball/spr_bull_e_cannonball.yy",},"LayerId":{"name":"e2087f92-06b9-4b53-8284-56fa76551f19","path":"sprites/spr_bull_e_cannonball/spr_bull_e_cannonball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bull_e_cannonball","path":"sprites/spr_bull_e_cannonball/spr_bull_e_cannonball.yy",},"resourceVersion":"1.0","name":"18516839-6a3e-497b-831d-681a0826ee44","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"18516839-6a3e-497b-831d-681a0826ee44",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bull_e_cannonball","path":"sprites/spr_bull_e_cannonball/spr_bull_e_cannonball.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_bull_e_cannonball",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"45d8c2ac-9da7-449f-8824-c7e72d45d6fe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18516839-6a3e-497b-831d-681a0826ee44","path":"sprites/spr_bull_e_cannonball/spr_bull_e_cannonball.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 30,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bull_e_cannonball","path":"sprites/spr_bull_e_cannonball/spr_bull_e_cannonball.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_bull_e_cannonball",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e2087f92-06b9-4b53-8284-56fa76551f19","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e2087f92-06b9-4b53-8284-56fa76551f19","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "enemy abilities",
     "path": "folders/Sprites/enemy abilities.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bull_e_cannonball",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

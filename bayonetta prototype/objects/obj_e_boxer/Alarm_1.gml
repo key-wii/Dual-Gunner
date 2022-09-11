@@ -3,7 +3,10 @@ sprite_index = spr_e_boxer;
 charging = false;
 charge = chargeMax;
 attacking = true;
-sound_machine(snd_punch_e);
+switch (dir_attack) {
+	case LEFT: sound_machine(snd_punch_e); break;
+	case RIGHT: sound_machine(snd_punch_e2); break;
+}
 
 var scale = 5;
 with (attack_arm) {

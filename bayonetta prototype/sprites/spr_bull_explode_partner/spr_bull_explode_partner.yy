@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bull_explode_partner",
   "bboxMode": 1,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"25298bf7-1d56-4838-9412-a2eaab2ead70","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"25298bf7-1d56-4838-9412-a2eaab2ead70","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"LayerId":{"name":"e2087f92-06b9-4b53-8284-56fa76551f19","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bull_explode_partner","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"resourceVersion":"1.0","name":"25298bf7-1d56-4838-9412-a2eaab2ead70","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"35cfaeac-9534-4c4b-8a7f-6c0a4b15ecaa","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"35cfaeac-9534-4c4b-8a7f-6c0a4b15ecaa","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"LayerId":{"name":"e2087f92-06b9-4b53-8284-56fa76551f19","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bull_explode_partner","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"resourceVersion":"1.0","name":"35cfaeac-9534-4c4b-8a7f-6c0a4b15ecaa","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"20134ab8-429b-4736-9552-f77b49f5b844","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"20134ab8-429b-4736-9552-f77b49f5b844","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"LayerId":{"name":"e2087f92-06b9-4b53-8284-56fa76551f19","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bull_explode_partner","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"resourceVersion":"1.0","name":"20134ab8-429b-4736-9552-f77b49f5b844","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"25298bf7-1d56-4838-9412-a2eaab2ead70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"35cfaeac-9534-4c4b-8a7f-6c0a4b15ecaa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"20134ab8-429b-4736-9552-f77b49f5b844",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bull_explode_partner","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_bull_explode_partner",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -46,11 +45,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"6e01052b-0b94-4547-9b0e-233ef0bf6cbb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"25298bf7-1d56-4838-9412-a2eaab2ead70","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"7c6def56-d9e7-4ab3-bbec-d05c547882e3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"35cfaeac-9534-4c4b-8a7f-6c0a4b15ecaa","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ff524b50-37a2-4f6a-b319-0ac5cdf8cdbd","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20134ab8-429b-4736-9552-f77b49f5b844","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 20,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bull_explode_partner","path":"sprites/spr_bull_explode_partner/spr_bull_explode_partner.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_bull_explode_partner",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e2087f92-06b9-4b53-8284-56fa76551f19","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e2087f92-06b9-4b53-8284-56fa76551f19","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "player abilities",
     "path": "folders/Sprites/player abilities.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bull_explode_partner",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

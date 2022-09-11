@@ -2,7 +2,6 @@
 
 if (charge == chargeMax) {
 	charging = true;
-	sound_machine(snd_punch_e_windup);
 	with (armL) alarm_set(1, 0);
 	with (armR) alarm_set(1, 0);
 	
@@ -11,11 +10,13 @@ if (charge == chargeMax) {
 			sprite_index = spr_e_boxerL;
 			attack_arm = armL;
 			other_arm = armR;
+			sound_machine(snd_punch_e_windup);
 			break;
 		case RIGHT:
 			sprite_index = spr_e_boxerR;
 			attack_arm = armR;
 			other_arm = armL;
+			sound_machine(snd_punch_e_windup2);
 			break;
 	}
 	with (attack_arm) {
