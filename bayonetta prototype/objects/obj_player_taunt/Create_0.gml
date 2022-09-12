@@ -12,6 +12,9 @@ alarm_set(4, 0);
 alarm_set(5, 0);
 alarm_set(6, 0);
 alarm_set(7, 0);
+alarm_set(10, 0);
+nextDelayMax = 7;
+nextDelay = 0;
 
 dir_orig = direction;
 h_face = 1;

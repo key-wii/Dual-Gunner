@@ -3,7 +3,12 @@ if (place_meeting(x, y, obj_e_parent)) {
 	with (obj_e_parent) {
 		if (place_meeting(x,y,other.id) and (ds_list_find_index(other.enemiesHit,id) == -1)) {
 			if (!shield && !invincible) {
-				take_damage(other.pow * 2, kbDir);
+				var kBack = other.pow * 2;
+				if (other.hyper) {
+					kBack /= 2;
+					kbDir = point_direction(x, y, other.x, other.y);
+				}
+				take_damage(kBack, kbDir);
 				ds_list_add(other.enemiesHit, id);
 				sound_machine(snd_hit_wave);
 				ssSteady(clamp(2 * other.pow, 1, 15), 8, false, false);

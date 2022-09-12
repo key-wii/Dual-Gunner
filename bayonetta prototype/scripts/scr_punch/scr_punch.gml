@@ -14,5 +14,6 @@ function punch(dir, face, power) {
 		pow = power;
 		rotate = -14 * face;
 		dir_face = face;
+		owner = other.id;
 	}
 }

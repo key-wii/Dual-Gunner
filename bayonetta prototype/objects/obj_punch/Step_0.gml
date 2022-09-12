@@ -1,5 +1,7 @@
+if (!instance_exists(owner)) exit;
+
 if (place_meeting(x, y, obj_e_parent)) {
-	var kbDir = direction;
+	var kbDir = owner.direction;
 	with (obj_e_parent) {
 		if (place_meeting(x,y,other.id) and (ds_list_find_index(other.enemiesHit,id) == -1)) {
 			if (!shield && !invincible) {
@@ -10,7 +12,7 @@ if (place_meeting(x, y, obj_e_parent)) {
 				
 				sound_machine(snd_punch);
 				knockbacked(1, kbDir);
-				take_damage3(clamp(other.pow / 2, 12, 12) / (move.weight * 3), kbDir + 125 * other.dir_face);
+				take_damage3(7 / (move.weight * 3), kbDir);
 				ds_list_add(other.enemiesHit, id);
 				//sound_machine(snd_hit_wave);
 				ssSteady(clamp(2 * other.pow, 1, 15), 8, false, false);

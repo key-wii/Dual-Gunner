@@ -1,9 +1,9 @@
 jump_move(move);
 
 //Check if player double tapped input
-if (timer > move.dashTickMax - 4 && dashInput_pressed) {
+/*if (timer > move.dashTickMax - 4 && dashInput_pressed) {
 	dashExplode = true;
-}
+}*/
 //Input buffer next dash
 if (timer <= 8 && dashInput_pressed) {
 	dashSkill();

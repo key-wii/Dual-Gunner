@@ -5,10 +5,6 @@ image_yscale = 1;
 dir_orig_move = move.direction;
 timer = move.dashTickMax;
 
-nextDelayMax = 7;
-nextDelay = 0;
-alarm_set(0, 8);
-
 /*with (obj_player_move) {
 	can_move = true;
 	topSpeed = topSpeed_default;

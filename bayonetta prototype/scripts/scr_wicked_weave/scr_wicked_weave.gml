@@ -14,6 +14,7 @@ function wicked_weave(dir) {
 		pow /= 10;
 		image_xscale *= 1.25;
 		image_yscale *= 1.25;
+		hyper = true;
 	}
 }
 
@@ -35,5 +36,6 @@ function wicked_weave_big(dir) {
 		pow /= 10;
 		image_xscale *= 1.25;
 		image_yscale *= 1.25;
+		hyper = true;
 	}
 }

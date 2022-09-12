@@ -11,6 +11,6 @@ y_orig = y;
 with (move) can_move = false;
 
 //hold = true;
-dashExplode = false;
+//dashExplode = false;
 
 //sound_machine(snd_);
