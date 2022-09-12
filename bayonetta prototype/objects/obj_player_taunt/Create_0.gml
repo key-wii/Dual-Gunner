@@ -15,6 +15,7 @@ alarm_set(7, 0);
 alarm_set(10, 0);
 nextDelayMax = 7;
 nextDelay = 0;
+doneExploding = false;
 
 dir_orig = direction;
 h_face = 1;

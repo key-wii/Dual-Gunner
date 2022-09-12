@@ -5,10 +5,10 @@ hdir -= 20;
 //direction += 15;
 direction += 30 * dir_face;
 if (hdir <= -150) {
-	if (ds_list_size(mirrors) > 0) alarm_set(11, 1);
 	alarm_set(7, 3);
 	rock++;
-	taunt_text();
+	if (ds_list_size(mirrors) > 0) alarm_set(11, 1);
+	else if (!doneExploding) taunt_text();
 }
 else alarm_set(6, 1);
 

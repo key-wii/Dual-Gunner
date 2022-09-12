@@ -24,4 +24,9 @@ if (ds_list_size(mirrors) > 0) {
 		}
 		instance_destroy();
 	}
+	
+	if (ds_list_size(mirrors) == 0) {
+		doneExploding = true;
+		rock = 5;
+	}
 }
