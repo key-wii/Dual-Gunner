@@ -1,9 +1,9 @@
-if (instance_exists(owner)) {
+if (instance_exists(owner && owner != id)) {
 	var ddir = point_direction(x, y, other.x, other.y);
 	var enemy = other.owner;
 	if (kBack) with (owner) {
 		var ppow = enemy.pow;
-		with (enemy) take_damage(clamp(other.pow * 8, 0, 16), ddir);
+		with (enemy) take_damage(clamp(owner.pow * 8, 0, 16), ddir);
 		take_damage(clamp(ppow * 8, 0, 16), ddir + 180);
 	}
 }
