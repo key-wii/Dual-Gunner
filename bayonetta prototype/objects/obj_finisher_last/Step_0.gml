@@ -17,9 +17,13 @@ if (place_meeting(x, y, obj_e_parent)) {
 				var xx = lengthdir_x(sprite_width, kbDir + 30 * other.dir_face);
 				var yy = lengthdir_y(sprite_width, kbDir + 30 * other.dir_face);
 				var expl = instance_create_layer(x + xx, y + yy, "Bull", obj_explosion_punch);
-				expl.image_speed *= 2;
-				expl.image_xscale *= 2;
-				expl.image_yscale *= 2;
+				with (expl) {
+					image_speed *= 2;
+					image_xscale *= 2;
+					image_yscale *= 2;
+					direction = kbDir;
+					image_angle = direction;
+				}
 			}
 		}
 	}
