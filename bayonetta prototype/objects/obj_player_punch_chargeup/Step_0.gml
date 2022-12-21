@@ -3,7 +3,7 @@ jump_move(move);
 if (!lAtkInput && !rAtkInput) {
 	hold = false;
 	instance_change(obj_player_punch, true);
-}
+} else hold_count++;
 
 //input buffering
 /*if (lAtkInput_pressed && dir_face != 1) {

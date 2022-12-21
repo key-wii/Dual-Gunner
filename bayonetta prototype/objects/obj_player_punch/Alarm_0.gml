@@ -1,5 +1,10 @@
 /// @description Punch
-punch(start_dir, dir_face, 10);
+
+if (hold) var dmg = 70;
+else var dmg = 15;
+if (hold) dmg += combo_length * 5;
+else dmg += combo_length * 2.5;
+punch(start_dir, dir_face, dmg, hold);
 
 var ddir = start_dir + 180;
 with (move) {

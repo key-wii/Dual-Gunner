@@ -12,7 +12,7 @@ for (var i = 0; i < ds_list_size(combo_now); i++)
 	temp[| i] = combo_now[| i];*/
 	
 //if (!check_combo(combo_now, combo1)) reset_combo();
-alarm_set(0, 1);
+alarm_set(0, 2);
 
 combo_length = ds_list_size(combo_now);
 

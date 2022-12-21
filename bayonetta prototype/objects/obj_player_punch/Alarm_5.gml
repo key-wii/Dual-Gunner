@@ -1,6 +1,3 @@
 /// @description Wicked Weave
-if (hold) {
-	alarm_set(5, 1);
-	exit;
-}
-wicked_weave(start_dir);
+if (hold) wicked_weave_big(start_dir);
+else wicked_weave(start_dir);

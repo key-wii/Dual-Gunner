@@ -2,8 +2,6 @@ start_dir = direction;
 alarm_set(5, 0);
 dont_cancel = true;
 
-if (last_hit) alarm_set(5, 1);
-
 /*var temp = ds_list_create();
 for (var i = 0; i < ds_list_size(combo_now); i++)
 	temp[| i] = combo_now[| i];*/
@@ -16,6 +14,7 @@ alarm_set(0, meleeCharge * 3);
 ds_list_destroy(temp);*/
 
 hold = true;
+hold_count = 0;
 
 with (move) { 
 	dashing = false;
