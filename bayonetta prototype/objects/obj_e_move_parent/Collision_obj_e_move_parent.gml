@@ -5,9 +5,9 @@ if (!collided_this_frame && instance_exists(owner.id) && owner.id != id) {
 		actual_pow = pow;
 		pow = 6;
 		var ppow = enemy.pow;
-		with (enemy) take_damage(clamp(other.pow * 6, 0, 16), ddir);
+		with (enemy) take_damage(clamp(other.pow * 4, 0, 16), ddir);
 		other.pow = pow;
-		take_damage(clamp(ppow * 6, 0, 16), ddir + 180);
+		take_damage(clamp(ppow * 4, 0, 16), ddir + 180);
 		pow = actual_pow;
 	}
 	collided_this_frame = true;
