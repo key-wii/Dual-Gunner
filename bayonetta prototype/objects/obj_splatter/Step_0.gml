@@ -19,7 +19,7 @@ if (movSpd < 0) movSpd = 0;
 if (instance_exists(obj_splatter_controller)) {
     surface_set_target(obj_splatter_controller.surf);
     draw_sprite_ext(sprite, 0, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
-    surface_reset_target();  
+    surface_reset_target();
 }
 
 // Once the blood thins away to nothing, destroy it

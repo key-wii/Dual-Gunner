@@ -241,6 +241,7 @@
     {"name":"scr_melee_combo","order":2,"path":"scripts/scr_melee_combo/scr_melee_combo.yy",},
     {"name":"obj_finisher_last","order":18,"path":"objects/obj_finisher_last/obj_finisher_last.yy",},
     {"name":"spr_clip","order":4,"path":"sprites/spr_clip/spr_clip.yy",},
+    {"name":"scr_death","order":9,"path":"scripts/scr_death/scr_death.yy",},
     {"name":"obj_menu_grenade_b","order":1,"path":"objects/obj_menu_grenade_b/obj_menu_grenade_b.yy",},
     {"name":"spr_e_ss","order":8,"path":"sprites/spr_e_ss/spr_e_ss.yy",},
     {"name":"Room_End","order":8,"path":"rooms/Room_End/Room_End.yy",},
