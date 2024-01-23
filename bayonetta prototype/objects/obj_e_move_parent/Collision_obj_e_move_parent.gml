@@ -1,11 +1,17 @@
-if (instance_exists(owner && owner != id)) {
+if (!collided_this_frame && instance_exists(owner.id) && owner.id != id) {
 	var ddir = point_direction(x, y, other.x, other.y);
 	var enemy = other.owner;
-	if (kBack) with (owner) {
+	if (kBack) with (owner.id) {
+		actual_pow = pow;
+		pow = 6;
 		var ppow = enemy.pow;
-		with (enemy) take_damage(clamp(owner.pow * 8, 0, 16), ddir);
-		take_damage(clamp(ppow * 8, 0, 16), ddir + 180);
+		with (enemy) take_damage(clamp(other.pow * 6, 0, 16), ddir);
+		other.pow = pow;
+		take_damage(clamp(ppow * 6, 0, 16), ddir + 180);
+		pow = actual_pow;
 	}
+	collided_this_frame = true;
+	other.collided_this_frame = true;
 }
 
 if (place_meeting(x, y, other)) {

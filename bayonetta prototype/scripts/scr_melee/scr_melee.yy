@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scr_melee",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "basic attack",
     "path": "folders/Scripts/player/basic attack.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_melee",
-  "tags": [],
-  "resourceType": "GMScript",
 }
